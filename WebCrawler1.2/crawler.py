@@ -11,6 +11,9 @@ class WebCrawler:
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
 
+
+    # TODO: add a function that reads an excel file and checks attributes that might be usable in crawl, ex: E-nr
+
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--headless')
