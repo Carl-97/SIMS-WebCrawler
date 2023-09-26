@@ -13,17 +13,13 @@ class WebCrawler:
         # driver is source?
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        # self.visited = ['https://www.bossard.com/eshop/za-en']
+        self.visited = ['']
     
     def get_visited(self):
         return self.visited
 
     def set_url(self, url):
         self.url = url
-        
-
-
-    # TODO: add a function that reads an excel file and checks attributes that might be usable in crawl, ex: E-nr
 
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
@@ -53,28 +49,25 @@ class WebCrawler:
     # Find valid links only, ex: links that starts with 'www'
     def find_links(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
-        #gets all 'a' elements that have a href atribute
+        # gets all 'a' elements that have a href atribute
         links = soup.find_all('a', href = True)
-        #filter out non website links
-       # websitelinks = [link for link in links if self.valid_website_link(link)]
+        # filter out non website links
+        # url = [link for link in links if self.valid_website_link(link)]
 
         valid_links = []
         for link in links:
             href = link.get('href')
-            
-           
             parsed_url = urlparse(href)
                
             if parsed_url.scheme and parsed_url.netloc:
                 # unsure if validate does anything
                 if self.valid_website_link(href):
-                    if not self.is_pdf(href): # still can download documents
-
+                    if not self.is_pdf(href):  # still can download documents
                         valid_links.append(href)
         return valid_links
     
     def is_pdf(self, url):
-        #checks if its end with .pdf
+        # checks if its end with .pdf
         return url.lower().endswith('.pdf')
 
     def valid_website_link(self, url): 
@@ -84,12 +77,11 @@ class WebCrawler:
 
     def extract_text_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
-
         # Extract content only from the <body> tag
         body_content = soup.body
         if body_content:
             return body_content.get_text()
-        return ""
+        return soup
 
     def save_to_csv(self, text_content, csv_filename):
         # TODO: add a standard filepath
@@ -127,21 +119,16 @@ class WebCrawler:
                 if visitedurl == current_url:
                     alreadVisited = True
                     print("already visited")
-            if alreadVisited == False:
-                print("curently on: " , current_url)
+            if not alreadVisited:
+                print("curently on: ", current_url)
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)
-
                 self.add_links(html_content, current_depth)
-
                 self.save_to_csv(current_url,'visited.csv')
-
                 text_content = "this url:" + self.url
-
                 text_content += self.extract_text_content(html_content)
                 self.save_to_csv(text_content, csv_filename)
                 # saves it to the visited csv file
-
                 current_depth += 1
 
     def scrape_databank(self, file, id_nr, brand=None):
@@ -158,7 +145,7 @@ class WebCrawler:
             
         #print(f"Found Links at depth {current_depth}:")
         for link in links:
-         #   print(link)
+            #print(link)
             self.link_queue.put(link)
 
     def close_browser(self):
