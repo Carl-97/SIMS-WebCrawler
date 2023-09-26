@@ -36,13 +36,27 @@ class WebCrawler:
         self.driver.get(url)
         return self.driver.page_source
 
+    #tar bort delar av hemsidan
+    def get_html_body(self, url):
+        #finds and remove header and
+        header_content = self.driver.find_element_by_tag_name("header").txt
+        footer_content = self.driver.find_element_by_tag_name("footer").txt
+        navbar_content = self.driver.find_element_by_tag_name("header").txt
+        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", header_content)
+        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", footer_content)
+        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", navbar_content)
+
+        #get body content
+        body_content = self.driver.find_element_by_tag_name("body").txt
+        return body_content
+
     # Find valid links only, ex: links that starts with 'www'
     def find_links(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
-        # gets all 'a' elements that have a href attribute
+        #gets all 'a' elements that have a href atribute
         links = soup.find_all('a', href = True)
-        # filter out non website links
-        # urls = [link for link in links if self.valid_website_link(link)]
+        #filter out non website links
+       # websitelinks = [link for link in links if self.valid_website_link(link)]
 
         valid_links = []
         for link in links:
@@ -55,6 +69,7 @@ class WebCrawler:
                 # unsure if validate does anything
                 if self.valid_website_link(href):
                     if not self.is_pdf(href): # still can download documents
+
                         valid_links.append(href)
         return valid_links
     
@@ -116,13 +131,13 @@ class WebCrawler:
                 print("curently on: " , current_url)
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)
-            
+
                 self.add_Links(html_content, current_depth)
-                
+
                 self.save_to_csv(current_url,'visited.csv')
-            
+
                 text_content = "this url:" + self.url
-                
+
                 text_content += self.extract_text_content(html_content)
                 self.save_to_csv(text_content, csv_filename)
                 # saves it to the visited csv file
@@ -136,7 +151,7 @@ class WebCrawler:
         text_content = "this url:" + self.url
         text_content += self.extract_text_content(html_content)
         self.save_to_csv(text_content, file)
-    
+
     def add_Links(self, html_content, current_depth):
         # TODO: prints the links found on the page
         links = self.find_links(html_content)
@@ -149,3 +164,7 @@ class WebCrawler:
     def close_browser(self):
         self.driver.quit()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> jakob
