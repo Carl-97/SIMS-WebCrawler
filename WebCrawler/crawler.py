@@ -157,6 +157,7 @@ class WebCrawler:
                 # saves it to the visited csv file
                 current_depth += 1
 
+    # TODO: fix so that it looks on both e-nr and rsk and try to check if data exists and if not send back boolean false?
     def scrape_databank(self, file, id_nr, brand=None):
         url = ('https://www.e-nummersok.se/sok?Query=' + str(id_nr))
         url2 = ('https://www.rskdatabasen.se/sok?Query=' + str(id_nr))
