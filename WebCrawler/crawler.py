@@ -123,10 +123,12 @@ class WebCrawler:
                 print("curently on: ", current_url)
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)
+                # TODO: optimize extraction, get_html_content and extract_text_content
+                body = self.get_html_content(current_url)
                 self.add_links(html_content, current_depth)
                 self.save_to_csv(current_url,'visited.csv')
                 text_content = "this url:" + self.url
-                text_content += self.extract_text_content(html_content)
+                text_content += self.extract_text_content(body)
                 self.save_to_csv(text_content, csv_filename)
                 # saves it to the visited csv file
                 current_depth += 1
