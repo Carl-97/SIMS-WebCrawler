@@ -38,19 +38,61 @@ class WebCrawler:
         return self.driver.page_source
     
     #tar bort delar av hemsidan
-    def get_html_body(self, url):
+    def has_product(self, html_content):
+        soup = BeautifulSoup(html_content, 'html.parser')
+        #product = soup.find('product')
+        selector = 'div[class*="product"]'
+        matching_div = soup.select(selector)
+        if matching_div: 
+            print("Finns")
+            return True
+        selector2 = 'div[id*="product"]'
+        matching_div = soup.select(selector2)
+        if matching_div: 
+            print("Finns")
+            return True
+        return False
+    def get_html_body(self, html_content):
+        soup = BeautifulSoup(html_content, 'html.parser')
+        #gets all 'a' elements that have a href atribute
+        
+        header = soup.find('header')
+        if header: 
+            header.extract()
+        footer = soup.find('footer')
+        if footer:
+            footer.extract()
+        #nav = soup.find('nav')
+        #if nav:
+            #nav.extract()
+        
+        navbar = soup.find(class_='navbar')
+        if navbar:
+            navbar.extract()
+         
+        body= soup.find('body').get_text()
+        return body
+        #body_content= soup.find('body').get_text();
+        
         #finds and remove header and 
-        header_content = self.driver.find_element_by_tag_name("header").txt
-        footer_content = self.driver.find_element_by_tag_name("footer").txt
-        navbar_content = self.driver.find_element_by_tag_name("header").txt
-        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", header_content)
-        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", footer_content)
-        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", navbar_content)
+        #header = self.driver.find_element_by_class_name('Header')
+        #header_content = self.driver.find_element(By.ID,"header").txt
+        #footer_content = self.driver.find_element_by_tag_name("footer").txt
+        #navbar_content = self.driver.find_element_by_tag_name("header").txt
+        #self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", header_content)
+        #self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", footer_content)
+        #self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", navbar_content)
+        
+
+        #self.driver.execute_script("arguments[0].remove()", header_content)
+        #self.driver.execute_script("arguments[0].remove()", footer_content)
+        #self.driver.execute_script("arguments[0].remove(", navbar_content)
         
         #get body content
-        body_content = self.driver.find_element_by_tag_name("body").txt
-        return body_content
-    
+        #body_content = self.driver.find_element_by_tag_name("body").txt
+        #return body_content
+        
+        #return body_content
     # Find valid links only, ex: links that starts with 'www'
     def find_links(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -125,20 +167,22 @@ class WebCrawler:
                 print("curently on: " , current_url)
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)
-                body = self.get_html_content(current_url);
+                
+                
                 self.add_Links(html_content, current_depth)
                 
                
                 self.save_to_csv(current_url,'visited.csv')
                 #print(html_content)
-            
-                text_content = "this url:" + self.url
-                
+                if self.has_product(html_content):
+                    body = self.get_html_body(html_content);
+                    text_content = "this url:" + self.url
+                #body += "this url: " + self.url
                 #text_content += self.extract_text_content(html_content)
                 #text_content
                 #self.save_to_csv(text_content, csv_filename)
                 
-                self.save_to_csv(body, csv_filename)
+                    self.save_to_csv(body, csv_filename)
                 #saves it to the visited csv file
                
             
