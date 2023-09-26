@@ -15,12 +15,10 @@ class WebCrawler:
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
         self.visited = ['https://www.bossard.com/eshop/za-en']
+        
     
     def get_visited(self):
         return self.visited
-
-    def setUrl(self, url):
-        self.url = url
         
 
 
