@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from crawler import WebCrawler
 
-excel_file = 'e-nummer.xlsx'
+excel_file = '/resources/e-nummer_20230915.xlsx'
 
 df = pd.read_excel(excel_file)
 crawlerSize= 0; #knowing a  mount of items can be useful #21217
