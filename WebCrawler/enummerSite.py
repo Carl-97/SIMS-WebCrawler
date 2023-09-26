@@ -25,7 +25,7 @@ for index, row in df.iterrows():
     filename = 'web_data.csv'
     #deep is amount of websites url we searched from 
     depth = 10
-    crawlertest[i].setUrl(startUrl)
+    crawlertest[i].set_url(startUrl)
     crawlertest[i].crawl_website_with_depth(filename, depth)
     array = crawlertest[i].get_visited()
     for x in array:

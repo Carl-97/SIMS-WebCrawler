@@ -18,7 +18,7 @@ class WebCrawler:
     def get_visited(self):
         return self.visited
 
-    def setUrl(self, url):
+    def set_url(self, url):
         self.url = url
         
 
@@ -36,18 +36,18 @@ class WebCrawler:
         self.driver.get(url)
         return self.driver.page_source
 
-    #tar bort delar av hemsidan
+    # tar bort delar av hemsidan
     def get_html_body(self, url):
-        #finds and remove header and
-        header_content = self.driver.find_element_by_tag_name("header").txt
-        footer_content = self.driver.find_element_by_tag_name("footer").txt
-        navbar_content = self.driver.find_element_by_tag_name("header").txt
+        # finds and remove header and
+        header_content = self.driver.find_element_by_tag_name("header").text
+        footer_content = self.driver.find_element_by_tag_name("footer").text
+        navbar_content = self.driver.find_element_by_tag_name("navbar").text
         self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", header_content)
         self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", footer_content)
         self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", navbar_content)
 
-        #get body content
-        body_content = self.driver.find_element_by_tag_name("body").txt
+        # get body content
+        body_content = self.driver.find_element_by_tag_name("body").text
         return body_content
 
     # Find valid links only, ex: links that starts with 'www'
@@ -132,7 +132,7 @@ class WebCrawler:
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)
 
-                self.add_Links(html_content, current_depth)
+                self.add_links(html_content, current_depth)
 
                 self.save_to_csv(current_url,'visited.csv')
 
@@ -152,7 +152,7 @@ class WebCrawler:
         text_content += self.extract_text_content(html_content)
         self.save_to_csv(text_content, file)
 
-    def add_Links(self, html_content, current_depth):
+    def add_links(self, html_content, current_depth):
         # TODO: prints the links found on the page
         links = self.find_links(html_content)
             

@@ -9,7 +9,7 @@ filename = 'web_data.csv'
     #deep is amount of websites url we searched from 
 depth = 10
 crawlertest = WebCrawler()
-crawlertest.setUrl(startUrl)
+crawlertest.set_url(startUrl)
 crawlertest.crawl_website_with_depth(filename, depth)
 array = crawlertest.get_visited()
 for x in array:
