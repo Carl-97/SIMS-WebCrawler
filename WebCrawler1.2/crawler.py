@@ -7,14 +7,13 @@ import queue
 import requests
 
 
-    
 class WebCrawler:
     def __init__(self):
-        self.url =''
-    	#driver is source?
+        self.url = ''
+        # driver is source?
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = ['https://www.bossard.com/eshop/za-en']
+        # self.visited = ['https://www.bossard.com/eshop/za-en']
     
     def get_visited(self):
         return self.visited
@@ -40,10 +39,10 @@ class WebCrawler:
     # Find valid links only, ex: links that starts with 'www'
     def find_links(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
-        #gets all 'a' elements that have a href atribute
+        # gets all 'a' elements that have a href attribute
         links = soup.find_all('a', href = True)
-        #filter out non website links
-       # websitelinks = [link for link in links if self.valid_website_link(link)]
+        # filter out non website links
+        # urls = [link for link in links if self.valid_website_link(link)]
 
         valid_links = []
         for link in links:
@@ -53,9 +52,9 @@ class WebCrawler:
             parsed_url = urlparse(href)
                
             if parsed_url.scheme and parsed_url.netloc:
-               #unsure if validate does anything
+                # unsure if validate does anything
                 if self.valid_website_link(href):
-                    if not self.is_pdf(href): #still can download docements
+                    if not self.is_pdf(href): # still can download documents
                         valid_links.append(href)
         return valid_links
     
@@ -67,9 +66,15 @@ class WebCrawler:
         x = url.startswith(('http://', 'https://'))
         #print("valid" , x)
         return x
+
     def extract_text_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
-        return soup.get_text()
+
+        # Extract content only from the <body> tag
+        body_content = soup.body
+        if body_content:
+            return body_content.get_text()
+        return ""
 
     def save_to_csv(self, text_content, csv_filename):
         # TODO: add a standard filepath
@@ -115,23 +120,31 @@ class WebCrawler:
                 self.add_Links(html_content, current_depth)
                 
                 self.save_to_csv(current_url,'visited.csv')
-                #print(html_content)
             
                 text_content = "this url:" + self.url
                 
                 text_content += self.extract_text_content(html_content)
-                text_content
                 self.save_to_csv(text_content, csv_filename)
-                #saves it to the visited csv file
-               
-            
+                # saves it to the visited csv file
+
                 current_depth += 1
+
+    def scrape_databank(self, id_nr, file):
+        url = ('https://www.e-nummersok.se/sok?Query=' + str(id_nr))
+        url2 = ('https://www.rskdatabasen.se/sok?Query=' + str(id_nr))
+        html_content = self.get_html_content(url)
+        print(html_content)
+        text_content = "this url:" + self.url
+        text_content += self.extract_text_content(html_content)
+        self.save_to_csv(text_content, file)
+
+        return 0
     
     def add_Links(self, html_content, current_depth):
         # TODO: prints the links found on the page
         links = self.find_links(html_content)
             
-        print(f"Found Links at depth {current_depth}:")
+        #print(f"Found Links at depth {current_depth}:")
         for link in links:
          #   print(link)
             self.link_queue.put(link)
