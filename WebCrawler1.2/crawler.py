@@ -42,8 +42,11 @@ class WebCrawler:
         #finds and remove header and 
         header_content = self.driver.find_element_by_tag_name("header").txt
         footer_content = self.driver.find_element_by_tag_name("footer").txt
+        navbar_content = self.driver.find_element_by_tag_name("header").txt
         self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", header_content)
         self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", footer_content)
+        self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", navbar_content)
+        
         #get body content
         body_content = self.driver.find_element_by_tag_name("body").txt
         return body_content
