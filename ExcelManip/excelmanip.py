@@ -53,9 +53,15 @@ class ExcelManip:
 
 
 if __name__ == "__main__":
-    manipulator = ExcelManip('../WebCrawler1.2/resources/quality_secured_articles.xlsx')
+    manipulator = ExcelManip('../WebCrawler/resources/quality_secured_articles.xlsx')
     result = manipulator.pre_process()
 
-    for row in result:
-        if 'brand' in row and 'rsk' in row:
-            print(row)
+    for dictionary in result:
+        if 'rsk' in dictionary:
+            if 'brand' in dictionary:
+                print("This row has both RSK and Brand.")
+                print(f"RSK: {dictionary['rsk']}, Brand: {dictionary['brand']}")
+            else:
+                print("This row has RSK only.")
+                print(f"RSK: {dictionary['rsk']}")
+        print("------")
