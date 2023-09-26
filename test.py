@@ -11,12 +11,13 @@ if __name__ == '__main__':
     for dictionary in data:
         if 'rsk' in dictionary:
             if 'brand' in dictionary:
-                rsk_val = str(dictionary['rsk'])
-                brand_value = str(dictionary['brand'])
+                rsk_val = dictionary['rsk']
+                print(rsk_val)
+                brand_value = dictionary['brand']
                 wc.scrape_databank(filename, rsk_val, brand_value)
             else:
                 print("This row has RSK only.")
-                rsk_val = str(dictionary['rsk'])
+                rsk_val = dictionary['rsk']
                 wc.scrape_databank(filename, rsk_val, None)
         else:
             print('Better use a search engine...')
