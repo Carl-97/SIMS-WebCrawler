@@ -163,8 +163,3 @@ class WebCrawler:
 
     def close_browser(self):
         self.driver.quit()
-
-<<<<<<< HEAD
-=======
-
->>>>>>> jakob
