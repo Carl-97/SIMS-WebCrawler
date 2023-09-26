@@ -1,5 +1,4 @@
 from ExcelManip import excelmanip as em
-from WebCrawler import crawler
 from WebCrawler.crawler import WebCrawler
 
 if __name__ == '__main__':
