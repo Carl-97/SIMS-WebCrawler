@@ -1,42 +1,24 @@
-from urllib.parse import quote
 from ExcelManip import excelmanip as em
-from WebCrawler.crawlerDemo4 import WebCrawler
-
-
-def process_with_id(id_val, web_crawler, index):
-    websites = [
-        f'https://www.e-nummersok.se/sok?Query={id_val}',
-        f'https://www.rskdatabasen.se/sok?Query={id_val}'
-    ]
-    for url in websites:
-        web_crawler.crawl_website_with_depth(str(index), 0, start_url=url)
-
-
-def process_without_id(data_dict, web_crawler, index):
-    filtered_values = [value for value in data_dict.values() if value is not None]
-    if filtered_values:
-        search_query = " ".join(filtered_values)
-        search_query = quote(search_query)
-        google_search_url = f'https://www.google.com/search?q={search_query}'
-        web_crawler.crawl_website_with_depth(str(index), 1, start_url=google_search_url)
-    else:
-        print("Dictionary has no valid values to perform a search.")
-
+from WebCrawler.crawler import WebCrawler
 
 if __name__ == '__main__':
-    file_path = 'resources/QualityTest2.xlsx'
-    excel = em.ExcelManip(file_path)
-    data = excel.pre_process()
+    manipulator = em.ExcelManip('resources/sample.xlsx')
+    data = manipulator.pre_process()
     wc = WebCrawler()
     filename = 'data.csv'
 
-    for idx, dictionary in enumerate(data, start=1):
-        if 'id' in dictionary and dictionary['id'] is not None:
-            id_nr = dictionary['id']
-            process_with_id(id_nr, wc, idx)
-            process_without_id(dictionary, wc, idx)
+    for dictionary in data:
+        if 'rsk' in dictionary:
+            if 'brand' in dictionary:
+                rsk_val = dictionary['rsk']
+                print(rsk_val)
+                brand_value = dictionary['brand']
+                wc.scrape_data(filename, rsk_val, brand_value)
+            else:
+                print("This row has RSK only.")
+                rsk_val = dictionary['rsk']
+                wc.scrape_data(filename, rsk_val, None)
         else:
-            process_without_id(dictionary, wc, idx)
+            print('Better use a search engine...')
+    print("------")
 
-    print("------Done------")
-    wc.close()
