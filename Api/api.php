@@ -64,4 +64,5 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
         $json = json_encode($array);
         echo $json;
     }
+    $classSql->close();
 }
