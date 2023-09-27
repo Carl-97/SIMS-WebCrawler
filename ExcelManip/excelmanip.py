@@ -12,6 +12,7 @@ class ExcelManip:
         brands_df = pd.read_excel(self.brands_file, dtype=str)
         return brands_df['Brandnames'].str.lower().dropna().tolist()
 
+    # TODO : fix so that it takes multiple integers and add them do a list?
     def _identify_rsk(self, s):
         pattern = r'\b\d{7}\b'
         matches = re.findall(pattern, s)
