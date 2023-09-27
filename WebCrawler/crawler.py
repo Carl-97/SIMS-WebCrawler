@@ -14,11 +14,16 @@ class WebCrawler:
     	#driver is source?
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = ['https://www.bossard.com/eshop/za-en']
+        self.visited = ['https://www.bossard.com/eshop/se-sv/products/fastening-technology/standard-fastening-elements/nuts/square-nuts/square-nuts/p/147']
         
     
     def get_visited(self):
         return self.visited
+  
+
+
+    def setUrl(self, url):
+        self.url = url
         
 
 
@@ -161,7 +166,10 @@ class WebCrawler:
                 if visitedurl == current_url:
                     alreadVisited = True
                     print("already visited")
-            if alreadVisited == False:
+            if alreadVisited == False or current_depth == 0:
+                #implement ignorelist
+                if alreadVisited == False:
+                    self.visited.append(current_url)
                 print("curently on: " , current_url)
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)

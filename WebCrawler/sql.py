@@ -25,3 +25,5 @@ class Sql:
             return None
     def close_cursor(self):
         self.cursor.close()
+    #def insertData(self, table, data):
+        #quary = f'INSERT INTO {table} ({',' join(columns)}) VALUES ({''})'
