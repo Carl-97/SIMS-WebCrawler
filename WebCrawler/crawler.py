@@ -15,7 +15,7 @@ class WebCrawler:
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
         self.visited = ['https://www.bossard.com/eshop/se-sv/products/fastening-technology/standard-fastening-elements/nuts/square-nuts/square-nuts/p/147']
-        
+        self.ignorelist = []        
     
     def get_visited(self):
         return self.visited
@@ -75,27 +75,7 @@ class WebCrawler:
          
         body= soup.find('body').get_text()
         return body
-        #body_content= soup.find('body').get_text();
         
-        #finds and remove header and 
-        #header = self.driver.find_element_by_class_name('Header')
-        #header_content = self.driver.find_element(By.ID,"header").txt
-        #footer_content = self.driver.find_element_by_tag_name("footer").txt
-        #navbar_content = self.driver.find_element_by_tag_name("header").txt
-        #self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", header_content)
-        #self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", footer_content)
-        #self.driver.execute_script("arguments[0].parentNode.removeChild(arguments[0])", navbar_content)
-        
-
-        #self.driver.execute_script("arguments[0].remove()", header_content)
-        #self.driver.execute_script("arguments[0].remove()", footer_content)
-        #self.driver.execute_script("arguments[0].remove(", navbar_content)
-        
-        #get body content
-        #body_content = self.driver.find_element_by_tag_name("body").txt
-        #return body_content
-        
-        #return body_content
     # Find valid links only, ex: links that starts with 'www'
     def find_links(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -160,35 +140,39 @@ class WebCrawler:
             # TODO: add a check if links is valid and if not concat to former link? If wanting to concat the link,
             #  change the method find_links to find all
             current_url = self.link_queue.get()
-            
-            alreadVisited = False
-            for visitedurl in self.visited:
-                if visitedurl == current_url:
-                    alreadVisited = True
-                    print("already visited")
-            if alreadVisited == False or current_depth == 0:
+            ignore = False
+            for ignorelist in self.ignorelist:
+                if ignorelist == current_url:
+                    ignore= True
+                    print("in the ignor list")
+            if ignorelist == False:
+                alreadVisited = False
+                for visitedurl in self.visited:
+                    if visitedurl == current_url:
+                        alreadVisited = True
+                        print("already visited")
+                if alreadVisited == False or current_depth == 0:
                 #implement ignorelist
-                if alreadVisited == False:
+                  
+                    if alreadVisited == False:
+                        self.visited.append(current_url)
+                        print("curently on: " , current_url)
                     self.visited.append(current_url)
-                print("curently on: " , current_url)
-                self.visited.append(current_url)
-                html_content = self.get_html_content(current_url)
+                    html_content = self.get_html_content(current_url)
                 
                 
-                self.add_Links(html_content, current_depth)
+                    self.add_Links(html_content, current_depth)
                 
                
-                self.save_to_csv(current_url,'visited.csv')
+                    self.save_to_csv(current_url,'visited.csv')
                 #print(html_content)
-                if self.has_product(html_content):
-                    body = self.get_html_body(html_content);
-                    text_content = "this url:" + self.url
+                    if self.has_product(html_content):
+                        body = self.get_html_body(html_content);
+                        text_content = "this url:" + self.url
                 #body += "this url: " + self.url
-                #text_content += self.extract_text_content(html_content)
-                #text_content
-                #self.save_to_csv(text_content, csv_filename)
+               
                 
-                    self.save_to_csv(body, csv_filename)
+                        self.save_to_csv(body, csv_filename)
                 #saves it to the visited csv file
                
             
