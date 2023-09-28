@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 import os
 import csv
 import queue
-
+#using crawler1.3 but changed something with visited and self.url so I can say where to start crawl from
 CONFIG = {
     'chrome_options': ['--headless', '--enable-javascript', '--disable-features=BlockThirdPartyCookies']
 }
@@ -14,10 +14,15 @@ CONFIG = {
 class WebCrawler:
 
     def __init__(self):
+        self.url =''
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = set()
-
+        self.visited = [] #array of ulrs
+        
+    def setUrl(self, url):
+        self.url = url
+         
+    
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
         for option in CONFIG['chrome_options']:
