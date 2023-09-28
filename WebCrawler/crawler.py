@@ -5,8 +5,6 @@ import os
 import csv
 import queue
 import requests
-
-
     
 class WebCrawler:
     def __init__(self):
@@ -16,19 +14,11 @@ class WebCrawler:
         self.link_queue = queue.Queue()
         self.visited = ['https://www.bossard.com/eshop/se-sv/products/fastening-technology/standard-fastening-elements/nuts/square-nuts/square-nuts/p/147']
         self.ignorelist = []        
-    
     def get_visited(self):
         return self.visited
-  
-
-
     def setUrl(self, url):
         self.url = url
-        
-
-
     # TODO: add a function that reads an excel file and checks attributes that might be usable in crawl, ex: E-nr
-
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--headless')
@@ -58,16 +48,15 @@ class WebCrawler:
     def get_html_body(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         #gets all 'a' elements that have a href atribute
-        
         header = soup.find('header')
         if header: 
             header.extract()
         footer = soup.find('footer')
         if footer:
             footer.extract()
-        #nav = soup.find('nav')
-        #if nav:
-            #nav.extract()
+        nav = soup.find('nav')
+        if nav:
+            nav.extract()
         
         navbar = soup.find(class_='navbar')
         if navbar:
@@ -83,14 +72,11 @@ class WebCrawler:
         links = soup.find_all('a', href = True)
         #filter out non website links
        # websitelinks = [link for link in links if self.valid_website_link(link)]
-
         valid_links = []
         for link in links:
             href = link.get('href')
-            
-           
             parsed_url = urlparse(href)
-               
+            
             if parsed_url.scheme and parsed_url.netloc:
                #unsure if validate does anything
                 if self.valid_website_link(href):
@@ -145,37 +131,27 @@ class WebCrawler:
                 if ignorelist == current_url:
                     ignore= True
                     print("in the ignor list")
-            if ignorelist == False:
+            if ignore == False:
                 alreadVisited = False
                 for visitedurl in self.visited:
                     if visitedurl == current_url:
                         alreadVisited = True
                         print("already visited")
-                if alreadVisited == False or current_depth == 0:
-                #implement ignorelist
-                  
+                if alreadVisited == False or current_depth == 0:      
                     if alreadVisited == False:
                         self.visited.append(current_url)
                         print("curently on: " , current_url)
                     self.visited.append(current_url)
                     html_content = self.get_html_content(current_url)
-                
-                
                     self.add_Links(html_content, current_depth)
-                
-               
                     self.save_to_csv(current_url,'visited.csv')
-                #print(html_content)
+                    #print(html_content)
                     if self.has_product(html_content):
                         body = self.get_html_body(html_content);
-                        text_content = "this url:" + self.url
-                #body += "this url: " + self.url
-               
-                
+                        #text_content = "this url:" + self.url
+                        body += "this url: " + self.url
                         self.save_to_csv(body, csv_filename)
                 #saves it to the visited csv file
-               
-            
                 current_depth += 1
     
     def add_Links(self, html_content, current_depth):
@@ -189,4 +165,3 @@ class WebCrawler:
 
     def close_browser(self):
         self.driver.quit()
-
