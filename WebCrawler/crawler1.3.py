@@ -5,6 +5,7 @@ from urllib.parse import urlparse
 import os
 import csv
 import queue
+
 CONFIG = {
     'chrome_options': ['--headless', '--enable-javascript', '--disable-features=BlockThirdPartyCookies']
 }
@@ -15,12 +16,7 @@ class WebCrawler:
     def __init__(self):
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = [] #array of ulrs
-    
-    
-    def setUrl(self, url):
-        self.url = url
-        
+        self.visited = set()
 
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
@@ -92,4 +88,4 @@ if __name__ == '__main__':
     with WebCrawler() as wc:
         test_file = 'test_method.csv'
         test_url = 'https://www.e-nummersok.se/...'
-        wc.crawl_website_with_depth(test_url, test_file, 10)
+        wc.crawl_website_with_depth(test_url, test_file)
