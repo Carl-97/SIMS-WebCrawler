@@ -15,7 +15,7 @@ class WebCrawler:
     def __init__(self):
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = set() #array of ulrs
+        self.visited = [] #array of ulrs
     
     
     def setUrl(self, url):
@@ -62,7 +62,7 @@ class WebCrawler:
             for line in lines:
                 csv_writer.writerow([line.strip()])
 
-    def crawl_website_with_depth(self, start_url, csv_filename, depth_limit):
+    def crawl_website_with_depth(self, start_url, csv_filename, depth_limit=1):
         self.link_queue.put((start_url, 0))
 
         while not self.link_queue.empty():
