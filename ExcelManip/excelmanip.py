@@ -12,12 +12,6 @@ class ExcelManip:
         brands_df = pd.read_excel(self.brands_file, dtype=str)
         return brands_df['Brandnames'].str.lower().dropna().tolist()
 
-    # TODO : fix so that it takes multiple integers and add them do a list?
-    def _identify_rsk(self, s):
-        pattern = r'\b\d{7}\b'
-        matches = re.findall(pattern, s)
-        modified_str = re.sub(pattern, '', s).strip()
-        return modified_str, matches if matches else None
 
     def _identify_brands(self, input_string):
         for brand in self.brand_names:
@@ -25,6 +19,13 @@ class ExcelManip:
                 modified_str = re.sub(brand, '', input_string, flags=re.IGNORECASE).strip()
                 return modified_str, brand
         return input_string, None
+
+    # TODO : fix so that it takes multiple integers and add them do a list?
+    def _identify_rsk(self, s):
+        pattern = re.compile(r'\b\d{7}\b')
+        matches = pattern.findall(s)
+        modified_str = pattern.sub('', s).strip()
+        return modified_str, matches if matches else None
 
     def pre_process(self):
         df = pd.read_excel(self.data_file, engine='openpyxl', header=None, dtype=str)
@@ -34,19 +35,16 @@ class ExcelManip:
             row_items = list(map(str, row))
             processed_row = ";".join(filter(lambda item: item != "nan", row_items))
 
-            dictionary = {}
-
             modified_str_rsk, extracted_value_rsk = self._identify_rsk(processed_row)
-            if extracted_value_rsk:
-                dictionary['rsk'] = extracted_value_rsk[0] if extracted_value_rsk else None
-
-            modified_str_brands, extracted_value_brands = self._identify_brands(modified_str_rsk)
-            if extracted_value_brands:
-                dictionary['brand'] = extracted_value_brands
+            modified_str_brands, extracted_value_brands = self._identify_brands(modified_str_rsk)  # Added this line
 
             remaining_items = modified_str_brands.split(';')
-            for i, item in enumerate(remaining_items):
-                dictionary[f'attribute_{i}'] = item
+
+            dictionary = {
+                'rsk': extracted_value_rsk[0] if extracted_value_rsk else None,
+                'brand': extracted_value_brands,
+                **{f'attribute_{i}': item for i, item in enumerate(remaining_items)}
+            }
 
             dict_data.append(dictionary)
 
@@ -57,7 +55,11 @@ if __name__ == "__main__":
     manipulator = ExcelManip('../WebCrawler/resources/quality_secured_articles.xlsx')
     result = manipulator.pre_process()
 
+    # print all data in dictionary
     for dictionary in result:
+        print(dictionary)
+
+    '''for dictionary in result:
         if 'rsk' in dictionary:
             if 'brand' in dictionary:
                 print("This row has both RSK and Brand.")
@@ -65,4 +67,4 @@ if __name__ == "__main__":
             else:
                 print("This row has RSK only.")
                 print(f"RSK: {dictionary['rsk']}")
-        print("------")
+        print("------")'''
