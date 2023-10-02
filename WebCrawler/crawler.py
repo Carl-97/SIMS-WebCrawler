@@ -11,17 +11,20 @@ import requests
 
 class WebCrawler:
     def __init__(self):
-        # self.url = ''
+        self.url = ''
         # driver is source?
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = ['']
-
+        self.visited = []
+        self.ignore = []
+    def init_visit(self):
+        self.visited.append()
+        #takes row for row and add
     def get_visited(self):
         return self.visited
 
-    '''def set_url(self, url):
-        self.url = url'''
+    def set_url(self, url):
+        self.url = url
 
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
@@ -155,6 +158,7 @@ class WebCrawler:
                 #text_content = "this url:" + self.url
                 #text_content += self.extract_text_content(body)
                 self.save_to_csv(text_content, csv_filename)
+                self.save_to_csv(current_url,'visited.csv')
                 # saves it to the visited csv file
                 current_depth += 1
 
