@@ -12,7 +12,6 @@ class ExcelManip:
         brands_df = pd.read_excel(self.brands_file, dtype=str)
         return brands_df['Brandnames'].str.lower().dropna().tolist()
 
-
     def _identify_brands(self, input_string):
         for brand in self.brand_names:
             if brand in input_string.lower():
@@ -21,14 +20,15 @@ class ExcelManip:
         return input_string, None
 
     # TODO : fix so that it takes multiple integers and add them do a list?
-    def _identify_rsk(self, s):
+    @staticmethod
+    def _identify_rsk(s):
         pattern = re.compile(r'\b\d{7}\b')
         matches = pattern.findall(s)
         modified_str = pattern.sub('', s).strip()
         return modified_str, matches if matches else None
 
     def pre_process(self):
-        df = pd.read_excel(self.data_file, engine='openpyxl', header=None, dtype=str)
+        df = pd.read_excel(self.data_file, engine='openpyxl', header=0, dtype=str)
         dict_data = []
 
         for _, row in df.iterrows():
@@ -41,7 +41,7 @@ class ExcelManip:
             remaining_items = modified_str_brands.split(';')
 
             dictionary = {
-                'rsk': extracted_value_rsk[0] if extracted_value_rsk else None,
+                'id': extracted_value_rsk[0] if extracted_value_rsk else None,
                 'brand': extracted_value_brands,
                 **{f'attribute_{i}': item for i, item in enumerate(remaining_items)}
             }
