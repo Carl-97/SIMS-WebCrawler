@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as ec
 from bs4 import BeautifulSoup, Tag
 from urllib.parse import urlparse
 
-
 class WebCrawler:
     def __init__(self):
         self.driver = self.setup_headless_chrome()
