@@ -28,7 +28,7 @@ class WebCrawler:
         try:
             self.driver.get(url)
             # Wait for the page to fully load (handle redirections)
-            time.sleep(5)
+            time.sleep(3)
             wait = WebDriverWait(self.driver, 2)  # Adjust the timeout as needed
             wait.until(ec.presence_of_element_located((By.TAG_NAME, 'body')))
             return self.driver.page_source
@@ -123,7 +123,7 @@ class WebCrawler:
             # Find the specific div element by its id ("search")
             search_div = soup.find('div', id='search')
 
-            '''# Initialize a list to store the extracted links
+            # Initialize a list to store the extracted links
             search_result_links = []
     
             # Check if the div element with the specified id was found
@@ -131,8 +131,8 @@ class WebCrawler:
                 # Extract links from the div element, assuming links are in <a> tags
                 links = search_div.find_all('a', href=True)
                 search_result_links = [link['href'] for link in links]
-                return search_div'''
-            return search_div
+                return search_result_links
+            return ['']
         except Exception as e:
             print(f"Error parsing HTML content: {e}")
             return ""
@@ -142,15 +142,17 @@ class WebCrawler:
         while not self.link_queue.empty():
             current_url, current_depth = self.link_queue.get()
 
-            # TODO : fix problem with is_search_engine_url, something with indentation shit on bs4 side...
             # Check if the current URL is from a search engine and skip scraping if true
+            print(current_url)
             if self.is_search_engine_url(current_url):
                 print(f"Skipping scraping for search engine URL: {current_url}")
                 html_content = self.get_html_content(current_url)
                 valid_links = self.extract_search_engine_links(html_content)
-                for link in valid_links:
+                for link in valid_links[:5]:
+                    #print(link)
                     self.link_queue.put((link, current_depth + 1))
             else:
+                print(f'Current depth: {current_depth}')
                 if current_depth > depth_limit or current_url in self.visited:
                     continue
                 self.visited.add(current_url)
