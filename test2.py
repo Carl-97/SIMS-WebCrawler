@@ -28,7 +28,6 @@ if __name__ == '__main__':
                 wc.crawl_website_with_depth(str(i), 1, start_url=google_search_url)
             else:
                 print("Dictionary has no valid values to perform a search.")
-        wc.close()
         i += 1
     print("------Done------")
-
+    wc.close()
