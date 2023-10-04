@@ -29,7 +29,7 @@ class WebCrawler:
             self.driver.get(url)
             # Wait for the page to fully load (handle redirections)
             time.sleep(3)
-            wait = WebDriverWait(self.driver, 2)  # Adjust the timeout as needed
+            wait = WebDriverWait(self.driver, 2)
             wait.until(ec.presence_of_element_located((By.TAG_NAME, 'body')))
             return self.driver.page_source
         except Exception as e:
@@ -106,7 +106,8 @@ class WebCrawler:
     @staticmethod
     def is_search_engine_url(url):
         # Define a list of known search engine domains (you can add more if needed)
-        search_engine_domains = ['google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com']
+        search_engine_domains = ['google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com', 'twitter.com',
+                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com']
 
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
@@ -146,17 +147,20 @@ class WebCrawler:
             print(current_url)
             if self.is_search_engine_url(current_url):
                 print(f"Skipping scraping for search engine URL: {current_url}")
-                html_content = self.get_html_content(current_url)
-                valid_links = self.extract_search_engine_links(html_content)
-                for link in valid_links[:5]:
-                    #print(link)
-                    self.link_queue.put((link, current_depth + 1))
+                if current_depth == 0:
+                    html_content = self.get_html_content(current_url)
+                    valid_links = self.extract_search_engine_links(html_content)
+                    time.sleep(2)
+                    for link in valid_links[:5]:
+                        #print(link)
+                        self.link_queue.put((link, current_depth + 1))
             else:
                 print(f'Current depth: {current_depth}')
                 if current_depth > depth_limit or current_url in self.visited:
                     continue
                 self.visited.add(current_url)
                 html_content = self.get_html_content(current_url)
+                time.sleep(2)
                 if not html_content:
                     continue
                 scraped_url = self.driver.current_url
