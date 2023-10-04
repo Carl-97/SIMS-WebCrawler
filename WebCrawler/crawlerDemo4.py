@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as ec
 from bs4 import BeautifulSoup, Tag
 from urllib.parse import urlparse
 
-
 class WebCrawler:
     def __init__(self):
         self.driver = self.setup_headless_chrome()
@@ -74,7 +73,7 @@ class WebCrawler:
         parsed_url = urlparse(url)
         scheme = parsed_url.scheme
         netloc = parsed_url.netloc
-        # path = parsed_url.path
+        path = parsed_url.path
         lower_url = url.lower()
 
         # Check if the scheme is 'http' or 'https'
@@ -108,7 +107,7 @@ class WebCrawler:
     def is_search_engine_url(url):
         # Define a list of known search engine domains (you can add more if needed)
         search_engine_domains = ['google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com', 'twitter.com',
-                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com', '.gov']
+                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com']
 
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
@@ -156,7 +155,7 @@ class WebCrawler:
                         #print(link)
                         self.link_queue.put((link, current_depth + 1))
             else:
-                #print(f'Current depth: {current_depth}')
+                print(f'Current depth: {current_depth}')
                 if current_depth > depth_limit or current_url in self.visited:
                     continue
                 self.visited.add(current_url)
@@ -164,16 +163,11 @@ class WebCrawler:
                 time.sleep(2)
                 if not html_content:
                     continue
-                scraped_url = current_url
-                if self.is_valid_link(current_url):
-                    separator = '-' * 40
-                    cleaned_content = self.clean_html_content(html_content)
-                    cleaned_content = scraped_url + '\n' + cleaned_content + '\n' + separator
-                    self.save_content_to_csv(cleaned_content, csv_filename)
-                elif '.pdf' in current_url:
-                    separator = '-' * 40
-                    cleaned_content = scraped_url + '\n' + separator
-                    self.save_content_to_csv(cleaned_content, csv_filename)
+                scraped_url = self.driver.current_url
+                separator = '-' * 40
+                cleaned_content = self.clean_html_content(html_content)
+                cleaned_content = scraped_url + cleaned_content + '\n' + separator
+                self.save_content_to_csv(cleaned_content, csv_filename)
 
                 # Add valid links to the queue regardless of whether it's a search engine URL
                 for link in self.find_valid_links(html_content):

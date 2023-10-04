@@ -1,12 +1,10 @@
 import time
-
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
 import os
 import csv
 import queue
-import requests
 
 
 class WebCrawler:
@@ -15,7 +13,7 @@ class WebCrawler:
         # driver is source?
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = ['']
+        self.visited = set()
 
     def get_visited(self):
         return self.visited
@@ -23,7 +21,8 @@ class WebCrawler:
     '''def set_url(self, url):
         self.url = url'''
 
-    def setup_headless_chrome(self):
+    @staticmethod
+    def setup_headless_chrome():
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--enable-javascript')
@@ -49,7 +48,8 @@ class WebCrawler:
             return True
         return False
 
-    def get_html_body(self, html_content):
+    @staticmethod
+    def get_html_body(html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         # gets all 'a' elements that have a href atribute
 
@@ -99,66 +99,49 @@ class WebCrawler:
         #print("valid" , x)
         return x
 
-    def extract_text_content(self, html_content):
+    @staticmethod
+    def clean_html_content(html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
-        # Extract content only from the <body> tag
-        body_content = soup.body
-        if body_content:
-            return body_content.get_text()
-        return soup
+        for tag_name in ['header', 'footer', 'nav', 'navbar']:
+            tag = soup.find(tag_name)
+            if tag:
+                tag.extract()
+        return soup.body.get_text()
 
     def save_to_csv(self, text_content, csv_filename):
         # TODO: add a standard filepath
         file_path = ''
-        # Split the text content by newline characters and remove empty lines
-        lines = [line.strip() for line in text_content.strip().split('\n') if line.strip()]
+        lines = [line.strip() for line in text_content.split('\n') if line.strip()]
+        mode = 'a' if os.path.exists(csv_filename) else 'w'
+        with open(csv_filename, mode, newline='', encoding='utf-8') as csv_file:
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerows([[line] for line in lines])
 
-        if not os.path.exists(csv_filename):
-            # Save the text content to a CSV file with 'utf-8' encoding
-            with open(csv_filename, 'w', newline='', encoding='utf-8') as csv_file:
-                csv_writer = csv.writer(csv_file)
-                for line in lines:
-                    # Write each line as a separate row in the CSV file
-                    csv_writer.writerow([line])
-        else:
-            # Append text to existing file
-            with open(csv_filename, 'a', newline='', encoding='utf-8') as csv_file:
-                csv_writer = csv.writer(csv_file)
-                for line in lines:
-                    # Write each line as a separate row in the CSV file
-                    csv_writer.writerow([line])
+    def crawl_website_with_depth(self, csv_filename, depth_limit, start_url):
+        self.link_queue.put((start_url, 0))
+        while not self.link_queue.empty():
+            current_url, current_depth = self.link_queue.get()
+            if current_depth > depth_limit or current_url in self.visited:
+                continue
+            self.visited.add(current_url)
+            html_content = self.get_html_content(current_url)
+            if not html_content:
+                continue
+            cleaned_content = self.clean_html_content(html_content)
+            self.save_to_csv(cleaned_content, csv_filename)
+            if current_depth < depth_limit:
+                for link in self.find_links(html_content):
+                    self.link_queue.put((link, current_depth + 1))
 
-    def crawl_website_with_depth(self, csv_filename, depth_limit, url):
-        self.link_queue.put(url)
-        current_depth = 0
+    @staticmethod
+    def extract_text_content(html_content):
+        # Extract text content from HTML
+        soup = BeautifulSoup(html_content, 'html.parser')
+        body_content = soup.body
+        if body_content:
+            return body_content.get_text()
+        return soup.body.get_text()
 
-        while not self.link_queue.empty() and current_depth <= depth_limit:
-
-            # TODO: add a check if links is valid and if not concat to former link? If wanting to concat the link,
-            #  change the method find_links to find all
-            current_url = self.link_queue.get()
-
-            alreadVisited = False
-            for visitedurl in self.visited:
-                if visitedurl == current_url:
-                    alreadVisited = True
-                    print("already visited")
-            if not alreadVisited:
-                print("curently on: ", current_url)
-                self.visited.append(current_url)
-                html_content = self.get_html_content(current_url)
-                # TODO: optimize extraction, get_html_body and extract_text_content
-                self.add_links(html_content, current_depth)
-                self.save_to_csv(current_url, 'resources/visited.csv')
-                text_content = "this url:" + url
-                text_content += self.get_html_body(html_content)
-                #text_content = "this url:" + self.url
-                #text_content += self.extract_text_content(body)
-                self.save_to_csv(text_content, csv_filename)
-                # saves it to the visited csv file
-                current_depth += 1
-
-    # TODO: fix so that it looks on both e-nr and rsk and try to check if data exists and if not send back boolean false?
     def scrape_data(self, filename, id_nr, extra=None):
         e_nr_url = 'https://www.e-nummersok.se/sok?Query=' + str(id_nr)
         rsk_nr_url = 'https://www.rskdatabasen.se/sok?Query=' + str(id_nr)
@@ -173,13 +156,13 @@ class WebCrawler:
                 html_content = self.get_html_content(e_nr_url)
                 text_content = self.extract_text_content(html_content)
                 if extra in text_content:
-                    print(e_nr_url)
+                    print(f'Match {extra}, seems to be found on: {e_nr_url}')
                     self.save_to_csv(text_content, 'e_nr_content.csv')
 
                 html_content = self.get_html_content(rsk_nr_url)
                 text_content = self.extract_text_content(html_content)
                 if extra in text_content:
-                    print(rsk_nr_url)
+                    print(f'Match {extra}, seems to be found on: {rsk_nr_url}')
                     self.save_to_csv(text_content, 'rsk_nr_content.csv')
                 return
             elif e_nr_url:
@@ -210,7 +193,7 @@ class WebCrawler:
         initial_url = self.driver.current_url
         current_url = initial_url
         i = 0
-        while i < 3:
+        while i < 5:
             current_url = self.driver.current_url
             if current_url != initial_url:
                 break
@@ -232,14 +215,14 @@ class WebCrawler:
 # Testing for some methods
 if __name__ == '__main__':
     test_file = 'test_method.csv'
-    depth = 1
+    depth = 0
     url = 'https://www.e-nummersok.se/lista/plintsystem-plint-och-kabelmarkning-apparats/plintsystem-for-skenmontage/weidmuller/plint-sakr-pa-m-2920154-14020'
 
+    # Test crawl depth, be careful with this
     wc = WebCrawler()
-    '''wc.set_url(url)
-    wc.crawl_website_with_depth(test_file, depth)
-    wc.close_browser()'''
+    wc.crawl_website_with_depth(test_file, depth, 'https://www.e-nummersok.se/lista/kontaktorer-startapparater-kontaktormanovrera/kontaktorer-kontaktorkombinationer-med-tillbe/siemens/varistor-127-240vac150-250vdc-3266972-27334')
 
+    # Crawl specific urls based on id and if it can find the right one
     file = 'test.csv'
     brand = 'Weidmüller'
     wc.scrape_data(file, 2920154, brand)

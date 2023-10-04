@@ -8,15 +8,15 @@ if __name__ == '__main__':
     filename = 'data.csv'
 
     for dictionary in data:
-        if 'rsk' in dictionary:
+        if 'id' in dictionary:
             if 'brand' in dictionary:
-                rsk_val = dictionary['rsk']
+                rsk_val = dictionary['id']
                 print(rsk_val)
                 brand_value = dictionary['brand']
                 wc.scrape_data(filename, rsk_val, brand_value)
             else:
-                print("This row has RSK only.")
-                rsk_val = dictionary['rsk']
+                print("This row has ID only.")
+                rsk_val = dictionary['id']
                 wc.scrape_data(filename, rsk_val, None)
         else:
             print('Better use a search engine...')
