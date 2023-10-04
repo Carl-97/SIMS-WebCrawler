@@ -10,21 +10,18 @@ import requests
 
 
 class WebCrawler:
-    def __init__(self, ignore):
-        self.url = ''
+    def __init__(self):
+        # self.url = ''
         # driver is source?
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
-        self.visited = []
-        self.ignore = ignore
-    def init_visit(self):
-        self.visited.append()
-        #takes row for row and add
+        self.visited = ['']
+
     def get_visited(self):
         return self.visited
 
-    def set_url(self, url):
-        self.url = url
+    '''def set_url(self, url):
+        self.url = url'''
 
     def setup_headless_chrome(self):
         chrome_options = webdriver.ChromeOptions()
@@ -96,19 +93,7 @@ class WebCrawler:
     def is_pdf(self, url):
         # checks if its end with .pdf
         return url.lower().endswith('.pdf')
-    
-    #checks if they are in one the arrays
-    def inIgnore(self, current_url):
-        for ignoredurl in self.ignore:
-                if ignoredurl == current_url:
-                    return  True
-        return False
-    def inVisited(self, current_url):
-        for visitedurl in self.visited:
-                if visitedurl == current_url:
-                    return True
-                    
-        return False
+
     def valid_website_link(self, url):
         x = url.startswith(('http://', 'https://'))
         #print("valid" , x)
@@ -152,10 +137,13 @@ class WebCrawler:
             # TODO: add a check if links is valid and if not concat to former link? If wanting to concat the link,
             #  change the method find_links to find all
             current_url = self.link_queue.get()
-            
-            inIgnoreList = self.inIgnore(current_url)
-            alreadVisited = self.inVisited(current_url)
-            if not alreadVisited and not inIgnoreList or current_depth ==0:
+
+            alreadVisited = False
+            for visitedurl in self.visited:
+                if visitedurl == current_url:
+                    alreadVisited = True
+                    print("already visited")
+            if not alreadVisited:
                 print("curently on: ", current_url)
                 self.visited.append(current_url)
                 html_content = self.get_html_content(current_url)
@@ -167,7 +155,6 @@ class WebCrawler:
                 #text_content = "this url:" + self.url
                 #text_content += self.extract_text_content(body)
                 self.save_to_csv(text_content, csv_filename)
-                self.save_to_csv(current_url,'visited.csv')
                 # saves it to the visited csv file
                 current_depth += 1
 
