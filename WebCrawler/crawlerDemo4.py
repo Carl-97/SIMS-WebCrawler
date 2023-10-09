@@ -185,11 +185,12 @@ class WebCrawler:
                     time.sleep(2)
                     if not html_content:
                         continue
-                    scraped_url = self.driver.current_url
-                    separator = '-' * 40
-                    cleaned_content = self.clean_html_content(html_content)
-                    cleaned_content = scraped_url + cleaned_content + '\n' + separator
-                    self.save_content_to_csv(cleaned_content, csv_filename)
+                    if self.has_product(html_content):
+                        scraped_url = self.driver.current_url
+                        separator = '-' * 40
+                        cleaned_content = self.clean_html_content(html_content)
+                        cleaned_content = scraped_url + cleaned_content + '\n' + separator
+                        self.save_content_to_csv(cleaned_content, csv_filename)
                 else:
                     if self.is_pdf(current_url):
                         separator = '-' * 40
