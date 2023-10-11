@@ -108,7 +108,7 @@ class WebCrawler:
     def is_search_engine_url(url):
         # Define a list of known search engine domains (you can add more if needed)
         search_engine_domains = ['google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com', 'twitter.com',
-                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com']
+                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com', '.gov']
 
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
