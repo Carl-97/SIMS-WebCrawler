@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from bs4 import BeautifulSoup, Tag
 from urllib.parse import urlparse
 
+# TODO : save pdf links that might be connected to item
 class WebCrawler:
     def __init__(self):
         self.driver = self.setup_headless_chrome()
@@ -73,7 +74,7 @@ class WebCrawler:
         parsed_url = urlparse(url)
         scheme = parsed_url.scheme
         netloc = parsed_url.netloc
-        path = parsed_url.path
+        # path = parsed_url.path
         lower_url = url.lower()
 
         # Check if the scheme is 'http' or 'https'
@@ -107,7 +108,7 @@ class WebCrawler:
     def is_search_engine_url(url):
         # Define a list of known search engine domains (you can add more if needed)
         search_engine_domains = ['google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com', 'twitter.com',
-                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com']
+                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com', '.gov']
 
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
