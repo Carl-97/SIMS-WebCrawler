@@ -35,25 +35,3 @@ if __name__ == '__main__':
         i += 1
     print("------Done------")
     wc.close()
-
-    '''Test of preprocess'''
-    excel_file_path = 'resources/QualityTest.xlsx'
-    workbook = openpyxl.load_workbook(excel_file_path)
-    # Get the default (first) sheet
-    sheet = workbook.active
-
-    # Iterate through CSV files in the 'temp_files' directory
-    i = 1
-    for filename in enumerate(os.listdir('temp_files')):
-        if filename in f'{i}.csv':
-            csv_file_path = os.path.join('temp_files', filename)
-            if os.path.exists(csv_file_path):
-                print(f'Read file {filename}')
-                # You can add code here to read the CSV file and perform operations
-            else:
-                print(f'{filename} does not exist')
-            i += 1
-
-    # Save the modified Excel workbook (if needed)
-    #workbook.save(excel_file_path)
-

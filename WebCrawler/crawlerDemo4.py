@@ -15,7 +15,8 @@ class WebCrawler:
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
         self.visited = set()
-        self.ignorelist = self.set_ignorlist_from_cvs()
+        self.ignore_list = self.set_ignorelist_url()
+
     @staticmethod
     def setup_headless_chrome():
         chrome_options = webdriver.ChromeOptions()
@@ -42,7 +43,8 @@ class WebCrawler:
         soup = BeautifulSoup(html_content, 'html.parser')
         return bool(soup.select('div[class*="product"]')) or bool(soup.select('div[id*="product"]'))
 
-    def is_pdf(self, url):
+    @staticmethod
+    def is_pdf(url):
         # checks if its end with .pdf
         return url.lower().endswith('.pdf')
 
@@ -59,7 +61,6 @@ class WebCrawler:
             elements_with_class = soup.find_all(div_=class_name)
             for element in elements_with_class:
                 self.remove_all_children(element)
-
 
         return soup.body.get_text()
 
@@ -114,7 +115,8 @@ class WebCrawler:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerows([[line] for line in lines])
 
-    def set_ignorlist_from_cvs(self):
+    @staticmethod
+    def set_ignorelist_url():
         with open("resources/ignoreUrls.csv", mode='r') as file:
             csv_reader = csv.reader(file)
             array=[]
@@ -128,7 +130,7 @@ class WebCrawler:
         #string_array = self.ignorelist
         #binary_data = [s.encode('utf-8') for s in string_array]
         #search_engine_domains =  binary_data
-        search_engine_domains = self.ignorelist
+        search_engine_domains = self.ignore_list
 
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
@@ -140,9 +142,7 @@ class WebCrawler:
     @staticmethod
     def extract_search_engine_links(html_content):
         try:
-            # Create a BeautifulSoup object to parse the HTML content
             soup = BeautifulSoup(html_content, 'html.parser')
-
             # Find the specific div element by its id ("search")
             search_div = soup.find('div', id='search')
 
@@ -155,13 +155,14 @@ class WebCrawler:
                 links = search_div.find_all('a', href=True)
                 search_result_links = [link['href'] for link in links]
                 return search_result_links
-            return ['']
+            return search_result_links
         except Exception as e:
             print(f"Error parsing HTML content: {e}")
             return ""
 
     def crawl_website_with_depth(self, csv_filename, depth_limit, start_url):
         self.link_queue.put((start_url, 0))
+        separator = '-' * 40
         while not self.link_queue.empty():
             current_url, current_depth = self.link_queue.get()
 
@@ -174,10 +175,8 @@ class WebCrawler:
                     valid_links = self.extract_search_engine_links(html_content)
                     time.sleep(2)
                     for link in valid_links[:5]:
-                        #print(link)
                         self.link_queue.put((link, current_depth + 1))
             else:
-                #print(f'Current depth: {current_depth}')
                 if current_depth > depth_limit or current_url in self.visited:
                     continue
                 self.visited.add(current_url)
@@ -185,15 +184,13 @@ class WebCrawler:
                 time.sleep(2)
                 if not html_content:
                     continue
-                scraped_url = current_url
+                #scraped_url = self.driver.current_url
                 if self.is_valid_link(current_url):
-                    separator = '-' * 40
                     cleaned_content = self.clean_html_content(html_content)
-                    cleaned_content = scraped_url + '\n' + cleaned_content + '\n' + separator
+                    cleaned_content = current_url + '\n' + cleaned_content + '\n' + separator
                     self.save_content_to_csv(cleaned_content, csv_filename)
                 elif '.pdf' in current_url:
-                    separator = '-' * 40
-                    cleaned_content = scraped_url + '\n' + separator
+                    cleaned_content = current_url + '\n' + separator
                     self.save_content_to_csv(cleaned_content, csv_filename)
 
                 # Add valid links to the queue regardless of whether it's a search engine URL
