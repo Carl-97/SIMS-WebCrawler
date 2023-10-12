@@ -600,9 +600,6 @@ Version 1.0.2
 "<div class=""coi-banner__text"">"
 "<div class=""coi-banner__maintext"" id=""coi-banner-wrapper_label"">"
 Några används till statistik och andra av tredjepartstjänster. Genom att klicka 'OK' godkänner du användandet av cookies.
-"<a class=""coi-banner__policy"" href=""javascript:TogglePage(this, 'coiPage-3');"" onkeypress=""TogglePage(this, 'coiPage-3')"">"
-Om cookies
-</a>
 </div>
 </div>
 </div>
@@ -1031,7 +1028,7 @@ renewBtn.style.display = 'block';
 "<form action=""/store/se/sv/category-products/65017"" enctype=""application/x-www-form-urlencoded"" id=""keepAliveForm"" method=""post"" name=""keepAliveForm"" style=""display: none;"">"
 "<input name=""keepAliveForm"" type=""hidden"" value=""keepAliveForm""/>"
 "<input id=""keepAliveButton"" name=""keepAliveButton"" onclick=""mojarra.ab(this,event,'action','@form',0);return false"" type=""submit"" value=""""/>"
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:0"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:0"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 "<span id=""layoutPanel"">"
 "<script type=""text/javascript"">"
@@ -1335,37 +1332,37 @@ Elartiklar
 </a>
 "<ul class=""hg-menugroup-level2"" style=""display: none;"">"
 <li>
-"<a href=""/store/se/sv/category-products/displays-och-kontroller"" id=""j_idt143:0:j_idt145:5:j_idt148:0:j_idt150"">"
+"<a href=""/store/se/sv/category-products/231467"" id=""j_idt143:0:j_idt145:5:j_idt148:0:j_idt150"">"
+<span>
+Controller
+</span>
+</a>
+</li>
+<li>
+"<a href=""/store/se/sv/category-products/displays-och-kontroller"" id=""j_idt143:0:j_idt145:5:j_idt148:1:j_idt150"">"
 <span>
 Displays och kontroller
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/sv/category-products/Joysticks-och-tillbehor-swe"" id=""j_idt143:0:j_idt145:5:j_idt148:1:j_idt150"">"
+"<a href=""/store/se/sv/category-products/Joysticks-och-tillbehor-swe"" id=""j_idt143:0:j_idt145:5:j_idt148:2:j_idt150"">"
 <span>
 Joysticks och tillbehör
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/sv/category-products/64730"" id=""j_idt143:0:j_idt145:5:j_idt148:2:j_idt150"">"
+"<a href=""/store/se/sv/category-products/64730"" id=""j_idt143:0:j_idt145:5:j_idt148:3:j_idt150"">"
 <span>
 Kontakter
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/sv/category-products/642228"" id=""j_idt143:0:j_idt145:5:j_idt148:3:j_idt150"">"
+"<a href=""/store/se/sv/category-products/642228"" id=""j_idt143:0:j_idt145:5:j_idt148:4:j_idt150"">"
 <span>
 Magnetspolar
-</span>
-</a>
-</li>
-<li>
-"<a href=""/store/se/sv/category-products/231467"" id=""j_idt143:0:j_idt145:5:j_idt148:4:j_idt150"">"
-<span>
-Plus+1® controller
 </span>
 </a>
 </li>
@@ -2587,7 +2584,7 @@ Presshylsa Syrafast
 "<div class=""col-xl-3 pb-4 pr-lg-4 pb-xl-5 border-right"">"
 "<form action=""/store/se/sv/category-products/65017"" enctype=""application/x-www-form-urlencoded"" id=""filterForm"" method=""post"" name=""filterForm"">"
 "<input name=""filterForm"" type=""hidden"" value=""filterForm""/>"
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:3"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:3"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 "<div class=""col-xl-9 pl-xl-4"" id=""products"">"
@@ -2633,7 +2630,7 @@ Logga in för att se pris
 "var fetchNetPricesAsync=function(o){var o=(typeof o==='object')&&o?o:{};o['javax.faces.behavior.event']='action';o.execute='@this';o.render='searchPage searchPageScripts';o.onevent=function(data){if(data.status=='begin'){addOutletLoader()}if(data.status=='success'){removeOutletLoader()}};jsf.ajax.request('j_idt369:j_idt370',null,o)}"
 </script>
 </span>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:4"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:4"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 "<div class=""col-md-6 col-lg-4 col-xl-3 mt-3 px-2"" id=""1582580"">"
 "<div class=""hg-ws-product-grid-card card relative h-100 border-0"">"
@@ -2689,7 +2686,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:5"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:5"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -2747,7 +2744,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:6"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:6"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -2805,7 +2802,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:7"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:7"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -2863,7 +2860,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:8"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:8"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -2921,7 +2918,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:9"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:9"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -2979,7 +2976,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:10"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:10"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3037,7 +3034,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:11"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:11"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3095,7 +3092,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:12"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:12"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3153,7 +3150,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:13"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:13"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3208,7 +3205,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:14"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:14"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3263,7 +3260,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:15"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:15"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3321,7 +3318,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:16"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:16"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3379,7 +3376,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:17"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:17"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3437,7 +3434,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:18"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:18"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3495,7 +3492,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:19"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:19"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3553,7 +3550,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:20"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:20"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3611,7 +3608,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:21"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:21"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3669,7 +3666,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:22"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:22"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3727,7 +3724,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:23"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:23"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3785,7 +3782,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:24"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:24"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3843,7 +3840,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:25"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:25"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3898,7 +3895,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:26"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:26"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -3956,7 +3953,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:27"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:27"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4014,7 +4011,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:28"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:28"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4072,7 +4069,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:29"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:29"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4130,7 +4127,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:30"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:30"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4188,7 +4185,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:31"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:31"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4246,7 +4243,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:32"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:32"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4304,7 +4301,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:33"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:33"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4362,7 +4359,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:34"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:34"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4420,7 +4417,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:35"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:35"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4478,7 +4475,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:36"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:36"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4536,7 +4533,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:37"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:37"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4594,7 +4591,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:38"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:38"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4652,7 +4649,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:39"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:39"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4710,7 +4707,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:40"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:40"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4768,7 +4765,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:41"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:41"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4826,7 +4823,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:42"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:42"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4884,7 +4881,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:43"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:43"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4942,7 +4939,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:44"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:44"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -4997,7 +4994,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:45"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:45"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5055,7 +5052,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:46"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:46"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5110,7 +5107,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:47"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:47"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5168,7 +5165,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:48"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:48"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5223,7 +5220,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:49"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:49"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5281,7 +5278,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:50"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:50"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5339,7 +5336,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:51"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:51"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5397,7 +5394,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:52"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:52"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5455,7 +5452,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:53"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:53"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5513,7 +5510,7 @@ Förpackningsstorlek:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:54"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:54"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5537,7 +5534,7 @@ Förpackningsstorlek:
 </div>
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:55"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:55"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5557,7 +5554,7 @@ Förpackningsstorlek:
 Presshylsa Syrafast 1- o 2-stål slang
 </div>
 </a>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:56"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:56"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5575,7 +5572,7 @@ Presshylsa Syrafast 1- o 2-stål slang
 Presshylsa Syrafast Skalning
 </div>
 </a>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:57"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:57"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5593,7 +5590,7 @@ Presshylsa Syrafast Skalning
 Presshylsa Syrafast Termoplast och Textilslang
 </div>
 </a>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:58"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:58"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -5611,7 +5608,7 @@ Presshylsa Syrafast Termoplast och Textilslang
 "Presshylsor Syrafast 3WB,4SH,4SP"
 </div>
 </a>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:59"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8695016569517795821:3588965916947384476""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:59"" name=""javax.faces.ViewState"" type=""hidden"" value=""-8234076979782779740:4297895990090429848""/>"
 </form>
 </div>
 </div>
@@ -6236,27 +6233,6 @@ Copyright © 2023 HydraSpecma
 <!-- Local Scripts -->
 <!-- //Local Scripts -->
 </span>
-"<script charset=""utf-8"" src=""//sleeknotecustomerscripts.sleeknote.com/14121.js"" type=""text/javascript"">"
-</script>
-"<script id=""sleeknoteScript"" type=""text/javascript"">"
-"(function(){var a=document.createElement(""script"");a.type=""text/javascript"";a.charset=""utf-8"";a.src=""//sleeknotecustomerscripts.sleeknote.com/14121.js"";var b=document.getElementById(""sleeknoteScript"");b.parentNode.insertBefore(a,b)})();"
-</script>
-"<script id="""" type=""text/javascript"">"
-"!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version=""2.0"",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,""script"",""https://connect.facebook.net/en_US/fbevents.js"");fbq(""init"",""507976921524735"");fbq(""track"",""PageView"");"
-</script>
-<noscript>
-"<img height=""1"" src=""https://www.facebook.com/tr?id=1988953458098563&amp;ev=PageView&amp;noscript=1"" style=""display:none"" width=""1""/>"
-</noscript>
-"<script id="""" type=""text/javascript"">"
-"!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version=""2.0"",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,""script"",""https://connect.facebook.net/en_US/fbevents.js"");fbq(""init"",""6470890332961548"");fbq(""set"",""agent"",""tmgoogletagmanager"",""6470890332961548"");fbq(""track"",""PageView"");"
-</script>
-<noscript>
-"<img height=""1"" src=""https://www.facebook.com/tr?id=6470890332961548&amp;ev=PageView&amp;noscript=1"" style=""display:none"" width=""1""/>"
-</noscript>
-"<script id="""" type=""text/javascript"">"
-"var _paq=window._paq=window._paq||[];_paq.push([""setDomains"",[""*.www.hydraspecma.com/store/dk/da"",""*.www.hydraspecma.com/store/dk/en"",""*.www.hydraspecma.com/store/fi/fi"",""*.www.hydraspecma.com/store/se/en"",""*.www.hydraspecma.com/store/se/sv""]]);_paq.push([""enableCrossDomainLinking""]);_paq.push([""trackPageView""]);_paq.push([""enableLinkTracking""]);"
-"(function(){var a=""https://hydraspecma.matomo.cloud/"";_paq.push([""setTrackerUrl"",a+""matomo.php""]);_paq.push([""setSiteId"",""3""]);var b=document;a=b.createElement(""script"");b=b.getElementsByTagName(""script"")[0];a.async=!0;a.src=""//cdn.matomo.cloud/hydraspecma.matomo.cloud/matomo.js"";b.parentNode.insertBefore(a,b)})();"
-</script>
 <script>
 "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"
 "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),"
@@ -6485,10 +6461,31 @@ $('#keepAliveButton').click();
 </script>
 "<span id=""messageWindow"">"
 </span>
-"<iframe aria-hidden=""true"" id=""sleeknote"" style=""display:none!important"">"
-</iframe>
+"<script charset=""utf-8"" src=""//sleeknotecustomerscripts.sleeknote.com/14121.js"" type=""text/javascript"">"
+</script>
+"<script id=""sleeknoteScript"" type=""text/javascript"">"
+"(function(){var a=document.createElement(""script"");a.type=""text/javascript"";a.charset=""utf-8"";a.src=""//sleeknotecustomerscripts.sleeknote.com/14121.js"";var b=document.getElementById(""sleeknoteScript"");b.parentNode.insertBefore(a,b)})();"
+</script>
+"<script id="""" type=""text/javascript"">"
+"!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version=""2.0"",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,""script"",""https://connect.facebook.net/en_US/fbevents.js"");fbq(""init"",""507976921524735"");fbq(""track"",""PageView"");"
+</script>
+<noscript>
+"<img height=""1"" src=""https://www.facebook.com/tr?id=1988953458098563&amp;ev=PageView&amp;noscript=1"" style=""display:none"" width=""1""/>"
+</noscript>
+"<script id="""" type=""text/javascript"">"
+"!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version=""2.0"",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,""script"",""https://connect.facebook.net/en_US/fbevents.js"");fbq(""init"",""6470890332961548"");fbq(""set"",""agent"",""tmgoogletagmanager"",""6470890332961548"");fbq(""track"",""PageView"");"
+</script>
+<noscript>
+"<img height=""1"" src=""https://www.facebook.com/tr?id=6470890332961548&amp;ev=PageView&amp;noscript=1"" style=""display:none"" width=""1""/>"
+</noscript>
+"<script id="""" type=""text/javascript"">"
+"var _paq=window._paq=window._paq||[];_paq.push([""setDomains"",[""*.www.hydraspecma.com/store/dk/da"",""*.www.hydraspecma.com/store/dk/en"",""*.www.hydraspecma.com/store/fi/fi"",""*.www.hydraspecma.com/store/se/en"",""*.www.hydraspecma.com/store/se/sv""]]);_paq.push([""enableCrossDomainLinking""]);_paq.push([""trackPageView""]);_paq.push([""enableLinkTracking""]);"
+"(function(){var a=""https://hydraspecma.matomo.cloud/"";_paq.push([""setTrackerUrl"",a+""matomo.php""]);_paq.push([""setSiteId"",""3""]);var b=document;a=b.createElement(""script"");b=b.getElementsByTagName(""script"")[0];a.async=!0;a.src=""//cdn.matomo.cloud/hydraspecma.matomo.cloud/matomo.js"";b.parentNode.insertBefore(a,b)})();"
+</script>
 "<script async="""" charset=""UTF-8"" id=""consent-file"" src=""https://policy.app.cookieinformation.com/983b8e/hydraspecma.com/sv.js"" type=""text/javascript"">"
 </script>
+"<iframe aria-hidden=""true"" id=""sleeknote"" style=""display:none!important"">"
+</iframe>
 </body>
 ----------------------------------------
 "https://www.hydraspecma.com/store/se/sv/find/item/40022-08-SY<body class=""hg-webshop"" data-aos-delay=""0"" data-aos-duration=""600"" data-aos-easing=""ease-out-sine"">"
@@ -7093,9 +7090,6 @@ Version 1.0.2
 "<div class=""coi-banner__text"">"
 "<div class=""coi-banner__maintext"" id=""coi-banner-wrapper_label"">"
 Några används till statistik och andra av tredjepartstjänster. Genom att klicka 'OK' godkänner du användandet av cookies.
-"<a class=""coi-banner__policy"" href=""javascript:TogglePage(this, 'coiPage-3');"" onkeypress=""TogglePage(this, 'coiPage-3')"">"
-Om cookies
-</a>
 </div>
 </div>
 </div>
@@ -7524,7 +7518,7 @@ renewBtn.style.display = 'block';
 "<form action=""/store/se/sv/find/item/40022-08-SY"" enctype=""application/x-www-form-urlencoded"" id=""keepAliveForm"" method=""post"" name=""keepAliveForm"" style=""display: none;"">"
 "<input name=""keepAliveForm"" type=""hidden"" value=""keepAliveForm""/>"
 "<input id=""keepAliveButton"" name=""keepAliveButton"" onclick=""mojarra.ab(this,event,'action','@form',0);return false"" type=""submit"" value=""""/>"
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:0"" name=""javax.faces.ViewState"" type=""hidden"" value=""-2099808656455738727:-6975272211541871889""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:0"" name=""javax.faces.ViewState"" type=""hidden"" value=""-3879964345034761784:4611386725485431125""/>"
 </form>
 "<span id=""layoutPanel"">"
 "<script type=""text/javascript"">"
@@ -7828,37 +7822,37 @@ Elartiklar
 </a>
 "<ul class=""hg-menugroup-level2"" style=""display: none;"">"
 <li>
-"<a href=""/store/se/sv/category-products/displays-och-kontroller"" id=""j_idt137:0:j_idt139:5:j_idt142:0:j_idt144"">"
+"<a href=""/store/se/sv/category-products/231467"" id=""j_idt137:0:j_idt139:5:j_idt142:0:j_idt144"">"
+<span>
+Controller
+</span>
+</a>
+</li>
+<li>
+"<a href=""/store/se/sv/category-products/displays-och-kontroller"" id=""j_idt137:0:j_idt139:5:j_idt142:1:j_idt144"">"
 <span>
 Displays och kontroller
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/sv/category-products/Joysticks-och-tillbehor-swe"" id=""j_idt137:0:j_idt139:5:j_idt142:1:j_idt144"">"
+"<a href=""/store/se/sv/category-products/Joysticks-och-tillbehor-swe"" id=""j_idt137:0:j_idt139:5:j_idt142:2:j_idt144"">"
 <span>
 Joysticks och tillbehör
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/sv/category-products/64730"" id=""j_idt137:0:j_idt139:5:j_idt142:2:j_idt144"">"
+"<a href=""/store/se/sv/category-products/64730"" id=""j_idt137:0:j_idt139:5:j_idt142:3:j_idt144"">"
 <span>
 Kontakter
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/sv/category-products/642228"" id=""j_idt137:0:j_idt139:5:j_idt142:3:j_idt144"">"
+"<a href=""/store/se/sv/category-products/642228"" id=""j_idt137:0:j_idt139:5:j_idt142:4:j_idt144"">"
 <span>
 Magnetspolar
-</span>
-</a>
-</li>
-<li>
-"<a href=""/store/se/sv/category-products/231467"" id=""j_idt137:0:j_idt139:5:j_idt142:4:j_idt144"">"
-<span>
-Plus+1® controller
 </span>
 </a>
 </li>
@@ -9159,7 +9153,7 @@ Minsta beställningskvantitet:
 "<input name=""itemRelationsForm"" type=""hidden"" value=""itemRelationsForm""/>"
 "<div class=""tab-content max-height"">"
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:3"" name=""javax.faces.ViewState"" type=""hidden"" value=""-2099808656455738727:-6975272211541871889""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:3"" name=""javax.faces.ViewState"" type=""hidden"" value=""-3879964345034761784:4611386725485431125""/>"
 </form>
 </div>
 </div>
@@ -9350,7 +9344,7 @@ Kontakta os för pressmått innan pressning
 "<div class=""col-md-4"">"
 "<form action=""/store/se/sv/find/item/40022-08-SY"" class=""form-inline"" enctype=""application/x-www-form-urlencoded"" id=""j_idt689"" method=""post"" name=""j_idt689"">"
 "<input name=""j_idt689"" type=""hidden"" value=""j_idt689""/>"
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:4"" name=""javax.faces.ViewState"" type=""hidden"" value=""-2099808656455738727:-6975272211541871889""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:4"" name=""javax.faces.ViewState"" type=""hidden"" value=""-3879964345034761784:4611386725485431125""/>"
 </form>
 </div>
 </div>
@@ -10148,9 +10142,6 @@ Version 1.0.2
 "<div class=""coi-banner__text"">"
 "<div class=""coi-banner__maintext"" id=""coi-banner-wrapper_label"">"
 "Some are used for statistical purposes and others are set up by third party services. By clicking ‘Accept all’, you accept the use of cookies."
-"<a class=""coi-banner__policy"" href=""javascript:TogglePage(this, 'coiPage-3');"" onkeypress=""TogglePage(this, 'coiPage-3')"">"
-About cookies
-</a>
 </div>
 </div>
 </div>
@@ -10579,7 +10570,7 @@ renewBtn.style.display = 'block';
 "<form action=""/store/se/en/find?q=0021-08-SY"" enctype=""application/x-www-form-urlencoded"" id=""keepAliveForm"" method=""post"" name=""keepAliveForm"" style=""display: none;"">"
 "<input name=""keepAliveForm"" type=""hidden"" value=""keepAliveForm""/>"
 "<input id=""keepAliveButton"" name=""keepAliveButton"" onclick=""mojarra.ab(this,event,'action','@form',0);return false"" type=""submit"" value=""""/>"
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:0"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:0"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 "<span id=""layoutPanel"">"
 "<script type=""text/javascript"">"
@@ -10862,37 +10853,37 @@ Connectors
 </a>
 </li>
 <li>
-"<a href=""/store/se/en/category-products/Displays-en"" id=""j_idt143:0:j_idt145:4:j_idt148:1:j_idt150"">"
+"<a href=""/store/se/en/category-products/231467"" id=""j_idt143:0:j_idt145:4:j_idt148:1:j_idt150"">"
+<span>
+Controllers
+</span>
+</a>
+</li>
+<li>
+"<a href=""/store/se/en/category-products/Displays-en"" id=""j_idt143:0:j_idt145:4:j_idt148:2:j_idt150"">"
 <span>
 Displays
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/en/category-products/Electronic-drivers-en"" id=""j_idt143:0:j_idt145:4:j_idt148:2:j_idt150"">"
+"<a href=""/store/se/en/category-products/Electronic-drivers-en"" id=""j_idt143:0:j_idt145:4:j_idt148:3:j_idt150"">"
 <span>
 Electronic drivers
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/en/category-products/Joysticks-and-accessories"" id=""j_idt143:0:j_idt145:4:j_idt148:3:j_idt150"">"
+"<a href=""/store/se/en/category-products/Joysticks-and-accessories"" id=""j_idt143:0:j_idt145:4:j_idt148:4:j_idt150"">"
 <span>
 Joysticks and accessories
 </span>
 </a>
 </li>
 <li>
-"<a href=""/store/se/en/category-products/642228"" id=""j_idt143:0:j_idt145:4:j_idt148:4:j_idt150"">"
+"<a href=""/store/se/en/category-products/642228"" id=""j_idt143:0:j_idt145:4:j_idt148:5:j_idt150"">"
 <span>
 Magnetic coils
-</span>
-</a>
-</li>
-<li>
-"<a href=""/store/se/en/category-products/231467"" id=""j_idt143:0:j_idt145:4:j_idt148:5:j_idt150"">"
-<span>
-Plus+1® controllers
 </span>
 </a>
 </li>
@@ -12098,7 +12089,7 @@ You searched for
 "<div class=""col-xl-3 pb-4 pr-lg-4 pb-xl-5 border-right"">"
 "<form action=""/store/se/en/find?q=0021-08-SY"" enctype=""application/x-www-form-urlencoded"" id=""filterForm"" method=""post"" name=""filterForm"">"
 "<input name=""filterForm"" type=""hidden"" value=""filterForm""/>"
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:3"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:3"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 "<div class=""col-xl-9 pl-xl-4"" id=""products"">"
@@ -12140,7 +12131,7 @@ Login to see prices
 "var fetchNetPricesAsync=function(o){var o=(typeof o==='object')&&o?o:{};o['javax.faces.behavior.event']='action';o.execute='@this';o.render='searchPage searchPageScripts';o.onevent=function(data){if(data.status=='begin'){addOutletLoader()}if(data.status=='success'){removeOutletLoader()}};jsf.ajax.request('j_idt369:j_idt370',null,o)}"
 </script>
 </span>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:4"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:4"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 "<div class=""col-md-6 col-lg-4 col-xl-3 mt-3 px-2"" id=""2052765"">"
 "<div class=""hg-ws-product-grid-card card relative h-100 border-0"">"
@@ -12193,7 +12184,7 @@ Package size:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:5"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:5"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 </div>
@@ -12248,7 +12239,7 @@ Package size:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:6"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:6"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 </div>
@@ -12306,7 +12297,7 @@ Package size:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:7"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:7"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 </div>
@@ -12361,7 +12352,7 @@ Package size:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:8"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:8"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 </div>
@@ -12419,7 +12410,7 @@ Package size:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:9"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:9"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 </div>
@@ -12477,7 +12468,7 @@ Package size:
 "<div class=""buttons-block w-100"">"
 </div>
 </div>
-"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:10"" name=""javax.faces.ViewState"" type=""hidden"" value=""8794476744605683065:-3804156242277179204""/>"
+"<input autocomplete=""off"" id=""j_id1:javax.faces.ViewState:10"" name=""javax.faces.ViewState"" type=""hidden"" value=""1099771270489176776:-2423156794453449074""/>"
 </form>
 </div>
 </div>

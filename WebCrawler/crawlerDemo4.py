@@ -48,9 +48,14 @@ class WebCrawler:
     def clean_html_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         # add class names you want to remove
-        classes_to_remove = ['head','header', 'footer', 'nav', 'navbar', 'cookie', 'Cookie', 'validation', 'lang', 'policy', 'Navigation', 'search']
+        classes_to_remove = ['head','header', 'footer', 'nav', 'navbar', 'cookie', 'Cookie', 'validation', 'lang', 'policy', 'Navigation', 'search', 'ChangeStore']
         #ignorecontent 
-        
+        head_tag = soup.head
+        head_tag.decompose()
+        #header_tag = soup.header
+        #header_tag.decompose()
+        #footer_tag = soup.footer
+        #footer_tag.decompose()
         for class_name in classes_to_remove:
             elements_with_class = soup.find_all(class_=class_name)
             for element in elements_with_class:
@@ -61,6 +66,13 @@ class WebCrawler:
             #self.remove_all_children(element)
             #element.extract()
                 element.decompose()
+        for remove in classes_to_remove:
+            cookieElement = soup.find_all(div_=lambda x: x and remove in x)
+            for element in cookieElement:
+            #self.remove_all_children(element)
+            #element.extract()
+                element.decompose()
+                
         #cookie = soup.find('cookie')
         #if cookie:
          #   cookie.extract()

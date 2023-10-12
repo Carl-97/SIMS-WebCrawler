@@ -575,11 +575,6 @@ Pricing
 </div>
 <!-- 右边 -->
 "<div class=""cc-top-right cc-right"">"
-"<div class=""cc--top-search-container hidden-xxxlg"">"
-"<input class=""cc-field cc-top-search-input"" onblur='this.setAttribute(""readonly"",true);' onfocus='this.removeAttribute(""readonly"");' placeholder=""Search Books"" readonly="""" type=""text"" value=""""/>"
-"<span class=""icon-search"" id=""icon-search"" title=""Search Books"">"
-</span>
-</div>
 "<ul class=""cc-top-right_log-in-wrap pull-right"">"
 "<li class=""cc-before-log-in-menu cc-top-item"">"
 "<a class=""cc-log-in-link"" href=""/login.php"">"
@@ -980,13 +975,6 @@ Isiflo
 </div>
 </div>
 <!-- search -->
-"<div class=""basic-text-search-group cc-left"">"
-"<input class=""cc-left form-control"" id=""basic-text-search-input"" placeholder=""Search text..."" type=""text""/>"
-"<span id=""basic-text-search-btn"">"
-"<i class=""icon search-icon"">"
-</i>
-</span>
-</div>
 <!-- desc -->
 "<div class=""basic-book-info_desc-container cc-left"">"
 "<h2 class=""basic-desc"">"
@@ -1012,9 +1000,6 @@ Keywords:
 Read the Text Version
 </h3>
 "<div class=""basic-page-context"">"
-"<p class=""basic-text-search-input-tip cc-error cc-hide"">"
-No Text Content!
-</p>
 "<ul class=""basic-edit-page-size margin-bottom"">"
 <div>
 Pages:
@@ -1313,60 +1298,6 @@ Share
 </div>
 </div>
 <!-- top-search -->
-"<div class=""top-search-wrap cc-left"">"
-"<h3 class=""basic-top-seacrh_title"">"
-Top Search
-</h3>
-"<div class=""basic-top-seacrh_input-container"">"
-"<input class=""basic-top-seacrh_input form-control"" id=""basic-document-search-input"" placeholder=""Search the book"" type=""text""/>"
-"<span class=""basic-top-seacrh_input-icon"" id=""basic-document-search-btn"">"
-"<i class=""icon search-icon"">"
-</i>
-</span>
-</div>
-"<div class=""basic-top-seacrh_tag-container"">"
-"<a href=""/tags/business"" target=""_blank"">"
-<span>
-business
-</span>
-</a>
-"<a href=""/tags/design"" target=""_blank"">"
-<span>
-design
-</span>
-</a>
-"<a href=""/tags/fashion"" target=""_blank"">"
-<span>
-fashion
-</span>
-</a>
-"<a href=""/tags/music"" target=""_blank"">"
-<span>
-music
-</span>
-</a>
-"<a href=""/tags/health"" target=""_blank"">"
-<span>
-health
-</span>
-</a>
-"<a href=""/tags/life"" target=""_blank"">"
-<span>
-life
-</span>
-</a>
-"<a href=""/tags/sports"" target=""_blank"">"
-<span>
-sports
-</span>
-</a>
-"<a href=""/tags/marketing"" target=""_blank"">"
-<span>
-marketing
-</span>
-</a>
-</div>
-</div>
 <!-- related-publication -->
 "<div class=""related-publication-wrap cc-left"">"
 "<div class=""basic-related-publications pull-left"">"
@@ -1375,80 +1306,80 @@ Related Publications
 </h3>
 "<div class=""basic-related-publications_container pull-left"">"
 "<div class=""book-img-container"">"
-"<a class=""book-img-link"" href=""/yhwo/nxlf"" target=""_blank"" title=""ablasa2018"">"
+"<a class=""book-img-link"" href=""/mwobx/mtjp"" target=""_blank"" title=""Tap chi Nu Doanh Nhan_So 73_Thang"">"
 "<div class=""book-img-wrap"">"
-"<img src=""https://online.fliphtml5.com/yhwo/nxlf/files/shot.jpg""/>"
+"<img src=""https://online.fliphtml5.com/mwobx/mtjp/files/shot.jpg""/>"
 "<div class=""book-img-shadow"">"
 View
 </div>
 </div>
-"<p class=""book-img-title"" title=""ablasa2018"">"
-ablasa2018
+"<p class=""book-img-title"" title=""Tap chi Nu Doanh Nhan_So 73_Thang"">"
+Tap chi Nu Doanh Nhan_So 73_Thang
 </p>
 </a>
 </div>
 "<div class=""book-img-container"">"
-"<a class=""book-img-link"" href=""/xaqa/jbsi"" target=""_blank"" title=""Product Catalogc 1"">"
+"<a class=""book-img-link"" href=""/tcgq/bnja"" target=""_blank"" title=""Revista A.M.A. en Marcha. Número 139"">"
 "<div class=""book-img-wrap"">"
-"<img src=""https://online.fliphtml5.com/xaqa/jbsi/files/shot.jpg""/>"
+"<img src=""https://online.fliphtml5.com/tcgq/bnja/files/shot.jpg""/>"
 "<div class=""book-img-shadow"">"
 View
 </div>
 </div>
-"<p class=""book-img-title"" title=""Product Catalogc 1"">"
-Product Catalogc 1
+"<p class=""book-img-title"" title=""Revista A.M.A. en Marcha. Número 139"">"
+Revista A.M.A. en Marcha. Número 139
 </p>
 </a>
 </div>
 "<div class=""book-img-container"">"
-"<a class=""book-img-link"" href=""/djgtu/snle"" target=""_blank"" title=""Select Itaigara - Cardápio Japonês"">"
+"<a class=""book-img-link"" href=""/iozp/wgzu"" target=""_blank"" title=""Clouds House Referrers Guide"">"
 "<div class=""book-img-wrap"">"
-"<img src=""https://online.fliphtml5.com/djgtu/snle/files/shot.jpg""/>"
+"<img src=""https://online.fliphtml5.com/iozp/wgzu/files/shot.jpg""/>"
 "<div class=""book-img-shadow"">"
 View
 </div>
 </div>
-"<p class=""book-img-title"" title=""Select Itaigara - Cardápio Japonês"">"
-Select Itaigara - Cardápio Japonês
+"<p class=""book-img-title"" title=""Clouds House Referrers Guide"">"
+Clouds House Referrers Guide
 </p>
 </a>
 </div>
 "<div class=""book-img-container"">"
-"<a class=""book-img-link"" href=""/ajkw/ktgq"" target=""_blank"" title=""29 Coachwood Manor Court Brochure - Rose Perdue Team"">"
+"<a class=""book-img-link"" href=""/wtzl/mraa"" target=""_blank"" title=""Catalogue-IneoAH1819-17 07 2018"">"
 "<div class=""book-img-wrap"">"
-"<img src=""https://online.fliphtml5.com/ajkw/ktgq/files/shot.jpg""/>"
+"<img src=""https://online.fliphtml5.com/wtzl/mraa/files/shot.jpg""/>"
 "<div class=""book-img-shadow"">"
 View
 </div>
 </div>
-"<p class=""book-img-title"" title=""29 Coachwood Manor Court Brochure - Rose Perdue Team"">"
-29 Coachwood Manor Court Brochure - Rose Perdue Team
+"<p class=""book-img-title"" title=""Catalogue-IneoAH1819-17 07 2018"">"
+Catalogue-IneoAH1819-17 07 2018
 </p>
 </a>
 </div>
 "<div class=""book-img-container"">"
-"<a class=""book-img-link"" href=""/kawa/fxlk"" target=""_blank"" title=""Rowan Style Edit 2018 by Quail Studio"">"
+"<a class=""book-img-link"" href=""/omnq/aflx"" target=""_blank"" title=""National Geographic Lindblad Expeditions Explorations 2018-20"">"
 "<div class=""book-img-wrap"">"
-"<img src=""https://online.fliphtml5.com/kawa/fxlk/files/shot.jpg""/>"
+"<img src=""https://online.fliphtml5.com/omnq/aflx/files/shot.jpg""/>"
 "<div class=""book-img-shadow"">"
 View
 </div>
 </div>
-"<p class=""book-img-title"" title=""Rowan Style Edit 2018 by Quail Studio"">"
-Rowan Style Edit 2018 by Quail Studio
+"<p class=""book-img-title"" title=""National Geographic Lindblad Expeditions Explorations 2018-20"">"
+National Geographic Lindblad Expeditions Explorations 2018-20
 </p>
 </a>
 </div>
 "<div class=""book-img-container"">"
-"<a class=""book-img-link"" href=""/hhxk/xedr"" target=""_blank"" title=""ValleyLine"">"
+"<a class=""book-img-link"" href=""/ppyl/cdze"" target=""_blank"" title=""Introducing Yoredale"">"
 "<div class=""book-img-wrap"">"
-"<img src=""https://online.fliphtml5.com/hhxk/xedr/files/shot.jpg""/>"
+"<img src=""https://online.fliphtml5.com/ppyl/cdze/files/shot.jpg""/>"
 "<div class=""book-img-shadow"">"
 View
 </div>
 </div>
-"<p class=""book-img-title"" title=""ValleyLine"">"
-ValleyLine
+"<p class=""book-img-title"" title=""Introducing Yoredale"">"
+Introducing Yoredale
 </p>
 </a>
 </div>
@@ -1808,7 +1739,7 @@ showOnMobile();
 });
 })(window.jQuery);
 </script>
-"<script crossorigin=""anonymous"" data-cf-beacon='{""rayId"":""814dd1f93c3e2d80"",""version"":""2023.8.0"",""b"":1,""token"":""0b4801741c0f4af5810385db2f59be15"",""si"":100}' defer="""" integrity=""sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="" src=""https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"">"
+"<script crossorigin=""anonymous"" data-cf-beacon='{""rayId"":""814e42f7dd920a2c"",""version"":""2023.8.0"",""b"":1,""token"":""0b4801741c0f4af5810385db2f59be15"",""si"":100}' defer="""" integrity=""sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="" src=""https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"">"
 </script>
 "<iframe aria-hidden=""true"" id=""intercom-frame"" style=""position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;"" tabindex=""-1"" title=""Intercom"">"
 </iframe>
@@ -1848,7 +1779,7 @@ var width = window.innerWidth
 </script>
 "<ins class=""adsbygoogle"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-ad-slot=""5358168653"" data-ad-status=""unfilled"" data-adsbygoogle-status=""done"" style=""display: block; height: 280px;"">"
 "<div aria-label=""Advertisement"" id=""aswift_1_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"" tabindex=""0"" title=""Advertisement"">"
-"<iframe allowtransparency=""true"" data-google-container-id=""a!2"" data-google-query-id=""CNHe_-OF8IEDFRf2GQodZ8UC0A"" data-load-complete=""true"" frameborder=""0"" height=""280"" hspace=""0"" id=""aswift_1"" marginheight=""0"" marginwidth=""0"" name=""aswift_1"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=280&amp;slotname=5358168653&amp;adk=2302804870&amp;adf=3262652976&amp;pi=t.ma~as.5358168653&amp;w=748&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1697097749&amp;rafmt=1&amp;format=748x280&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;fwr=0&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697097749140&amp;bpp=2&amp;bdt=384&amp;idt=131&amp;shv=r20231004&amp;mjsv=m202310040101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8c44a3ebaf40d745-22592b8643df0059%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_Mb3uAgHiwnwpQM8zs_46cC38NJ_fQ&amp;gpic=UID%3D00000c970a3625a9%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_MbBvO_xtsoFJ7RUfnUbgiVU2I5LUg&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=3866194003626&amp;frm=20&amp;pv=1&amp;ga_vid=448736883.1697097608&amp;ga_sid=1697097749&amp;ga_hid=122105251&amp;ga_fc=1&amp;u_tz=120&amp;u_his=29&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=182&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44795921%2C44804782%2C44805098%2C44803793&amp;oid=2&amp;pvsid=1008059867882196&amp;tmod=1702037006&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=yF5v9HKTp3&amp;p=https%3A//docplayer.se&amp;dtd=137"" style=""left:0;position:absolute;top:0;border:0;width:748px;height:280px;"" vspace=""0"" width=""748"">"
+"<iframe allowtransparency=""true"" data-google-container-id=""a!2"" data-google-query-id=""CI_O_4KX8IEDFXlZkQUd7twHSg"" data-load-complete=""true"" frameborder=""0"" height=""280"" hspace=""0"" id=""aswift_1"" marginheight=""0"" marginwidth=""0"" name=""aswift_1"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=280&amp;slotname=5358168653&amp;adk=2302804870&amp;adf=3262652976&amp;pi=t.ma~as.5358168653&amp;w=748&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1697102377&amp;rafmt=1&amp;format=748x280&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;fwr=0&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697102377632&amp;bpp=1&amp;bdt=452&amp;idt=105&amp;shv=r20231004&amp;mjsv=m202310090101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6cb08ea983ca54a1-2262fbba8ee400eb%3AT%3D1697102246%3ART%3D1697102247%3AS%3DALNI_Mb1vc3PWI4XjE_QqmQvKxxSoqJlug&amp;gpic=UID%3D00000c970f83fed4%3AT%3D1697102246%3ART%3D1697102246%3AS%3DALNI_Mb1FG1MCWzqFcGcTQ-ktzOr_ebqRg&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=2350350783936&amp;frm=20&amp;pv=1&amp;ga_vid=295214208.1697102247&amp;ga_sid=1697102378&amp;ga_hid=495132957&amp;ga_fc=1&amp;u_tz=120&amp;u_his=26&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=182&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31077327%2C31078593%2C44804783%2C44805099%2C44805334%2C31078721%2C44800658%2C31078630&amp;oid=2&amp;pvsid=2414090620834352&amp;tmod=755207059&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=CsDkveX0y3&amp;p=https%3A//docplayer.se&amp;dtd=113"" style=""left:0;position:absolute;top:0;border:0;width:748px;height:280px;"" vspace=""0"" width=""748"">"
 </iframe>
 </div>
 </ins>
@@ -1884,7 +1815,7 @@ if (width < 612) {
 </script>
 "<ins class=""adsbygoogle"" data-ad-client=""ca-pub-6133583279631137"" data-ad-slot=""5921840084"" data-ad-status=""unfilled"" data-adsbygoogle-status=""done"" style=""display:inline-block;width:160px;height:600px"">"
 "<div aria-label=""Advertisement"" id=""aswift_2_host"" style=""border: none; height: 600px; width: 160px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"" tabindex=""0"" title=""Advertisement"">"
-"<iframe allowtransparency=""true"" data-google-container-id=""a!3"" data-google-query-id=""CPrj_-OF8IEDFTNRHgId2BgN4w"" data-load-complete=""true"" frameborder=""0"" height=""600"" hspace=""0"" id=""aswift_2"" marginheight=""0"" marginwidth=""0"" name=""aswift_2"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=600&amp;slotname=5921840084&amp;adk=713883011&amp;adf=1582245765&amp;pi=t.ma~as.5921840084&amp;w=160&amp;lmt=1697097749&amp;format=160x600&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697097749142&amp;bpp=2&amp;bdt=386&amp;idt=155&amp;shv=r20231004&amp;mjsv=m202310040101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8c44a3ebaf40d745-22592b8643df0059%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_Mb3uAgHiwnwpQM8zs_46cC38NJ_fQ&amp;gpic=UID%3D00000c970a3625a9%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_MbBvO_xtsoFJ7RUfnUbgiVU2I5LUg&amp;prev_fmts=0x0%2C748x280&amp;nras=1&amp;correlator=3866194003626&amp;frm=20&amp;pv=1&amp;ga_vid=448736883.1697097608&amp;ga_sid=1697097749&amp;ga_hid=122105251&amp;ga_fc=1&amp;u_tz=120&amp;u_his=29&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=478&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44795921%2C44804782%2C44805098%2C44803793&amp;oid=2&amp;pvsid=1008059867882196&amp;tmod=1702037006&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=d%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=0&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;fsb=1&amp;xpc=Y81HDFnQ3f&amp;p=https%3A//docplayer.se&amp;dtd=160"" style=""left:0;position:absolute;top:0;border:0;width:160px;height:600px;"" vspace=""0"" width=""160"">"
+"<iframe allowtransparency=""true"" data-google-container-id=""a!3"" data-google-query-id=""CJbFgIOX8IEDFU_MsgodiaoSLw"" data-load-complete=""true"" frameborder=""0"" height=""600"" hspace=""0"" id=""aswift_2"" marginheight=""0"" marginwidth=""0"" name=""aswift_2"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=600&amp;slotname=5921840084&amp;adk=713883011&amp;adf=1582245765&amp;pi=t.ma~as.5921840084&amp;w=160&amp;lmt=1697102377&amp;format=160x600&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697102377633&amp;bpp=1&amp;bdt=453&amp;idt=124&amp;shv=r20231004&amp;mjsv=m202310090101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6cb08ea983ca54a1-2262fbba8ee400eb%3AT%3D1697102246%3ART%3D1697102247%3AS%3DALNI_Mb1vc3PWI4XjE_QqmQvKxxSoqJlug&amp;gpic=UID%3D00000c970f83fed4%3AT%3D1697102246%3ART%3D1697102246%3AS%3DALNI_Mb1FG1MCWzqFcGcTQ-ktzOr_ebqRg&amp;prev_fmts=0x0%2C748x280&amp;nras=1&amp;correlator=2350350783936&amp;frm=20&amp;pv=1&amp;ga_vid=295214208.1697102247&amp;ga_sid=1697102378&amp;ga_hid=495132957&amp;ga_fc=1&amp;u_tz=120&amp;u_his=26&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=478&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31077327%2C31078593%2C44804783%2C44805099%2C44805334%2C31078721%2C44800658%2C31078630&amp;oid=2&amp;pvsid=2414090620834352&amp;tmod=755207059&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=d%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=0&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;fsb=1&amp;xpc=SyUrPgyhIO&amp;p=https%3A//docplayer.se&amp;dtd=128"" style=""left:0;position:absolute;top:0;border:0;width:160px;height:600px;"" vspace=""0"" width=""160"">"
 </iframe>
 </div>
 </ins>
@@ -1916,7 +1847,7 @@ document.write(
 </script>
 "<ins class=""adsbygoogle"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-ad-slot=""1041765101"" data-ad-status=""unfilled"" data-adsbygoogle-status=""done"" style=""display: block; height: 0px;"">"
 "<div aria-label=""Advertisement"" id=""aswift_3_host"" style=""border: none; height: 0px; width: 568px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"" tabindex=""0"" title=""Advertisement"">"
-"<iframe allowtransparency=""true"" data-google-container-id=""a!4"" data-google-query-id=""CIPs_-OF8IEDFYFDHgIdyegDHg"" data-load-complete=""true"" frameborder=""0"" height=""0"" hspace=""0"" id=""aswift_3"" marginheight=""0"" marginwidth=""0"" name=""aswift_3"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=280&amp;slotname=1041765101&amp;adk=626325035&amp;adf=4206558846&amp;pi=t.ma~as.1041765101&amp;w=568&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1697097749&amp;rafmt=1&amp;format=568x280&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;fwr=0&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697097749144&amp;bpp=1&amp;bdt=388&amp;idt=165&amp;shv=r20231004&amp;mjsv=m202310040101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8c44a3ebaf40d745-22592b8643df0059%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_Mb3uAgHiwnwpQM8zs_46cC38NJ_fQ&amp;gpic=UID%3D00000c970a3625a9%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_MbBvO_xtsoFJ7RUfnUbgiVU2I5LUg&amp;prev_fmts=0x0%2C748x280%2C160x600&amp;nras=1&amp;correlator=3866194003626&amp;frm=20&amp;pv=1&amp;ga_vid=448736883.1697097608&amp;ga_sid=1697097749&amp;ga_hid=122105251&amp;ga_fc=1&amp;u_tz=120&amp;u_his=29&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=195&amp;ady=1257&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44795921%2C44804782%2C44805098%2C44803793&amp;oid=2&amp;pvsid=1008059867882196&amp;tmod=1702037006&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=4&amp;uci=a!4&amp;btvi=1&amp;fsb=1&amp;xpc=EOiWhYDsQS&amp;p=https%3A//docplayer.se&amp;dtd=173"" style=""left: 0px; position: absolute; top: 0px; border: 0px; width: 568px; height: 0px;"" vspace=""0"" width=""568"">"
+"<iframe allowtransparency=""true"" data-google-container-id=""a!4"" data-google-query-id=""CNq8gYOX8IEDFdJQkQUdMVwIgg"" data-load-complete=""true"" frameborder=""0"" height=""0"" hspace=""0"" id=""aswift_3"" marginheight=""0"" marginwidth=""0"" name=""aswift_3"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=280&amp;slotname=1041765101&amp;adk=626325035&amp;adf=4206558846&amp;pi=t.ma~as.1041765101&amp;w=568&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1697102377&amp;rafmt=1&amp;format=568x280&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;fwr=0&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697102377634&amp;bpp=1&amp;bdt=454&amp;idt=137&amp;shv=r20231004&amp;mjsv=m202310090101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6cb08ea983ca54a1-2262fbba8ee400eb%3AT%3D1697102246%3ART%3D1697102247%3AS%3DALNI_Mb1vc3PWI4XjE_QqmQvKxxSoqJlug&amp;gpic=UID%3D00000c970f83fed4%3AT%3D1697102246%3ART%3D1697102246%3AS%3DALNI_Mb1FG1MCWzqFcGcTQ-ktzOr_ebqRg&amp;prev_fmts=0x0%2C748x280%2C160x600&amp;nras=1&amp;correlator=2350350783936&amp;frm=20&amp;pv=1&amp;ga_vid=295214208.1697102247&amp;ga_sid=1697102378&amp;ga_hid=495132957&amp;ga_fc=1&amp;u_tz=120&amp;u_his=26&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=195&amp;ady=1257&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31077327%2C31078593%2C44804783%2C44805099%2C44805334%2C31078721%2C44800658%2C31078630&amp;oid=2&amp;pvsid=2414090620834352&amp;tmod=755207059&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=4&amp;uci=a!4&amp;btvi=1&amp;fsb=1&amp;xpc=UiiIuo0Lda&amp;p=https%3A//docplayer.se&amp;dtd=144"" style=""left: 0px; position: absolute; top: 0px; border: 0px; width: 568px; height: 0px;"" vspace=""0"" width=""568"">"
 </iframe>
 </div>
 </ins>
@@ -2242,7 +2173,7 @@ Visningar:
 </script>
 "<ins class=""adsbygoogle"" data-ad-client=""ca-pub-6133583279631137"" data-ad-slot=""3183521133"" data-ad-status=""unfilled"" data-adsbygoogle-status=""done"" style=""width: 0px; height: 0px;"">"
 "<div aria-label=""Advertisement"" id=""aswift_4_host"" style=""border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"" tabindex=""0"" title=""Advertisement"">"
-"<iframe allowtransparency=""true"" data-google-container-id=""a!5"" data-google-query-id=""CMzRgOSF8IEDFQfCGQodL-cIUA"" data-load-complete=""true"" frameborder=""0"" height=""0"" hspace=""0"" id=""aswift_4"" marginheight=""0"" marginwidth=""0"" name=""aswift_4"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=250&amp;slotname=3183521133&amp;adk=1748007323&amp;adf=3797926878&amp;pi=t.ma~as.3183521133&amp;w=300&amp;lmt=1697097749&amp;format=300x250&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697097749145&amp;bpp=2&amp;bdt=389&amp;idt=184&amp;shv=r20231004&amp;mjsv=m202310040101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8c44a3ebaf40d745-22592b8643df0059%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_Mb3uAgHiwnwpQM8zs_46cC38NJ_fQ&amp;gpic=UID%3D00000c970a3625a9%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_MbBvO_xtsoFJ7RUfnUbgiVU2I5LUg&amp;prev_fmts=0x0%2C748x280%2C160x600%2C568x280&amp;nras=1&amp;correlator=3866194003626&amp;frm=20&amp;pv=1&amp;ga_vid=448736883.1697097608&amp;ga_sid=1697097749&amp;ga_hid=122105251&amp;ga_fc=1&amp;u_tz=120&amp;u_his=29&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=1839&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44795921%2C44804782%2C44805098%2C44803793&amp;oid=2&amp;pvsid=1008059867882196&amp;tmod=1702037006&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7CleEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=0&amp;bc=31&amp;ifi=5&amp;uci=a!5&amp;btvi=2&amp;fsb=1&amp;xpc=oCPpI2ShYp&amp;p=https%3A//docplayer.se&amp;dtd=191"" style=""left: 0px; position: absolute; top: 0px; border: 0px; width: 0px; height: 0px;"" vspace=""0"" width=""0"">"
+"<iframe allowtransparency=""true"" data-google-container-id=""a!5"" data-google-query-id=""CLLvgoOX8IEDFQdTkQUdunYGGg"" data-load-complete=""true"" frameborder=""0"" height=""0"" hspace=""0"" id=""aswift_4"" marginheight=""0"" marginwidth=""0"" name=""aswift_4"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=250&amp;slotname=3183521133&amp;adk=1748007323&amp;adf=3797926878&amp;pi=t.ma~as.3183521133&amp;w=300&amp;lmt=1697102377&amp;format=300x250&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;wgl=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697102377635&amp;bpp=1&amp;bdt=455&amp;idt=155&amp;shv=r20231004&amp;mjsv=m202310090101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6cb08ea983ca54a1-2262fbba8ee400eb%3AT%3D1697102246%3ART%3D1697102247%3AS%3DALNI_Mb1vc3PWI4XjE_QqmQvKxxSoqJlug&amp;gpic=UID%3D00000c970f83fed4%3AT%3D1697102246%3ART%3D1697102246%3AS%3DALNI_Mb1FG1MCWzqFcGcTQ-ktzOr_ebqRg&amp;prev_fmts=0x0%2C748x280%2C160x600%2C568x280&amp;nras=1&amp;correlator=2350350783936&amp;frm=20&amp;pv=1&amp;ga_vid=295214208.1697102247&amp;ga_sid=1697102378&amp;ga_hid=495132957&amp;ga_fc=1&amp;u_tz=120&amp;u_his=26&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=1839&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31077327%2C31078593%2C44804783%2C44805099%2C44805334%2C31078721%2C44800658%2C31078630&amp;oid=2&amp;pvsid=2414090620834352&amp;tmod=755207059&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7CleEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=0&amp;bc=31&amp;ifi=5&amp;uci=a!5&amp;btvi=2&amp;fsb=1&amp;xpc=omZPRkhiSF&amp;p=https%3A//docplayer.se&amp;dtd=161"" style=""left: 0px; position: absolute; top: 0px; border: 0px; width: 0px; height: 0px;"" vspace=""0"" width=""0"">"
 </iframe>
 </div>
 </ins>
@@ -2314,7 +2245,7 @@ VA/VVS HANDBOK KOPPLINGAR mm Vatten Gas 2018/5
 "<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
 "<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-ad-status=""unfilled"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 0px;"">"
 "<div aria-label=""Advertisement"" id=""aswift_5_host"" style=""border: none; height: 0px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"" tabindex=""0"" title=""Advertisement"">"
-"<iframe allowtransparency=""true"" data-google-container-id=""a!6"" data-google-query-id=""CPeLlOSF8IEDFVFTHgIdWVkMUw"" data-load-complete=""true"" frameborder=""0"" height=""0"" hspace=""0"" id=""aswift_5"" marginheight=""0"" marginwidth=""0"" name=""aswift_5"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=280&amp;adk=529902429&amp;adf=3559010066&amp;pi=t.aa~a.1964787842~i.11~rp.4&amp;w=748&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1697097749&amp;num_ads=1&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=7413389260&amp;ad_type=text_image&amp;format=748x280&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;fwr=0&amp;pra=3&amp;rh=187&amp;rw=748&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=27&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697097749626&amp;bpp=2&amp;bdt=869&amp;idt=2&amp;shv=r20231004&amp;mjsv=m202310040101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8c44a3ebaf40d745-22592b8643df0059%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_Mb3uAgHiwnwpQM8zs_46cC38NJ_fQ&amp;gpic=UID%3D00000c970a3625a9%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_MbBvO_xtsoFJ7RUfnUbgiVU2I5LUg&amp;prev_fmts=0x0%2C748x280%2C160x600%2C568x280%2C300x250&amp;nras=2&amp;correlator=3866194003626&amp;frm=20&amp;pv=1&amp;ga_vid=448736883.1697097608&amp;ga_sid=1697097749&amp;ga_hid=122105251&amp;ga_fc=1&amp;u_tz=120&amp;u_his=29&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=2157&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44795921%2C44804782%2C44805098%2C44803793&amp;oid=2&amp;pvsid=1008059867882196&amp;tmod=1702037006&amp;uas=0&amp;nvt=1&amp;fc=1408&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;ifi=6&amp;uci=a!6&amp;btvi=3&amp;fsb=1&amp;xpc=x3I4mmUpTS&amp;p=https%3A//docplayer.se&amp;dtd=43"" style=""left: 0px; position: absolute; top: 0px; border: 0px; width: 748px; height: 0px;"" vspace=""0"" width=""748"">"
+"<iframe allowtransparency=""true"" data-google-container-id=""a!6"" data-google-query-id=""CP38i4OX8IEDFUeZsgodyP0Mpw"" data-load-complete=""true"" frameborder=""0"" height=""0"" hspace=""0"" id=""aswift_5"" marginheight=""0"" marginwidth=""0"" name=""aswift_5"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;h=280&amp;adk=529902429&amp;adf=3559010066&amp;pi=t.aa~a.1964787842~i.11~rp.4&amp;w=748&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1697102377&amp;num_ads=1&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=7413389260&amp;ad_type=text_image&amp;format=748x280&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;fwr=0&amp;pra=3&amp;rh=187&amp;rw=748&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=27&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697102377914&amp;bpp=2&amp;bdt=734&amp;idt=2&amp;shv=r20231004&amp;mjsv=m202310090101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6cb08ea983ca54a1-2262fbba8ee400eb%3AT%3D1697102246%3ART%3D1697102247%3AS%3DALNI_Mb1vc3PWI4XjE_QqmQvKxxSoqJlug&amp;gpic=UID%3D00000c970f83fed4%3AT%3D1697102246%3ART%3D1697102246%3AS%3DALNI_Mb1FG1MCWzqFcGcTQ-ktzOr_ebqRg&amp;prev_fmts=0x0%2C748x280%2C160x600%2C568x280%2C300x250&amp;nras=2&amp;correlator=2350350783936&amp;frm=20&amp;pv=1&amp;ga_vid=295214208.1697102247&amp;ga_sid=1697102378&amp;ga_hid=495132957&amp;ga_fc=1&amp;u_tz=120&amp;u_his=26&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=15&amp;ady=2257&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31077327%2C31078593%2C44804783%2C44805099%2C44805334%2C31078721%2C44800658%2C31078630&amp;oid=2&amp;pvsid=2414090620834352&amp;tmod=755207059&amp;uas=0&amp;nvt=1&amp;fc=1408&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;ifi=6&amp;uci=a!6&amp;btvi=3&amp;fsb=1&amp;xpc=hAQ3WworUd&amp;p=https%3A//docplayer.se&amp;dtd=33"" style=""left: 0px; position: absolute; top: 0px; border: 0px; width: 748px; height: 0px;"" vspace=""0"" width=""748"">"
 </iframe>
 </div>
 </ins>
@@ -2331,12 +2262,6 @@ VA/VVS HANDBOK KOPPLINGAR mm Vatten Gas 2018/5
 </span>
 "Typ 101, Rak koppling/skjutmuff PE x PE 75 x 75 mm x 90 mm x 110 mm x 160 mm Typ 105/110/112, Rak utv. Typ D x G utv Beskr mm x G Rak mm x G Rak mm x G Rak mm x G Gml.st mm x G20 Anskaffning Rak mm x G Rak mm x G Rak mm x G Rak mm x G Gml.st ,5mm x G Rak mm x G Rak mm x G Rak mm x G Rak mm x G Gml.st mm x G Rak mm x G Rak mm x G Rak mm x G Rak mm x G Rak mm x G Rak mm x G Gml.st mm x G Gml.st mm x G Rak mm x G Rak mm x G Rak mm x G Rak mm x G Gml.st mm x G Rak mm x G Rak mm x G50 Anskaffning Rak Rak utv. gml.st Typ D x G utv mm x G Typ D x G utv G inv mm x G65 G mm x G80 G mm x G80 G Vatten Gas 5"
 </p>
-"<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
-"<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 280px;"">"
-"<div id=""aswift_6_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
-</div>
-</ins>
-</div>
 <p>
 "<span class=""badge bg-blue-hoki"">"
 6
@@ -2360,18 +2285,18 @@ VA/VVS HANDBOK KOPPLINGAR mm Vatten Gas 2018/5
 </span>
 "Typ 125/130 T-rör Typ D x D x D x 16 x 16 mm x 20 x 20 mm x 25 x 25 mm x 20 x 25 mm x 25 x 32 mm x 32 x 32 mm x 32 x 40 mm x 40 x 40 mm x 32 x 50 mm x 40 x 50 mm x 50 x 50 mm x 32 x 63 mm x 40 x 63 mm x 63 x 63 mm x 67 x 67 mm Anskaffning x 75 x 75 mm x 90 x 90 mm x110x110 mm x160x160 mm Typ 129, Vridbar vinkel 90 utv. D x G utv 32 mm x G mm x G mm x G mm x G Typ 229, Vridbar dubbelvinkel utv. D x G utv 32 mm x G mm x G mm x G mm x G32 Anskaffning 50 mm x G40 Anskaffning 63 mm x G50 Anskaffning Typ 131 T-rör med utv. avstick D x G utv 20 mm x G mm x G mm x G mm x G mm x G mm x G Vatten Gas"
 </p>
+"<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
+"<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 280px;"">"
+"<div id=""aswift_6_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
+</div>
+</ins>
+</div>
 <p>
 "<span class=""badge bg-blue-hoki"">"
 9
 </span>
 "Typ 132 T-rör med inv. avstick D x G inv 20 mm x G mm x G mm x G mm x G mm x G mm x G Typ 135/140, Ett och två-stegs förminskning Typ D x D x 16 mm x 20 mm x 20 mm x 25 mm x 25 mm x 32 mm x 38 mm x 32 mm x 40 mm x 40 mm x 50 mm x 57 mm Typ 142, Övergång mot stålrör D x G 25 mm x (27) 3/4"" mm x (34) 1"" mm x (42) 1 1/4"" mm x (49) 1 1/2"" mm x (60) 2"" Typ 143, Vridbar dubbelnippel D x D 32 x 32 mm x 40 mm Typ 144, Dubbelnippel D x D 25 x 25 mm Anskaffning 32 x 32 mm x 40 mm x 50 mm x 63 mm Vatten Gas 9"
 </p>
-"<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
-"<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 280px;"">"
-"<div id=""aswift_7_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
-</div>
-</ins>
-</div>
 <p>
 "<span class=""badge bg-blue-hoki"">"
 10
@@ -2449,7 +2374,7 @@ VA/VVS HANDBOK KOPPLINGAR mm Vatten Gas 2018/5
 </p>
 "<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
 "<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 280px;"">"
-"<div id=""aswift_8_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
+"<div id=""aswift_7_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
 </div>
 </ins>
 </div>
@@ -2609,7 +2534,7 @@ Typ 100/102 Rak Typ x 20 mm x 20 mm x 25 mm x 25 mm x 32 mm x 32 mm x 40 mm x 32
 </p>
 "<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
 "<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 280px;"">"
-"<div id=""aswift_9_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
+"<div id=""aswift_8_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
 </div>
 </ins>
 </div>
@@ -2672,7 +2597,7 @@ Typ 120 Vinkel 20 x 20 mm x 25 mm x 32 mm x 40 mm x 50 mm x 63 mm Typ 121 Vinkel
 </p>
 "<div class=""google-auto-placed ap_container"" style=""width: 100%; height: auto; clear: both; text-align: center;"">"
 "<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-client=""ca-pub-6133583279631137"" data-ad-format=""auto"" data-adsbygoogle-status=""done"" style=""display: block; margin: auto; background-color: transparent; height: 280px;"">"
-"<div id=""aswift_10_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
+"<div id=""aswift_9_host"" style=""border: none; height: 280px; width: 748px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"">"
 </div>
 </ins>
 </div>
@@ -4446,7 +4371,7 @@ var pixel_image_src = '/pix/'+Math.random()+'/report/pixel.gif?type=pageview&dom
 "document.write('<img src=""'+pixel_image_src+'""> ');"
 }());
 </script>
-"<img src=""/pix/0.24849123733304612/report/pixel.gif?type=pageview&amp;domain_id=36&amp;page_id=0&amp;design_id=0&amp;l=en-US&amp;p=Linux%20x86_64&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html""/>"
+"<img src=""/pix/0.25418832221038934/report/pixel.gif?type=pageview&amp;domain_id=36&amp;page_id=0&amp;design_id=0&amp;l=en-US&amp;p=Linux%20x86_64&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html""/>"
 </div>
 "<div id=""cookie_msg"" style=""z-index:99999; background-color:  rgb(244, 244, 244); color:#647484; font-size: 13px; border-top: 1px #cccccc solid; width: 100%; position: fixed;bottom: 0;padding: 3px; padding-right: 30px ;text-align: center;left:0"">"
 "To make this website work, we log user data and share it with processors. To use this website, you must agree to our"
@@ -4489,7 +4414,7 @@ hide_cookie_msg();
 </div>
 "<ins class=""adsbygoogle adsbygoogle-noablate"" data-ad-status=""unfilled"" data-adsbygoogle-status=""done"" style=""display: none !important;"">"
 "<div aria-label=""Advertisement"" id=""aswift_0_host"" style=""border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"" tabindex=""0"" title=""Advertisement"">"
-"<iframe allowtransparency=""true"" data-google-container-id=""a!1"" data-load-complete=""true"" frameborder=""0"" hspace=""0"" id=""aswift_0"" marginheight=""0"" marginwidth=""0"" name=""aswift_0"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1697097749&amp;plat=1%3A16777224%2C2%3A8%2C3%3A2162688%2C4%3A2162688%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697097749133&amp;bpp=7&amp;bdt=377&amp;idt=108&amp;shv=r20231004&amp;mjsv=m202310040101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8c44a3ebaf40d745-22592b8643df0059%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_Mb3uAgHiwnwpQM8zs_46cC38NJ_fQ&amp;gpic=UID%3D00000c970a3625a9%3AT%3D1697097608%3ART%3D1697097608%3AS%3DALNI_MbBvO_xtsoFJ7RUfnUbgiVU2I5LUg&amp;nras=1&amp;correlator=3866194003626&amp;frm=20&amp;pv=2&amp;ga_vid=448736883.1697097608&amp;ga_sid=1697097749&amp;ga_hid=122105251&amp;ga_fc=1&amp;u_tz=120&amp;u_his=29&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44795921%2C44804782%2C44805098%2C44803793&amp;oid=2&amp;pvsid=1008059867882196&amp;tmod=1702037006&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=131"" style=""left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;"" vspace=""0"">"
+"<iframe allowtransparency=""true"" data-google-container-id=""a!1"" data-load-complete=""true"" frameborder=""0"" hspace=""0"" id=""aswift_0"" marginheight=""0"" marginwidth=""0"" name=""aswift_0"" sandbox=""allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"" scrolling=""no"" src=""https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6133583279631137&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1697102377&amp;plat=1%3A16777224%2C2%3A8%2C3%3A2162688%2C4%3A2162688%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fdocplayer.se%2F106850474-Va-vvs-handbok-kopplingar-mm-2018-5.html&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;uach=WyJMaW51eCIsIjYuMi4wIiwieDg2IiwiIiwiMTE1LjAuNTc5MC4xNzAiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC9BKUJyYW5kIiwiOTkuMC4wLjAiXSxbIkhlYWRsZXNzQ2hyb21lIiwiMTE1LjAuNTc5MC4xNzAiXSxbIkNocm9taXVtIiwiMTE1LjAuNTc5MC4xNzAiXV0sMF0.&amp;dt=1697102377622&amp;bpp=10&amp;bdt=442&amp;idt=89&amp;shv=r20231004&amp;mjsv=m202310090101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6cb08ea983ca54a1-2262fbba8ee400eb%3AT%3D1697102246%3ART%3D1697102247%3AS%3DALNI_Mb1vc3PWI4XjE_QqmQvKxxSoqJlug&amp;gpic=UID%3D00000c970f83fed4%3AT%3D1697102246%3ART%3D1697102246%3AS%3DALNI_Mb1FG1MCWzqFcGcTQ-ktzOr_ebqRg&amp;nras=1&amp;correlator=2350350783936&amp;frm=20&amp;pv=2&amp;ga_vid=295214208.1697102247&amp;ga_sid=1697102378&amp;ga_hid=495132957&amp;ga_fc=1&amp;u_tz=120&amp;u_his=26&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=788&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C31077327%2C31078593%2C44804783%2C44805099%2C44805334%2C31078721%2C44800658%2C31078630&amp;oid=2&amp;pvsid=2414090620834352&amp;tmod=755207059&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=105"" style=""left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;"" vspace=""0"">"
 </iframe>
 </div>
 </ins>

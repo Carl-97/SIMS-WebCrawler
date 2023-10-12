@@ -150,7 +150,7 @@ Hoppa till slutet av bildgalleriet
 </div>
 <style>
 </style>
-"<div class=""fotorama-item fotorama fotorama1697097855012"" data-gallery-role=""gallery"">"
+"<div class=""fotorama-item fotorama fotorama1697102500282"" data-gallery-role=""gallery"">"
 "<div data-gallery-role=""fotorama__focusable-start"" tabindex=""-1"">"
 </div>
 "<div class=""fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows"" style=""min-width: 0px; max-width: 100%;"">"
@@ -161,9 +161,9 @@ Hoppa till slutet av bildgalleriet
 </div>
 "<div class=""fotorama__stage__shaft"" data-gallery-role=""stage-shaft"" style=""transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 320px; margin-left: 0px;"" tabindex=""0"">"
 "<div aria-hidden=""false"" class=""fotorama__stage__frame fotorama__active fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img"" data-active=""true"" href=""https://www.hydac.com/shop/media/catalog/crossbase/cache/804510ce68ff34894246cc79cc94a424/PRD_PHO_3D/PRD_PHO_3D_10000013200-00002__SALL__AIN__V1.jpg"">"
-"<img alt=""10000013200 00002  SALL  AIN  V1"" aria-hidden=""false"" aria-labelledby=""labelledby1697097855023"" class=""fotorama__img"" src=""https://www.hydac.com/shop/media/catalog/crossbase/cache/804510ce68ff34894246cc79cc94a424/PRD_PHO_3D/PRD_PHO_3D_10000013200-00002__SALL__AIN__V1.jpg""/>"
+"<img alt=""10000013200 00002  SALL  AIN  V1"" aria-hidden=""false"" aria-labelledby=""labelledby1697102500292"" class=""fotorama__img"" src=""https://www.hydac.com/shop/media/catalog/crossbase/cache/804510ce68ff34894246cc79cc94a424/PRD_PHO_3D/PRD_PHO_3D_10000013200-00002__SALL__AIN__V1.jpg""/>"
 "<div aria-hidden=""true"" class=""fotorama__caption"">"
-"<div class=""fotorama__caption__wrap"" id=""labelledby1697097855023"">"
+"<div class=""fotorama__caption__wrap"" id=""labelledby1697102500292"">"
 10000013200 00002  SALL  AIN  V1
 </div>
 </div>
@@ -243,7 +243,7 @@ Art.nr
 "<input name=""selected_configurable_option"" type=""hidden"" value=""""/>"
 "<input id=""related-products-field"" name=""related_product"" type=""hidden"" value=""""/>"
 "<input name=""item"" type=""hidden"" value=""72275""/>"
-"<input name=""form_key"" type=""hidden"" value=""ipSyDVV24aVIFfgG""/>"
+"<input name=""form_key"" type=""hidden"" value=""wreMJCR3jsDJwlP1""/>"
 "<div class=""box-tocart 72275"">"
 "<div class=""fieldset"">"
 "<div class=""actions"">"
@@ -3008,7 +3008,7 @@ CAD-nedladdning
 </a>
 </div>
 </div>
-"<input name=""form_key"" type=""hidden"" value=""ipSyDVV24aVIFfgG""/>"
+"<input name=""form_key"" type=""hidden"" value=""wreMJCR3jsDJwlP1""/>"
 "<div data-bind=""scope:'authenticationPopup', style: {display: 'none'}"" id=""authenticationPopup"" style=""display: none;"">"
 <script>
 "window.authenticationPopup = {""autocomplete"":""off"",""customerRegisterUrl"":""https:\/\/www.hydac.com\/shop\/sv-se\/company\/account\/create\/"",""customerForgotPasswordUrl"":""https:\/\/www.hydac.com\/shop\/sv-se\/customer\/account\/forgotpassword\/"",""baseUrl"":""https:\/\/www.hydac.com\/shop\/sv-se\/""}"
@@ -3410,23 +3410,6 @@ Performance Cookies
 </h3>
 </div>
 "<div class=""ot-lst-subhdr"">"
-"<div class=""ot-search-cntr"">"
-"<p class=""ot-scrn-rdr"" role=""status"">"
-</p>
-"<label class=""ot-scrn-rdr"" for=""vendor-search-handler"">"
-</label>
-"<input id=""vendor-search-handler"" name=""vendor-search-handler"" type=""text""/>"
-"<svg aria-hidden=""true"" viewbox=""0 -30 110 110"" x=""0px"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px"">"
-<title>
-Search Icon
-</title>
-"<path d=""M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23"
-"s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92"
-"c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17"
-"s-17-7.626-17-17S14.61,6,23.984,6z"" fill=""#2e3644"">"
-</path>
-</svg>
-</div>
 "<div class=""ot-fltr-cntr"">"
 "<button aria-haspopup=""true"" aria-label=""Filter"" id=""filter-btn-handler"">"
 "<svg aria-hidden=""true"" role=""presentation"" viewbox=""0 0 402.577 402.577"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px"">"
@@ -3592,7 +3575,7 @@ cookie name
 </iframe>
 </div>
 </div>
-"<img alt="""" src=""https://www.hydac.com/shop/sv-se/elasticsuite/tracker/hit/image/h.png?page[store_id]=11&amp;page[type][identifier]=catalog_product_view&amp;page[type][label]=Catalog%20Product%20View%20(Any)&amp;page[locale]=sv_SE&amp;page[domain]=127.0.0.1&amp;page[product][id]=72275&amp;page[product][label]=HDA%204745-A-250-000&amp;page[product][sku]=906392&amp;session[uid]=0cabfc1e-b255-9023-903f-a007e46b3423&amp;session[vid]=d46645f2-80d7-08a1-d17d-3e65dbc8ecdf&amp;page[site]=www.hydac.com&amp;page[url]=%2Fshop%2Fsv-se%2F906392&amp;page[title]=HDA%204745-A-250-000%20%7C%20HYDAC&amp;page[resolution][x]=800&amp;page[resolution][y]=600"" style=""position: absolute; top: 0; left: 0; visibility: hidden;""/>"
+"<img alt="""" src=""https://www.hydac.com/shop/sv-se/elasticsuite/tracker/hit/image/h.png?page[store_id]=11&amp;page[type][identifier]=catalog_product_view&amp;page[type][label]=Catalog%20Product%20View%20(Any)&amp;page[locale]=sv_SE&amp;page[domain]=127.0.0.1&amp;page[product][id]=72275&amp;page[product][label]=HDA%204745-A-250-000&amp;page[product][sku]=906392&amp;session[uid]=348ebb4b-9e98-8a31-0e54-af4ad8f788f4&amp;session[vid]=4a4ff8b0-6ede-0721-2353-355098b40067&amp;page[site]=www.hydac.com&amp;page[url]=%2Fshop%2Fsv-se%2F906392&amp;page[title]=HDA%204745-A-250-000%20%7C%20HYDAC&amp;page[resolution][x]=800&amp;page[resolution][y]=600"" style=""position: absolute; top: 0; left: 0; visibility: hidden;""/>"
 "<div class=""modals-wrapper"">"
 <!--
 /**
@@ -3745,146 +3728,5 @@ Registrera nu
 </body>
 ----------------------------------------
 "https://hydropneuparts.com/en/electronic-pressure-transmitter/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html<html class="""" lang=""en"">"
-<head>
-<!-- Google Tag Manager -->
-"<script async="""" src=""https://www.googletagmanager.com/gtm.js?id=GTM-TVH3QX6"">"
-</script>
-<script>
-"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':"
-"new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],"
-"j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="
-"'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);"
-"})(window,document,'script','dataLayer','GTM-TVH3QX6');"
-</script>
-"<link href=""https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"" media=""all"" rel=""stylesheet""/>"
-"<link href=""https://hydropneuparts.com/themes/HydroPeuParts/assets/cache/theme-6278161893.css"" media=""all"" rel=""stylesheet""/>"
-"<link as=""font"" crossorigin="""" href=""/modules/creativeelements/views/lib/ceicons/fonts/ceicons.woff2?t6ebnx"" rel=""preload"" type=""font/woff2""/>"
-"<link as=""font"" crossorigin="""" href=""/modules/creativeelements/views/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0"" rel=""preload"" type=""font/woff2""/>"
-<!-- End Google Tag Manager -->
-"<meta charset=""utf-8""/>"
-"<meta content=""ie=edge"" http-equiv=""x-ua-compatible""/>"
-"<link href=""https://hydropneuparts.com/en/electronic-pressure-transmitter/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"" rel=""canonical""/>"
-<title>
-906392 HYDAC HDA 4745-A-250-000 Electronic pressure transmitter
-</title>
-"<meta content=""HydroPneuMotion is a official HYDAC service center. On our webshop HydroPneuParts you can find a wide aray of HYDAC products, many of wich we keep in stock."" name=""description""/>"
-"<meta content=""906392,HYDAC,Electronic pressure transmitter,hydraulic,hydraulic parts,spare parts,filters,hydac filters,bosch rexroth,enerpac,eaton,vickers,pneumatic,mh hydraulics,rem-b,bijlard,damen hydrauliek,lis hydraulics,zwanenberg,hansa flex,Zanten"" name=""keywords""/>"
-"<link href=""https://hydropneuparts.com/en/electronic-pressure-transmitter/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"" rel=""canonical""/>"
-"<link href=""https://hydropneuparts.com/en/electronic-pressure-transmitter/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"" hreflang=""en-us"" rel=""alternate""/>"
-"<link href=""https://hydropneuparts.com/nl/elektronische-druktransmitter/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"" hreflang=""nl-nl"" rel=""alternate""/>"
-"<meta content=""width=device-width, initial-scale=1"" name=""viewport""/>"
-"<link href=""https://hydropneuparts.com/img/favicon.ico?1634241838"" rel=""icon"" type=""image/vnd.microsoft.icon""/>"
-"<link href=""https://hydropneuparts.com/img/favicon.ico?1634241838"" rel=""shortcut icon"" type=""image/x-icon""/>"
-"<script src=""https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"">"
-</script>
-"<script type=""text/javascript"">"
-"var CLOSE = ""Close Categories"";"
-"var MORE = ""More Categories"";"
-var id_lang = 1;
-var possearch_image = 1;
-var possearch_number = 10;
-"var prestashop = {""cart"":{""products"":[],""totals"":{""total"":{""type"":""total"",""label"":""Total"",""amount"":0,""value"":""\u20ac0.00""},""total_including_tax"":{""type"":""total"",""label"":""Total (tax incl.)"",""amount"":0,""value"":""\u20ac0.00""},""total_excluding_tax"":{""type"":""total"",""label"":""Total (tax excl.)"",""amount"":0,""value"":""\u20ac0.00""}},""subtotals"":{""products"":{""type"":""products"",""label"":""Subtotal"",""amount"":0,""value"":""\u20ac0.00""},""discounts"":null,""shipping"":{""type"":""shipping"",""label"":""Shipping"",""amount"":0,""value"":""""},""tax"":{""type"":""tax"",""label"":""Taxes"",""amount"":0,""value"":""\u20ac0.00""}},""products_count"":0,""summary_string"":""0 items"",""vouchers"":{""allowed"":0,""added"":[]},""discounts"":[],""minimalPurchase"":0,""minimalPurchaseRequired"":""""},""currency"":{""id"":1,""name"":""Euro"",""iso_code"":""EUR"",""iso_code_num"":""978"",""sign"":""\u20ac""},""customer"":{""lastname"":null,""firstname"":null,""email"":null,""birthday"":null,""newsletter"":null,""newsletter_date_add"":null,""optin"":null,""website"":null,""company"":null,""siret"":null,""ape"":null,""is_logged"":false,""gender"":{""type"":null,""name"":null},""addresses"":[]},""language"":{""name"":""English (English)"",""iso_code"":""en"",""locale"":""en-US"",""language_code"":""en-us"",""is_rtl"":""0"",""date_format_lite"":""m\/d\/Y"",""date_format_full"":""m\/d\/Y H:i:s"",""id"":1},""page"":{""title"":"""",""canonical"":""https:\/\/hydropneuparts.com\/en\/electronic-pressure-transmitter\/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"",""meta"":{""title"":""906392 HYDAC HDA 4745-A-250-000 Electronic pressure transmitter"",""description"":""HydroPneuMotion is a official HYDAC service center. On our webshop HydroPneuParts you can find a wide aray of HYDAC products, many of wich we keep in stock."",""keywords"":""906392,HYDAC,Electronic pressure transmitter,hydraulic,hydraulic parts,spare parts,filters,hydac filters,bosch rexroth,enerpac,eaton,vickers,pneumatic,mh hydraulics,rem-b,bijlard,damen hydrauliek,lis hydraulics,zwanenberg,hansa flex,Zanten"",""robots"":""index""},""page_name"":""product"",""body_classes"":{""lang-en"":true,""lang-rtl"":false,""country-NL"":true,""currency-EUR"":true,""layout-full-width"":true,""page-product"":true,""tax-display-enabled"":true,""product-id-181970"":true,""product-HDA 4745-A-250-000 Electronic pressure transmitter"":true,""product-id-category-57"":true,""product-id-manufacturer-3"":true,""product-id-supplier-0"":true,""product-available-for-order"":true},""admin_notifications"":[]},""shop"":{""name"":""HydroPneuParts"",""logo"":""https:\/\/hydropneuparts.com\/img\/hydropneuparts-logo-1634241838.jpg"",""stores_icon"":""https:\/\/hydropneuparts.com\/img\/logo_stores.png"",""favicon"":""https:\/\/hydropneuparts.com\/img\/favicon.ico""},""urls"":{""base_url"":""https:\/\/hydropneuparts.com\/"",""current_url"":""https:\/\/hydropneuparts.com\/en\/electronic-pressure-transmitter\/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"",""shop_domain_url"":""https:\/\/hydropneuparts.com"",""img_ps_url"":""https:\/\/hydropneuparts.com\/img\/"",""img_cat_url"":""https:\/\/hydropneuparts.com\/img\/c\/"",""img_lang_url"":""https:\/\/hydropneuparts.com\/img\/l\/"",""img_prod_url"":""https:\/\/hydropneuparts.com\/img\/p\/"",""img_manu_url"":""https:\/\/hydropneuparts.com\/img\/m\/"",""img_sup_url"":""https:\/\/hydropneuparts.com\/img\/su\/"",""img_ship_url"":""https:\/\/hydropneuparts.com\/img\/s\/"",""img_store_url"":""https:\/\/hydropneuparts.com\/img\/st\/"",""img_col_url"":""https:\/\/hydropneuparts.com\/img\/co\/"",""img_url"":""https:\/\/hydropneuparts.com\/themes\/HydroPeuParts\/assets\/img\/"",""css_url"":""https:\/\/hydropneuparts.com\/themes\/HydroPeuParts\/assets\/css\/"",""js_url"":""https:\/\/hydropneuparts.com\/themes\/HydroPeuParts\/assets\/js\/"",""pic_url"":""https:\/\/hydropneuparts.com\/upload\/"",""pages"":{""address"":""https:\/\/hydropneuparts.com\/en\/address"",""addresses"":""https:\/\/hydropneuparts.com\/en\/addresses"",""authentication"":""https:\/\/hydropneuparts.com\/en\/login"",""cart"":""https:\/\/hydropneuparts.com\/en\/cart"",""category"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=category"",""cms"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=cms"",""contact"":""https:\/\/hydropneuparts.com\/en\/contact-us"",""discount"":""https:\/\/hydropneuparts.com\/en\/discount"",""guest_tracking"":""https:\/\/hydropneuparts.com\/en\/guest-tracking"",""history"":""https:\/\/hydropneuparts.com\/en\/order-history"",""identity"":""https:\/\/hydropneuparts.com\/en\/identity"",""index"":""https:\/\/hydropneuparts.com\/en\/"",""my_account"":""https:\/\/hydropneuparts.com\/en\/my-account"",""order_confirmation"":""https:\/\/hydropneuparts.com\/en\/order-confirmation"",""order_detail"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=order-detail"",""order_follow"":""https:\/\/hydropneuparts.com\/en\/order-follow"",""order"":""https:\/\/hydropneuparts.com\/en\/order"",""order_return"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=order-return"",""order_slip"":""https:\/\/hydropneuparts.com\/en\/credit-slip"",""pagenotfound"":""https:\/\/hydropneuparts.com\/en\/page-not-found"",""password"":""https:\/\/hydropneuparts.com\/en\/password-recovery"",""pdf_invoice"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=pdf-invoice"",""pdf_order_return"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=pdf-order-return"",""pdf_order_slip"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=pdf-order-slip"",""prices_drop"":""https:\/\/hydropneuparts.com\/en\/prices-drop"",""product"":""https:\/\/hydropneuparts.com\/en\/index.php?controller=product"",""search"":""https:\/\/hydropneuparts.com\/en\/search"",""sitemap"":""https:\/\/hydropneuparts.com\/en\/sitemap"",""stores"":""https:\/\/hydropneuparts.com\/en\/stores"",""supplier"":""https:\/\/hydropneuparts.com\/en\/supplier"",""register"":""https:\/\/hydropneuparts.com\/en\/login?create_account=1"",""order_login"":""https:\/\/hydropneuparts.com\/en\/order?login=1""},""alternative_langs"":{""en-us"":""https:\/\/hydropneuparts.com\/en\/electronic-pressure-transmitter\/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"",""nl-nl"":""https:\/\/hydropneuparts.com\/nl\/elektronische-druktransmitter\/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html""},""theme_assets"":""\/themes\/HydroPeuParts\/assets\/"",""actions"":{""logout"":""https:\/\/hydropneuparts.com\/en\/?mylogout=""},""no_picture_image"":{""bySize"":{""small_default"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-small_default.jpg"",""width"":98,""height"":98},""cart_default"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-cart_default.jpg"",""width"":150,""height"":150},""medium_default"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-medium_default.jpg"",""width"":300,""height"":400},""home_default"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-home_default.jpg"",""width"":450,""height"":600},""large_default"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-large_default.jpg"",""width"":1000,""height"":1000},""Large_Large"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-Large_Large.jpg"",""width"":1024,""height"":1024}},""small"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-small_default.jpg"",""width"":98,""height"":98},""medium"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-home_default.jpg"",""width"":450,""height"":600},""large"":{""url"":""https:\/\/hydropneuparts.com\/img\/p\/en-default-Large_Large.jpg"",""width"":1024,""height"":1024},""legend"":""""}},""configuration"":{""display_taxes_label"":true,""display_prices_tax_incl"":false,""is_catalog"":false,""show_prices"":true,""opt_in"":{""partner"":false},""quantity_discount"":{""type"":""price"",""label"":""Unit price""},""voucher_enabled"":0,""return_enabled"":0},""field_required"":[],""breadcrumb"":{""links"":[{""title"":""Home"",""url"":""https:\/\/hydropneuparts.com\/en\/""},{""title"":""Hydac"",""url"":""https:\/\/hydropneuparts.com\/en\/11-hydac""},{""title"":""Other"",""url"":""https:\/\/hydropneuparts.com\/en\/26-other""},{""title"":""Electronic pressure transmitter"",""url"":""https:\/\/hydropneuparts.com\/en\/57-electronic-pressure-transmitter""},{""title"":""HDA 4745-A-250-000 Electronic pressure transmitter"",""url"":""https:\/\/hydropneuparts.com\/en\/electronic-pressure-transmitter\/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html""}],""count"":5},""link"":{""protocol_link"":""https:\/\/"",""protocol_content"":""https:\/\/""},""time"":1697097859,""static_token"":""2019901cdb51c7b38f1ec2132551da0a"",""token"":""67864487b1bfffc56737b6b93d327d30"",""debug"":false};"
-"var psemailsubscription_subscription = ""https:\/\/hydropneuparts.com\/en\/module\/ps_emailsubscription\/subscription"";"
-"var psr_icon_color = ""#F39234"";"
-"var vncfc_fc_url = ""https:\/\/hydropneuparts.com\/en\/module\/vatnumbercleaner\/vncfc?"";"
-"var xip_base_dir = ""https:\/\/hydropneuparts.com\/"";"
-</script>
-"<style type=""text/css"">"
-"#announcement-banner, .banner {"
-background:  !important;
-color:;
-}
-.announcement-link  {
-background: ;
-color: ;
-}
-.announcement-link:hover {
-background: ;
-color: ;
-}
-.countdown-container .countdown-heading {
-color: ;
-}
-.countdown-container .countdown-value {
-background: ;
-color: ;
-}
-".coupon-text, .coupon-code {"
-color: ;
-}
-</style>
-"<script type=""text/javascript"">"
-jQuery(document).ready(function() {
-var myDate = new Date();
-myDate.setDate(myDate.getDate() + 2);
-"jQuery(""#countdown"").countdown(myDate, function (event) {"
-jQuery(this).html(
-event.strftime(
-"'<div class=""timer-wrapper""><div class=""time"">%D</div><span class=""text"">days</span></div><div class=""timer-wrapper""><div class=""time"">%H</div><span class=""text"">hrs</span></div><div class=""timer-wrapper""><div class=""time"">%M</div><span class=""text"">mins</span></div><div class=""timer-wrapper""><div class=""time"">%S</div><span class=""text"">sec</span></div>'"
-)
-);
-});
-});
-</script>
-<style>
-#cart-subtotal-shipping{ display: none; }
-.cart-content p:nth-child(3n){ display: none; }
-.summary-selected-carrier .carrier-delay{ display: none; }
-</style>
-"<script type=""text/javascript"">"
-if (self === top) {
-"var antiClickjack = document.getElementById(""antiClickjack"");"
-antiClickjack.parentNode.removeChild(antiClickjack);
-} else {
-top.location = self.location;
-}
-</script>
-"<script src=""//code.jquery.com/jquery-1.12.4.js"">"
-</script>
-"<script src=""//code.jquery.com/ui/1.12.1/jquery-ui.js"">"
-</script>
-<script>
-"window.addEventListener(""load"", function(){"
-window.cookieconsent.initialise({
-"""palette"": {"
-"""popup"": {"
-"""background"": ""rgba(153, 154, 154, 0.95)"","
-"""text"": ""#fff"""
-"},"
-"""button"": {"
-"""background"": ""#82bfb9"","
-"""text"": ""#fff"""
-}
-"},"
-"""theme"": ""classic"","
-"""position"": ""bottom-left"","
-"""content"": {"
-"""message"": ""We use cookies to ensure you get the best experience on our website."","
-"""dismiss"": ""I agree"","
-"""link"": """"                }"
-})});
-</script>
-"<script type=""text/javascript"">"
-var hi_adb_front_controller_url = 'https://hydropneuparts.com/en/module/hiaddtocartbutton/ajax';
-</script>
-"<meta content=""product"" property=""og:type""/>"
-"<meta content=""https://hydropneuparts.com/en/electronic-pressure-transmitter/181970-hda-4745-a-250-000-electronic-pressure-transmitter.html"" property=""og:url""/>"
-"<meta content=""906392 HYDAC HDA 4745-A-250-000 Electronic pressure transmitter"" property=""og:title""/>"
-"<meta content=""HydroPneuParts"" property=""og:site_name""/>"
-"<meta content=""HydroPneuMotion is a official HYDAC service center. On our webshop HydroPneuParts you can find a wide aray of HYDAC products, many of wich we keep in stock."" property=""og:description""/>"
-"<meta content=""https://hydropneuparts.com/6374-Large_Large/hda-4745-a-250-000-electronic-pressure-transmitter.jpg"" property=""og:image""/>"
-"<meta content=""150.82"" property=""product:pretax_price:amount""/>"
-"<meta content=""EUR"" property=""product:pretax_price:currency""/>"
-"<meta content=""150.82"" property=""product:price:amount""/>"
-"<meta content=""EUR"" property=""product:price:currency""/>"
-"<meta content=""0.225000"" property=""product:weight:value""/>"
-"<meta content=""kg"" property=""product:weight:units""/>"
-"<style type=""text/css"">"
-.fancybox-margin{margin-right:15px;}
-</style>
-"<meta content=""AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"" http-equiv=""origin-trial""/>"
-<style>
-</style>
-</head>
 </html>
 ----------------------------------------

@@ -13,39 +13,9 @@
 "<div class=""icon-addon addon-lg"">"
 "<input autofocus=""autofocus"" class=""form-control ng-pristine ng-untouched ng-valid"" custom-autofocus="""" focus-next="""" id=""search"" ng-blur=""HideSuggestions()"" ng-click=""suggest()"" ng-enter=""search()"" ng-keyup=""suggest()"" ng-model=""model.Query"" onfocus=""this.value = this.value;"" placeholder=""Fritextsök t.ex E-nummer, Benämning, Typbeteckning, GTIN"" type=""text""/>"
 "<button class=""btn btn-primary"" id=""search-sm"" ng-click=""search()"" type=""button"">"
-"<span class=""glyphicon glyphicon-search"" id=""btn-icon"">"
-</span>
 <!--Button for small devices-->
 </button>
-"<label class=""glyphicon glyphicon-search"" for=""search"" id=""btn-search"" rel=""tooltip"" title=""search"">"
-</label>
 <!-- SEARCH SUGGESTION -->
-"<div class=""search-suggest-box"">"
-"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.ProductSuggestions.length &gt; 0"">"
-"<span class=""label label-default"">"
-Produkter
-</span>
-"<div class=""search-suggestion"">"
-<!-- ngRepeat: suggestion in model.ProductSuggestions -->
-</div>
-</div>
-"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.CategorySuggestions.length &gt; 0"">"
-"<span class=""label label-default"">"
-Listor
-</span>
-"<div class=""search-suggestion"">"
-<!-- ngRepeat: suggestion in model.CategorySuggestions -->
-</div>
-</div>
-"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.ManufacturerSuggestions.length&gt;0"">"
-"<span class=""label label-default"">"
-Leverantör
-</span>
-"<div class=""search-suggestion"">"
-<!-- ngRepeat: suggestion in model.ManufacturerSuggestions -->
-</div>
-</div>
-</div>
 </div>
 </div>
 <p>
@@ -247,36 +217,6 @@ Filter
 </div>
 </div>
 "<div class=""col-md-9 col-xs-12"">"
-"<div class=""searchresult-background"">"
-"<!-- search result, angular template -->"
-"<div class=""ng-scope"" data-ng-init='init({""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureBaseEtimFeatureFilterIsEnabled"":false,""IsSelectedFiltersEnabledInSearchSite"":false})' ng-controller=""searchResultController"">"
-<!-- ngIf: !model.DirectHit -->
-"<div class=""ng-scope ng-hide"" ng-if=""!model.DirectHit"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='OK'"">"
-<!-- LISTVIEW -->
-"<div class=""col-md-12 col-xs-12"" id=""searchresult-list"">"
-<!-- ngRepeat: row in model.SearchResultRows -->
-</div>
-<!-- GRIDVIEW -->
-"<div id=""searchresult-grid"">"
-<!-- ngRepeat: row in model.SearchResultRows -->
-</div>
-</div>
-<!-- end ngIf: !model.DirectHit -->
-<!-- NO HITS -->
-"<div class=""col-md-12 search-alert"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='NoHits'"">"
-<span>
-Inga träffar!
-</span>
-</div>
-"<div class=""col-md-12 ng-hide"" ng-show=""!model.Loading &amp;&amp; model.NoQuery"">"
-<span>
-Vänligen ange ett sökvillkor
-</span>
-</div>
-<!-- ngIf: model.Loading && !model.DirectHit -->
-<!-- ngIf: model.DirectHit -->
-</div>
-</div>
 "<div class=""pagination ng-scope"" data-ng-init=""init()"" ng-controller=""paginationController"">"
 "<div class=""col-md-12"">"
 <!-- ngIf: !initNewSearch && model.PaginationItems.length>1 -->
@@ -417,48 +357,9 @@ alert(IeWarningMessage);
 "<div class=""icon-addon addon-lg"">"
 "<input autofocus=""autofocus"" class=""form-control ng-pristine ng-untouched ng-valid"" custom-autofocus="""" focus-next="""" id=""search"" ng-blur=""HideSuggestions()"" ng-click=""suggest()"" ng-enter=""search()"" ng-keyup=""suggest()"" ng-model=""model.Query"" onfocus=""this.value = this.value;"" placeholder=""Sök RSK-nummer, artiklar eller tillverkare"" type=""text""/>"
 "<button class=""btn btn-primary"" id=""search-sm"" ng-click=""search()"" type=""button"">"
-"<span class=""glyphicon glyphicon-search"" id=""btn-icon"">"
-</span>
 <!--Button for small devices-->
 </button>
-"<label class=""glyphicon glyphicon-search"" for=""search"" id=""btn-search"" rel=""tooltip"" title=""search"">"
-</label>
 <!-- SEARCH SUGGESTION -->
-"<div class=""search-suggest-box"">"
-<!-- ngIf: model.FeatureNewSuggestionsIsEnabled -->
-"<div class=""label label-default matching-products-label ng-binding ng-scope ng-hide"" ng-if=""model.FeatureNewSuggestionsIsEnabled"" ng-show=""HasProductSuggestions()"">"
-Sökningen matchar 0 produkter
-</div>
-<!-- end ngIf: model.FeatureNewSuggestionsIsEnabled -->
-"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""HasProductSuggestions()"">"
-"<span class=""label label-default"">"
-Produkter
-</span>
-<!-- ngIf: !model.FeatureNewSuggestionsIsEnabled -->
-<!-- ngIf: model.FeatureNewSuggestionsIsEnabled -->
-"<div class=""search-suggestion search-suggestion-new ng-scope"" ng-if=""model.FeatureNewSuggestionsIsEnabled"">"
-<!-- ngRepeat: suggestion in model.ProductSuggestionGroupNew -->
-<!-- ngRepeat: suggestion in model.ProductSuggestionsNew -->
-</div>
-<!-- end ngIf: model.FeatureNewSuggestionsIsEnabled -->
-</div>
-"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.CategorySuggestions.length &gt; 0"">"
-"<span class=""label label-default"">"
-Kategorier
-</span>
-"<div class=""search-suggestion"">"
-<!-- ngRepeat: suggestion in model.CategorySuggestions -->
-</div>
-</div>
-"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.ManufacturerSuggestions.length&gt;0"">"
-"<span class=""label label-default"">"
-Tillverkare
-</span>
-"<div class=""search-suggestion"">"
-<!-- ngRepeat: suggestion in model.ManufacturerSuggestions -->
-</div>
-</div>
-</div>
 </div>
 </div>
 <p>
@@ -726,36 +627,6 @@ Filter
 </div>
 </div>
 "<div class=""col-md-9 col-xs-12"">"
-"<div class=""searchresult-background"">"
-"<!-- search result, angular template -->"
-"<div class=""ng-scope"" data-ng-init='init({""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""CategoryOldId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""CategoriesOld"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null,""ProductTypeNames"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureNewSuggestionsIsEnabled"":true,""FeatureBaseEtimFeatureFilterIsEnabled"":true,""IsSelectedFiltersEnabledInSearchSite"":true})' ng-controller=""searchResultController"">"
-<!-- ngIf: !model.DirectHit -->
-"<div class=""ng-scope ng-hide"" ng-if=""!model.DirectHit"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='OK'"">"
-<!-- LISTVIEW -->
-"<div class=""col-md-12 col-xs-12"" id=""searchresult-list"">"
-<!-- ngRepeat: row in model.SearchResultRows -->
-</div>
-<!-- GRIDVIEW -->
-"<div id=""searchresult-grid"">"
-<!-- ngRepeat: row in model.SearchResultRows -->
-</div>
-</div>
-<!-- end ngIf: !model.DirectHit -->
-<!-- NO HITS -->
-"<div class=""col-md-12 search-alert"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='NoHits'"">"
-<span>
-Inga träffar!
-</span>
-</div>
-"<div class=""col-md-12 ng-hide"" ng-show=""!model.Loading &amp;&amp; model.NoQuery"">"
-<span>
-Vänligen ange ett sökvillkor
-</span>
-</div>
-<!-- ngIf: model.Loading && !model.DirectHit -->
-<!-- ngIf: model.DirectHit -->
-</div>
-</div>
 "<div class=""pagination ng-scope"" data-ng-init=""init()"" ng-controller=""paginationController"">"
 "<div class=""col-md-12"">"
 <!-- ngIf: !initNewSearch && model.PaginationItems.length>1 -->
