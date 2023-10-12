@@ -9,7 +9,24 @@ import pandas as pd#for UI
 def updateNumbers():
     nummer_found.markdown(f'RSK or E-Nummer found: {countNummer} ({countNummer / i * 100:.2f}%)')
     search_performed.markdown(f'Google Searches performed: {countGoogleSearch} ({countGoogleSearch / i * 100:.2f}%)')
-    no_value.markdown(f'No Values found: {countNoValue} ({countNoValue / i * 100:.2f}%)')
+
+def process_with_id(id_val, web_crawler, index):
+    websites = [
+        f'https://www.e-nummersok.se/sok?Query={id_val}',
+        f'https://www.rskdatabasen.se/sok?Query={id_val}'
+    ]
+    for url in websites:
+        web_crawler.crawl_website_with_depth(str(index), 0, start_url=url)
+
+def process_without_id(data_dict, web_crawler, index):
+    filtered_values = [value for value in data_dict.values() if value is not None]
+    if filtered_values:
+        search_query = " ".join(filtered_values)
+        search_query = quote(search_query)
+        google_search_url = f'https://www.google.com/search?q={search_query}'
+        web_crawler.crawl_website_with_depth(str(index), 1, start_url=google_search_url)
+    else:
+        print("Dictionary has no valid values to perform a search.")
 
 # Note: using unsafe_allow_html can cause security problems if application is deployed on the web.
 # belows Code section is used for the streamlit UI
@@ -54,13 +71,11 @@ if upload_excel:
     num_rows = len(df)
     countNummer = 0
     countGoogleSearch = 0
-    countNoValue = 0
     st.markdown(f'<p class="text">Number of Lines (Items): {num_rows}</p>', unsafe_allow_html=True)
     processed_text = st.markdown(f'<p class="text">Items processed: not yet started</p>', unsafe_allow_html=True)
     my_expander = st.expander('Click to expand for more information', expanded=False)
     nummer_found = my_expander.markdown('RSK or E-Nummer found: ...')
     search_performed = my_expander.markdown('Google Searches performed: ...')
-    no_value = my_expander.markdown('No Values found: ...')
 
     print(f"Number of Lines (Items): {num_rows}")
     del df
@@ -69,37 +84,23 @@ if upload_excel:
         status_text = st.empty()
         processed_text.markdown(f'<p class="text">Items processed: 0</p>', unsafe_allow_html=True)
 # following code section is mostly for Web Crawling
-        manipulator = em.ExcelManip(upload_excel)
-        data = manipulator.pre_process()
+        excel = em.ExcelManip(upload_excel)
+        data = excel.pre_process()
         wc = WebCrawler()
         i = 1
 
-        for dictionary in data:
+        for idx, dictionary in enumerate(data, start=1):
             if 'id' in dictionary and dictionary['id'] is not None:
-                id_val = dictionary['id']
-                e_nr_url = f'https://www.e-nummersok.se/sok?Query={id_val}'
-                rsk_nr_url = f'https://www.rskdatabasen.se/sok?Query={id_val}'
-                wc.crawl_website_with_depth(str(i), 0, start_url=e_nr_url)
-                wc.crawl_website_with_depth(str(i), 0, start_url=rsk_nr_url)
+                id_nr = dictionary['id']
+                process_with_id(id_nr, wc, idx)
+                process_without_id(dictionary, wc, idx)
                 countNummer += 1
                 updateNumbers()
             else:
-                print("No 'id' found. Performing a Google search...")
-                # Filter out None values from the dictionary's values
-                filtered_values = [value for value in dictionary.values() if value is not None]
-                if filtered_values:
-                    # Construct a Google search query using the filtered values
-                    search_query = " ".join(filtered_values)
-                    search_query = quote(search_query)  # URL encode the search query
-                    google_search_url = f'https://www.google.com/search?q={search_query}'
-                    print(f'Search Query {i}: {google_search_url}')
-                    wc.crawl_website_with_depth(str(i), 1, start_url=google_search_url)
-                    countGoogleSearch += 1
-                    updateNumbers()
-                else:
-                    print("Dictionary has no valid values to perform a search.")
-                    countNoValue += 1
-                    updateNumbers()
+                process_without_id(dictionary, wc, idx)
+                countGoogleSearch += 1
+                updateNumbers()
+
 # next 4 code lines is for UI (update the progress bar, the number of processed Items, and the percentage number for the progress bar
             progress_percentage = (i/num_rows)*100
             progress_bar.progress(int(progress_percentage)) #update the progress bar once it is done with scraping
@@ -109,6 +110,9 @@ if upload_excel:
 
         print("------Done------")
         wc.close()
+
+        # here the Preprocess will happen
+
 #code section below is for UI (Processing complete, prepare zip for download
         status_text.markdown("<p class='text'>Processing Complete!</p>", unsafe_allow_html=True)
 
@@ -119,15 +123,27 @@ if upload_excel:
         with open(zip_name, "rb") as file:
             st.download_button( label="Download Zip Folder", data=file, file_name=f"Processed_{original_file_name}.zip", mime='application/zip', )
             # remove Files after Download
-            # os.remove(zip_name)
+            os.remove(zip_name)
 
 #Delete CSV Files
-            # folder_path = 'temp_files'
-            # file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
-            # for file_path in file_paths:
-            #     try:
-            #         os.remove(file_path)
-            #     except Exception as e:
-            #         print(f"Error occurred while deleting file {file_path}: {str(e)}")
-
+            folder_path = 'temp_files'
+            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
+            for file_path in file_paths:
+                try:
+                    os.remove(file_path)
+                except Exception as e:
+                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
+# Delete all PDF Files in the directory
+            folder_path = os.getcwd()
+            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
+            for file_path in file_paths:
+                try:
+                    # Check if the file is a PDF by looking at the extension
+                    if file_path.lower().endswith(".pdf"):
+                        os.remove(file_path)
+                        print(f"Deleted file: {file_path}")
+                    else:
+                        print(f"Skipped file: {file_path}")
+                except Exception as e:
+                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
 

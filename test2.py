@@ -24,7 +24,7 @@ def process_without_id(data_dict, web_crawler, index):
 
 
 if __name__ == '__main__':
-    file_path = 'resources/QualityTest2.xlsx'
+    file_path = 'resources/QualityTest.xlsx'
     excel = em.ExcelManip(file_path)
     data = excel.pre_process()
     wc = WebCrawler()
@@ -40,3 +40,4 @@ if __name__ == '__main__':
 
     print("------Done------")
     wc.close()
+
