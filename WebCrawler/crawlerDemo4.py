@@ -3,6 +3,7 @@ import os
 import csv
 import queue
 from selenium import webdriver
+from selenium.common import WebDriverException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
@@ -11,6 +12,9 @@ from urllib.parse import urlparse
 
 
 class WebCrawler:
+    max_retries = 3  # Maximum number of retries
+    retry_delay = 3  # Number of seconds to wait between retries
+
     def __init__(self):
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
@@ -27,16 +31,21 @@ class WebCrawler:
         return webdriver.Chrome(options=chrome_options)
 
     def get_html_content(self, url):
-        try:
-            self.driver.get(url)
-            # Wait for the page to fully load (handle redirections)
-            time.sleep(3)
-            wait = WebDriverWait(self.driver, 2)
-            wait.until(ec.presence_of_element_located((By.TAG_NAME, 'body')))
-            return self.driver.page_source
-        except Exception as e:
-            print(f"Error fetching {url}: {e}")
-            return ""
+        for retry in range(self.max_retries):
+            try:
+                self.driver.get(url)
+                # Wait for the page to fully load (handle redirections)
+                time.sleep(3)
+                wait = WebDriverWait(self.driver, 2)
+                wait.until(ec.presence_of_element_located((By.TAG_NAME, 'body')))
+                return self.driver.page_source
+            except WebDriverException as e:
+                print(f"Error fetching {url} (Attempt {retry + 1}/{self.max_retries}): {e}")
+                if retry < self.max_retries - 1:
+                    print(f"Retrying in {self.retry_delay} seconds...")
+                    time.sleep(self.retry_delay)
+        print(f"Max retries reached for {url}. Unable to fetch content.")
+        return ""
 
     @staticmethod
     def has_product(html_content):
@@ -163,7 +172,7 @@ class WebCrawler:
     def crawl_website_with_depth(self, csv_filename, depth_limit, start_url):
         self.link_queue.put((start_url, 0))
         self.save_content_to_csv('', csv_filename)
-        separator = '-' * 40
+        separator = '||'
         while not self.link_queue.empty():
             current_url, current_depth = self.link_queue.get()
 
