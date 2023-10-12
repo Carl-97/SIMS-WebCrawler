@@ -162,14 +162,15 @@ class WebCrawler:
 
     def crawl_website_with_depth(self, csv_filename, depth_limit, start_url):
         self.link_queue.put((start_url, 0))
+        self.save_content_to_csv('', csv_filename)
         separator = '-' * 40
         while not self.link_queue.empty():
             current_url, current_depth = self.link_queue.get()
 
             # Check if the current URL is from a search engine and skip scraping if true
-            print(current_url)
+            #print(current_url)
             if self.is_search_engine_url(current_url):
-                print(f"Skipping scraping for search engine URL: {current_url}")
+                #print(f"Skipping scraping for search engine URL: {current_url}")
                 if current_depth == 0:
                     html_content = self.get_html_content(current_url)
                     valid_links = self.extract_search_engine_links(html_content)
