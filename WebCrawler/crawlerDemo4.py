@@ -15,7 +15,7 @@ class WebCrawler:
         self.driver = self.setup_headless_chrome()
         self.link_queue = queue.Queue()
         self.visited = set()
-
+        self.ignorelist = self.set_ignorlist_from_cvs()
     @staticmethod
     def setup_headless_chrome():
         chrome_options = webdriver.ChromeOptions()
@@ -42,15 +42,24 @@ class WebCrawler:
         soup = BeautifulSoup(html_content, 'html.parser')
         return bool(soup.select('div[class*="product"]')) or bool(soup.select('div[id*="product"]'))
 
+    def is_pdf(self, url):
+        # checks if its end with .pdf
+        return url.lower().endswith('.pdf')
+
     def clean_html_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         # add class names you want to remove
         classes_to_remove = ['header', 'footer', 'nav', 'navbar']
-
+        #ignorecontent
         for class_name in classes_to_remove:
-            elements_with_class = soup.find_all(class_=class_name)
+            elements_with_class = soup.find_all(class_name)
             for element in elements_with_class:
                 self.remove_all_children(element)
+        for class_name in classes_to_remove:
+            elements_with_class = soup.find_all(div_=class_name)
+            for element in elements_with_class:
+                self.remove_all_children(element)
+
 
         return soup.body.get_text()
 
@@ -74,6 +83,7 @@ class WebCrawler:
         parsed_url = urlparse(url)
         scheme = parsed_url.scheme
         netloc = parsed_url.netloc
+        #can be added for further development
         # path = parsed_url.path
         lower_url = url.lower()
 
@@ -104,15 +114,26 @@ class WebCrawler:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerows([[line] for line in lines])
 
-    @staticmethod
-    def is_search_engine_url(url):
+    def set_ignorlist_from_cvs(self):
+        with open("resources/ignoreUrls.csv", mode='r') as file:
+            csv_reader = csv.reader(file)
+            array=[]
+            for row in csv_reader:
+               # decode_row = [cell.decode('utf-8') for cell in row]
+                array.append(row[0])
+        return array
+
+    def is_search_engine_url(self, url):
         # Define a list of known search engine domains (you can add more if needed)
-        search_engine_domains = ['google.com', 'bing.com', 'yahoo.com', 'duckduckgo.com', 'twitter.com',
-                                  'youtube.com', 'github.com', 'linkedin.com', 'facebook.com', 'instagram.com', '.gov']
+        #string_array = self.ignorelist
+        #binary_data = [s.encode('utf-8') for s in string_array]
+        #search_engine_domains =  binary_data
+        search_engine_domains = self.ignorelist
 
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
 
+        #netloc =
         # Check if the netloc (domain) of the URL is in the list of search engine domains
         return any(search_engine_domain in netloc for search_engine_domain in search_engine_domains)
 
