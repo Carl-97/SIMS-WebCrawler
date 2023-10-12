@@ -48,21 +48,30 @@ class WebCrawler:
     def clean_html_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         # add class names you want to remove
-        classes_to_remove = ['header', 'footer', 'nav', 'navbar']
-        #ignorecontent
+        classes_to_remove = ['head','header', 'footer', 'nav', 'navbar', 'cookie', 'Cookie', 'validation', 'lang', 'policy', 'Navigation', 'search']
+        #ignorecontent 
+        
         for class_name in classes_to_remove:
-            elements_with_class = soup.find_all(class_name)
+            elements_with_class = soup.find_all(class_=class_name)
             for element in elements_with_class:
-                self.remove_all_children(element)
-        for class_name in classes_to_remove:
-            elements_with_class = soup.find_all(div_=class_name)
-            for element in elements_with_class:
-                self.remove_all_children(element)
+                element.decompose()
+        for remove in classes_to_remove:
+            cookieElement = soup.find_all(class_=lambda x: x and remove in x)
+            for element in cookieElement:
+            #self.remove_all_children(element)
+            #element.extract()
+                element.decompose()
+        #cookie = soup.find('cookie')
+        #if cookie:
+         #   cookie.extract()
 
+        body_content = soup.body
+        if body_content:
+            return body_content.prettify()
+        return soup.prettify()
+        #return soup.body.get_text()
 
-        return soup.body.get_text()
-
-    @staticmethod
+    
     def remove_all_children(element):
         for child in element.find_all(recursive=False):
             if isinstance(child, Tag):
@@ -171,7 +180,7 @@ class WebCrawler:
                 if current_depth == 0:
                     html_content = self.get_html_content(current_url)
                     valid_links = self.extract_search_engine_links(html_content)
-                    time.sleep(2)
+                    time.sleep(0.7)
                     for link in valid_links[:5]:
                         print(link)
                         self.link_queue.put((link, current_depth + 1))
@@ -182,10 +191,11 @@ class WebCrawler:
                 if self.is_valid_link(current_url):
                     self.visited.add(current_url)
                     html_content = self.get_html_content(current_url)
-                    time.sleep(2)
+                    time.sleep(0.7)
                     if not html_content:
                         continue
-                    if self.has_product(html_content):
+                    #if self.has_product(html_content):
+                    else:
                         scraped_url = self.driver.current_url
                         separator = '-' * 40
                         cleaned_content = self.clean_html_content(html_content)

@@ -1,52 +1,900 @@
-https://www.rskdatabasen.se/sok?Query=2812018
-RSK Databasen
-Inloggad som:   /
-Inloggad som:
-Användarnamn:
-E-post:
-Företag:
-Användarkategori:
-Logga ut
-Gå till Kontoadministration
-Användarvillkor
-Uppdatera profilen
-Logga in
-E-post
-Lösenord:
-Kom ihåg inloggningen på denna dator
-Glömt lösenord
-Villkorstext
-Skapa konto
-Logga in
-Länken ar skickad. Följ instruktionerna i det mail som du fått.
-Ok
-E-post
-Skicka
-Tillbaka till inloggningen
-Sökningen matchar 0 produkter
+"https://www.e-nummersok.se/sok?Query=2812018<body style="""">"
+"<div class=""body-content"">"
+"<div class=""container-fluid"" id=""result"">"
+"<div class=""ng-scope"" data-ng-init='init({""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureBaseEtimFeatureFilterIsEnabled"":false,""IsSelectedFiltersEnabledInSearchSite"":false})' ng-controller=""searchBoxController"">"
+"<div class=""panel panel-default"">"
+"<div class=""panel-body"">"
+"<div class=""SearchBox"">"
+"<div class=""row"">"
+"<div class=""col-md-7 col-sm-10 col-xs-12"" id=""search-input"">"
+<p>
+</p>
+"<div class=""input-group"">"
+"<div class=""icon-addon addon-lg"">"
+"<input autofocus=""autofocus"" class=""form-control ng-pristine ng-untouched ng-valid"" custom-autofocus="""" focus-next="""" id=""search"" ng-blur=""HideSuggestions()"" ng-click=""suggest()"" ng-enter=""search()"" ng-keyup=""suggest()"" ng-model=""model.Query"" onfocus=""this.value = this.value;"" placeholder=""Fritextsök t.ex E-nummer, Benämning, Typbeteckning, GTIN"" type=""text""/>"
+"<button class=""btn btn-primary"" id=""search-sm"" ng-click=""search()"" type=""button"">"
+"<span class=""glyphicon glyphicon-search"" id=""btn-icon"">"
+</span>
+<!--Button for small devices-->
+</button>
+"<label class=""glyphicon glyphicon-search"" for=""search"" id=""btn-search"" rel=""tooltip"" title=""search"">"
+</label>
+<!-- SEARCH SUGGESTION -->
+"<div class=""search-suggest-box"">"
+"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.ProductSuggestions.length &gt; 0"">"
+"<span class=""label label-default"">"
 Produkter
-Kategorier
-Tillverkare
+</span>
+"<div class=""search-suggestion"">"
+<!-- ngRepeat: suggestion in model.ProductSuggestions -->
+</div>
+</div>
+"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.CategorySuggestions.length &gt; 0"">"
+"<span class=""label label-default"">"
+Listor
+</span>
+"<div class=""search-suggestion"">"
+<!-- ngRepeat: suggestion in model.CategorySuggestions -->
+</div>
+</div>
+"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.ManufacturerSuggestions.length&gt;0"">"
+"<span class=""label label-default"">"
+Leverantör
+</span>
+"<div class=""search-suggestion"">"
+<!-- ngRepeat: suggestion in model.ManufacturerSuggestions -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>
+</p>
+</div>
+"<div class=""col-md-1 col-sm-2 col-xs-2"">"
+"<button class=""btn btn-primary"" id=""search-lg"" ng-click=""search()"" type=""button"" value=""Sök"">"
 Sök
-Visa alla:
+</button>
+<!--Button for large devices-->
+</div>
+"<div class=""col-md-4 col-xs-12"" id=""sorting"">"
+"<nav id=""navlinks"">"
+"<a href=""/Lista"">"
+Listor
+</a>
+"<a href=""/Leverantor/"">"
+Leverantörer
+</a>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+"<div class=""container body-content"">"
+"<div class=""row"" id=""action-row"">"
+"<div class=""col-md-6 col-sm-10 col-xs-10"" id=""breadcrumbs"">"
+<nav>
+<!-- breadcrumbs -->
+"<a class=""link"" href=""/"">"
+Start
+</a>
+"<span class=""link"">"
+"Sökresultat för """
+<em>
+2812018
+</em>
+""""
+</span>
+</nav>
+</div>
+"<div id=""border-sm"">"
+</div>
+</div>
+"<div class=""row"" id=""full"">"
+"<div class=""filterrow-xs"">"
+"<div class=""col-md-10 col-sm-4 col-xs-12"" id=""options"">"
+<!-- OPTIONS dropdowns -->
+"<div class=""dropdown ng-scope"" data-ng-init='init({""Breadcrumbs"":{""Items"":[{""Name"":""2812018"",""Url"":null,""IsQueryText"":true}],""IsCategorySearch"":false,""IsManufacturerSearch"":false,""IsProductSearch"":true},""Sort"":{""Items"":[{""Name"":""Relevans"",""Id"":1,""Selected"":false},{""Name"":""E-nummer"",""Id"":2,""Selected"":false},{""Name"":""Senast inlagd"",""Id"":3,""Selected"":false}]},""Search"":{""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureBaseEtimFeatureFilterIsEnabled"":false,""IsSelectedFiltersEnabledInSearchSite"":false},""SideTitle"":""SEG Sök""})' ng-controller=""sortOptionsController"">"
+"<a class=""link"" data-toggle=""dropdown"" role=""button"">"
 Sortera på
+"<span class=""glyphicon glyphicon-menu-down"">"
+</span>
+</a>
+"<ul class=""dropdown-menu"">"
+<!-- ngRepeat: item in Items -->
+"<li class=""ng-scope"" ng-repeat=""item in Items"">"
+"<a href=""#"" ng-click=""changeSortOrder(item)"">"
+"<i class=""glyphicon glyphicon-ok"" ng-show=""IsSortKey(item)"">"
+</i>
+"<span class=""ng-binding"">"
 Relevans
-RSK-nummer
+</span>
+</a>
+</li>
+<!-- end ngRepeat: item in Items -->
+"<li class=""ng-scope"" ng-repeat=""item in Items"">"
+"<a href=""#"" ng-click=""changeSortOrder(item)"">"
+"<i class=""glyphicon glyphicon-ok ng-hide"" ng-show=""IsSortKey(item)"">"
+</i>
+"<span class=""ng-binding"">"
+E-nummer
+</span>
+</a>
+</li>
+<!-- end ngRepeat: item in Items -->
+"<li class=""ng-scope"" ng-repeat=""item in Items"">"
+"<a href=""#"" ng-click=""changeSortOrder(item)"">"
+"<i class=""glyphicon glyphicon-ok ng-hide"" ng-show=""IsSortKey(item)"">"
+</i>
+"<span class=""ng-binding"">"
 Senast inlagd
+</span>
+</a>
+</li>
+<!-- end ngRepeat: item in Items -->
+</ul>
+</div>
+"<div class=""simple-filter-row ng-scope"" data-ng-init=""init()"" ng-controller=""simpleFiltersController"">"
+"<ul class=""simple-filters"">"
+<li>
+"<a class=""link"" href=""#"" ng-click=""toggleActiveOnly()"">"
+"<span class=""checkbox-unchecked ng-hide"" ng-show=""!ActiveOnly"">"
+</span>
+"<span class=""checkbox-checked"" ng-show=""ActiveOnly"">"
+</span>
+<span>
 Endast aktiva
+</span>
+</a>
+</li>
+<li>
+"<a class=""link"" href=""#"" ng-click=""togglePicsOnly()"">"
+"<span class=""checkbox-unchecked"" ng-show=""!PicsOnly"">"
+</span>
+"<span class=""checkbox-checked ng-hide"" ng-show=""PicsOnly"">"
+</span>
+<span>
 Endast med bild
-Filter
-Visar 0 av 0 artiklar
-Kategorier
-Egenskaper
-Produkt
-Tillverkare
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+"<div class=""col-md-2 col-sm-2 col-xs-3"" id=""filterviews"">"
+<!-- FILTER-ikoner-->
+"<nav class=""ng-scope"" data-ng-init='init(""grid"")' ng-controller=""changeViewModeController"">"
+"<a class=""link"" ng-click=""changeViewMode('list')"">"
+"<span class=""glyphicon glyphicon-align-justify"" id=""listicon"">"
+</span>
+</a>
+"<a class=""link"" ng-click=""changeViewMode('grid')"">"
+"<span class=""glyphicon glyphicon-th-large"" id=""gridicon"">"
+</span>
+</a>
+</nav>
+</div>
+</div>
+"<div class=""ng-scope"" data-ng-init=""Init(false)"" ng-controller=""filtersController"">"
+"<div id=""filter-lg"">"
+<!-- ngIf: IsSelectedFiltersEnabledInSearchSite -->
+"<div class=""col-md-3 col-xs-12"">"
+<div>
+"<div class=""filterbox"">"
+<div>
+"<div class=""filter-content"">"
+"<div class=""box"">"
+"<h3 ng-click=""ToggleFilterVisible('CategoryFilter')"">"
+Listor
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[CategoryFilterVisible]"">"
+</i>
+</h3>
+"<div class=""ng-hide"" ng-show=""CategoryFilterVisible"">"
+<!-- ngRepeat: level1Category in Filters.Categories|filter :IsRowHiddenToggle -->
+<!-- ngIf: Filters.Categories.length>5 -->
+</div>
+</div>
+"<div class=""box one-level"">"
+<h3>
+Leverantörer
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[ManufacturerFilterVisible]"" ng-click=""ToggleFilterVisible('ManufacturerFilter')"">"
+</i>
+</h3>
+<!-- ngIf: ManufacturerFilterVisible -->
+</div>
+"<div class=""box one-level"">"
+"<h3 ng-click=""ToggleFilterVisible('BrandsFilter')"">"
 Varumärken
-Märkningar
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [BrandsFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: BrandsFilterVisible -->
+</div>
+"<div class=""box one-level"">"
+"<h3 ng-click=""ToggleFilterVisible('DocumentsFilter')"">"
 Dokument
-RSK flik
-Produktegenskaper
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [DocumentsFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: DocumentsFilterVisible -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+"<div id=""filter-responsive"">"
+<!-- ngIf: FiltersSelected && IsSelectedFiltersEnabledInSearchSite -->
+"<div class=""col-md-3 col-xs-12"">"
+<div>
+"<div class=""showfilter col-xs-12"">"
+<h2>
 Filter
+</h2>
+"<span class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[FiltersVisible]"" ng-click=""ToggleFilterVisible('FilterBox')"">"
+</span>
+</div>
+<!-- ngIf: FiltersVisible -->
+</div>
+</div>
+</div>
+</div>
+"<div class=""col-md-9 col-xs-12"">"
+"<div class=""searchresult-background"">"
+"<!-- search result, angular template -->"
+"<div class=""ng-scope"" data-ng-init='init({""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureBaseEtimFeatureFilterIsEnabled"":false,""IsSelectedFiltersEnabledInSearchSite"":false})' ng-controller=""searchResultController"">"
+<!-- ngIf: !model.DirectHit -->
+"<div class=""ng-scope ng-hide"" ng-if=""!model.DirectHit"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='OK'"">"
+<!-- LISTVIEW -->
+"<div class=""col-md-12 col-xs-12"" id=""searchresult-list"">"
+<!-- ngRepeat: row in model.SearchResultRows -->
+</div>
+<!-- GRIDVIEW -->
+"<div id=""searchresult-grid"">"
+<!-- ngRepeat: row in model.SearchResultRows -->
+</div>
+</div>
+<!-- end ngIf: !model.DirectHit -->
+<!-- NO HITS -->
+"<div class=""col-md-12 search-alert"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='NoHits'"">"
+<span>
 Inga träffar!
+</span>
+</div>
+"<div class=""col-md-12 ng-hide"" ng-show=""!model.Loading &amp;&amp; model.NoQuery"">"
+<span>
 Vänligen ange ett sökvillkor
+</span>
+</div>
+<!-- ngIf: model.Loading && !model.DirectHit -->
+<!-- ngIf: model.DirectHit -->
+</div>
+</div>
+"<div class=""pagination ng-scope"" data-ng-init=""init()"" ng-controller=""paginationController"">"
+"<div class=""col-md-12"">"
+<!-- ngIf: !initNewSearch && model.PaginationItems.length>1 -->
+</div>
+</div>
+</div>
+</div>
+"<script src=""/Scripts/angular.min.js?filetime=638242477873982370"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/angular-cookies.min.js?filetime=638242477873522635"" type=""text/javascript"">"
+</script>
+<!-- Include the JS ReCaptcha API -->
+"<script async="""" defer="""" src=""//www.google.com/recaptcha/api.js?render=explicit&amp;onload=vcRecaptchaApiLoaded"">"
+</script>
+"<script src=""/Scripts/AngularExtension/angular-recaptcha.min.js?filetime=638242477873394573"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/app.js?filetime=638242477873249146"" type=""text/javascript"">"
+</script>
+<!-- TODO should we skip loading some scripts on some pages? -->
+"<script src=""/Scripts/Angular/configs.js?filetime=638242477873279101"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/statisticsController.js?filetime=638242477873374313"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/searchBoxController.js?filetime=638270805433768824"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/searchResultController.js?filetime=638270805433772745"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/sortOptionsController.js?filetime=638242477873364098"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/paginationController.js?filetime=638242477873334126"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/changeViewModeController.js?filetime=638242477873269038"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/simpleFiltersController.js?filetime=638242477873364098"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/productGroupController.js?filetime=638242477873344152"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/manufacturerController.js?filetime=638242477873313630"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/filtersController.js?filetime=638270805433765268"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/errorReportController.js?filetime=638242477873288830"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/articleDetailsController.js?filetime=638242477873249146"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/previousArticlesController.js?filetime=638242477873334126"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/articleRelatedController.js?filetime=638313155549285814"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/messagesController.js?filetime=638308317169785248"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/cookieWarningController.js?filetime=638242477873288830"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/loginController.js?filetime=638242477873313630"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Slider/angular-awesome-slider.js?filetime=638242477873404877"" type=""text/javascript"">"
+</script>
+</div>
+</div>
+<footer>
+"<div class=""container"">"
+<p>
+SEG - Sveriges Elgrossister
+</p>
+"<img class=""break1"" src=""/Content/Images/ellips.png""/>"
+<p>
+www.seg.se
+</p>
+"<img class=""break2"" src=""/Content/Images/ellips.png""/>"
+<p>
+08 - 663 01 30
+</p>
+"<img class=""break3"" src=""/Content/Images/ellips.png""/>"
+<p>
+info@seg.se
+</p>
+"<img class=""break3"" src=""/Content/Images/ellips.png""/>"
+<p>
+"<a href=""/Messages"" title=""Aktuella meddelanden"">"
+Aktuella meddelanden
+</a>
+</p>
+</div>
+</footer>
+"<script src=""/bundles/jquery?v=M6dmVkrHVhoZ1gfOtvVDZbgBcQTsbWxoLsRizcGkbPk1"">"
+</script>
+"<script src=""/bundles/bootstrap?v=y06_79Ad8PBEWhAqU8oC7bf_QdxhPF_kt4ClTo6bnGw1"">"
+</script>
+<script>
+"(function(i, s, o, g, r, a, m) {"
+i['GoogleAnalyticsObject'] = r;
+i[r] = i[r] || function() {
+(i[r].q = i[r].q || []).push(arguments)
+"}, i[r].l = 1 * new Date();"
+"a = s.createElement(o),"
+m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+"m.parentNode.insertBefore(a, m)"
+"})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');"
+"ga('create', 'UA-65064670-7', 'auto');"
+"ga('send', 'pageview');"
+</script>
+"<script async="""" src=""https://www.googletagmanager.com/gtag/js?id=G-W9RK33D98T"">"
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+"gtag('js', new Date());"
+"gtag('config', 'G-W9RK33D98T');"
+</script>
+"<script src=""/Scripts/include.js"" type=""text/javascript"">"
+</script>
+"<script type=""text/javascript"">"
+"var IeWarningMessage = ""Microsoft Internet Explorer supporteras inte längre av Microsoft, och du bör uppgradera till en annan webläsare för att siten ska fungera korrekt. Till exempel Chrome eller Micorsoft Edge"";"
+if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) ||  (/MSIE 10/i.test(navigator.userAgent))) {
+"$(""#IeWarningMessage"").text(IeWarningMessage);"
+"$(""#IeWarningMessage"").removeClass(""hidden"");"
+}
+else if (navigator.appName === 'Microsoft Internet Explorer') {
+alert(IeWarningMessage);
+}
+</script>
+</body>
+----------------------------------------
+"https://www.rskdatabasen.se/sok?Query=2812018<body style="""">"
+"<div class=""body-content"">"
+"<div class=""container-fluid"" id=""result"">"
+"<div class=""ng-scope"" data-ng-init='init({""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""CategoryOldId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""CategoriesOld"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null,""ProductTypeNames"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureNewSuggestionsIsEnabled"":true,""FeatureBaseEtimFeatureFilterIsEnabled"":true,""IsSelectedFiltersEnabledInSearchSite"":true})' ng-controller=""searchBoxController"">"
+"<div class=""panel panel-default"">"
+"<div class=""panel-body"">"
+"<div class=""SearchBox"">"
+"<div class=""row"">"
+"<div class=""col-md-7 col-sm-10 col-xs-12"" id=""search-input"">"
+<p>
+</p>
+"<div class=""input-group"">"
+"<div class=""icon-addon addon-lg"">"
+"<input autofocus=""autofocus"" class=""form-control ng-pristine ng-untouched ng-valid"" custom-autofocus="""" focus-next="""" id=""search"" ng-blur=""HideSuggestions()"" ng-click=""suggest()"" ng-enter=""search()"" ng-keyup=""suggest()"" ng-model=""model.Query"" onfocus=""this.value = this.value;"" placeholder=""Sök RSK-nummer, artiklar eller tillverkare"" type=""text""/>"
+"<button class=""btn btn-primary"" id=""search-sm"" ng-click=""search()"" type=""button"">"
+"<span class=""glyphicon glyphicon-search"" id=""btn-icon"">"
+</span>
+<!--Button for small devices-->
+</button>
+"<label class=""glyphicon glyphicon-search"" for=""search"" id=""btn-search"" rel=""tooltip"" title=""search"">"
+</label>
+<!-- SEARCH SUGGESTION -->
+"<div class=""search-suggest-box"">"
+<!-- ngIf: model.FeatureNewSuggestionsIsEnabled -->
+"<div class=""label label-default matching-products-label ng-binding ng-scope ng-hide"" ng-if=""model.FeatureNewSuggestionsIsEnabled"" ng-show=""HasProductSuggestions()"">"
+Sökningen matchar 0 produkter
+</div>
+<!-- end ngIf: model.FeatureNewSuggestionsIsEnabled -->
+"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""HasProductSuggestions()"">"
+"<span class=""label label-default"">"
+Produkter
+</span>
+<!-- ngIf: !model.FeatureNewSuggestionsIsEnabled -->
+<!-- ngIf: model.FeatureNewSuggestionsIsEnabled -->
+"<div class=""search-suggestion search-suggestion-new ng-scope"" ng-if=""model.FeatureNewSuggestionsIsEnabled"">"
+<!-- ngRepeat: suggestion in model.ProductSuggestionGroupNew -->
+<!-- ngRepeat: suggestion in model.ProductSuggestionsNew -->
+</div>
+<!-- end ngIf: model.FeatureNewSuggestionsIsEnabled -->
+</div>
+"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.CategorySuggestions.length &gt; 0"">"
+"<span class=""label label-default"">"
+Kategorier
+</span>
+"<div class=""search-suggestion"">"
+<!-- ngRepeat: suggestion in model.CategorySuggestions -->
+</div>
+</div>
+"<div class=""search-suggestion-wrapper ng-hide"" ng-show=""model.ManufacturerSuggestions.length&gt;0"">"
+"<span class=""label label-default"">"
+Tillverkare
+</span>
+"<div class=""search-suggestion"">"
+<!-- ngRepeat: suggestion in model.ManufacturerSuggestions -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>
+</p>
+</div>
+"<div class=""col-md-1 col-sm-2 col-xs-2"">"
+"<button class=""btn btn-primary"" id=""search-lg"" ng-click=""search()"" type=""button"" value=""Sök"">"
+Sök
+</button>
+<!--Button for large devices-->
+</div>
+"<div class=""col-md-4 col-xs-12"" id=""sorting"">"
+"<nav id=""navlinks"">"
+"<a href=""/Kategori"">"
+Kategorier
+</a>
+"<a href=""/Tillverkare/"">"
+Tillverkare
+</a>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+"<div class=""container body-content"">"
+"<div class=""row"" id=""action-row"">"
+"<div class=""col-md-6 col-sm-10 col-xs-10"" id=""breadcrumbs"">"
+<nav>
+<!-- breadcrumbs -->
+"<a class=""link"" href=""/"">"
+Start
+</a>
+"<span class=""link"">"
+"Sökresultat för """
+<em>
+2812018
+</em>
+""""
+</span>
+</nav>
+</div>
+"<div id=""border-sm"">"
+</div>
+</div>
+"<div class=""row"" id=""full"">"
+"<div class=""filterrow-xs"">"
+"<div class=""col-md-10 col-sm-4 col-xs-12"" id=""options"">"
+<!-- OPTIONS dropdowns -->
+"<div class=""dropdown ng-scope"" data-ng-init='init({""Breadcrumbs"":{""Items"":[{""Name"":""2812018"",""Url"":null,""IsQueryText"":true}],""IsCategorySearch"":false,""IsCategoryOldSearch"":false,""IsManufacturerSearch"":false,""IsProductSearch"":true},""Sort"":{""Items"":[{""Name"":""Relevans"",""Id"":1,""Selected"":false},{""Name"":""RSK-nummer"",""Id"":2,""Selected"":false},{""Name"":""Senast inlagd"",""Id"":3,""Selected"":false}]},""Search"":{""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""CategoryOldId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""CategoriesOld"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null,""ProductTypeNames"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureNewSuggestionsIsEnabled"":true,""FeatureBaseEtimFeatureFilterIsEnabled"":true,""IsSelectedFiltersEnabledInSearchSite"":true},""SideTitle"":""RSK Databasen Sök""})' ng-controller=""sortOptionsController"">"
+"<a class=""link"" data-toggle=""dropdown"" role=""button"">"
+Sortera på
+"<span class=""glyphicon glyphicon-menu-down"">"
+</span>
+</a>
+"<ul class=""dropdown-menu"">"
+<!-- ngRepeat: item in Items -->
+"<li class=""ng-scope"" ng-repeat=""item in Items"">"
+"<a href=""#"" ng-click=""changeSortOrder(item)"">"
+"<i class=""glyphicon glyphicon-ok"" ng-show=""IsSortKey(item)"">"
+</i>
+"<span class=""ng-binding"">"
+Relevans
+</span>
+</a>
+</li>
+<!-- end ngRepeat: item in Items -->
+"<li class=""ng-scope"" ng-repeat=""item in Items"">"
+"<a href=""#"" ng-click=""changeSortOrder(item)"">"
+"<i class=""glyphicon glyphicon-ok ng-hide"" ng-show=""IsSortKey(item)"">"
+</i>
+"<span class=""ng-binding"">"
+RSK-nummer
+</span>
+</a>
+</li>
+<!-- end ngRepeat: item in Items -->
+"<li class=""ng-scope"" ng-repeat=""item in Items"">"
+"<a href=""#"" ng-click=""changeSortOrder(item)"">"
+"<i class=""glyphicon glyphicon-ok ng-hide"" ng-show=""IsSortKey(item)"">"
+</i>
+"<span class=""ng-binding"">"
+Senast inlagd
+</span>
+</a>
+</li>
+<!-- end ngRepeat: item in Items -->
+</ul>
+</div>
+"<div class=""simple-filter-row ng-scope"" data-ng-init=""init()"" ng-controller=""simpleFiltersController"">"
+"<ul class=""simple-filters"">"
+<li>
+"<a class=""link"" href=""#"" ng-click=""toggleActiveOnly()"">"
+"<span class=""checkbox-unchecked ng-hide"" ng-show=""!ActiveOnly"">"
+</span>
+"<span class=""checkbox-checked"" ng-show=""ActiveOnly"">"
+</span>
+<span>
+Endast aktiva
+</span>
+</a>
+</li>
+<li>
+"<a class=""link"" href=""#"" ng-click=""togglePicsOnly()"">"
+"<span class=""checkbox-unchecked ng-hide"" ng-show=""!PicsOnly"">"
+</span>
+"<span class=""checkbox-checked"" ng-show=""PicsOnly"">"
+</span>
+<span>
+Endast med bild
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+"<div class=""col-md-2 col-sm-2 col-xs-3"" id=""filterviews"">"
+<!-- FILTER-ikoner-->
+"<nav class=""ng-scope"" data-ng-init='init(""grid"")' ng-controller=""changeViewModeController"">"
+"<a class=""link"" ng-click=""changeViewMode('list')"">"
+"<span class=""glyphicon glyphicon-align-justify"" id=""listicon"">"
+</span>
+</a>
+"<a class=""link"" ng-click=""changeViewMode('grid')"">"
+"<span class=""glyphicon glyphicon-th-large"" id=""gridicon"">"
+</span>
+</a>
+</nav>
+</div>
+</div>
+"<div class=""ng-scope"" data-ng-init=""Init(false)"" ng-controller=""filtersController"">"
+"<div id=""filter-lg"">"
+<!-- ngIf: IsSelectedFiltersEnabledInSearchSite -->
+"<div class=""col-md-12 selected-filters ng-scope"" ng-if=""IsSelectedFiltersEnabledInSearchSite"">"
+<span>
+<!-- ngIf: FiltersSelected -->
+</span>
+</div>
+<!-- end ngIf: IsSelectedFiltersEnabledInSearchSite -->
+"<div class=""col-md-3 col-xs-12"">"
+<div>
+"<div class=""filterbox"">"
+<div>
+"<div class=""filter-content"">"
+"<div class=""box"">"
+"<h3 ng-click=""ToggleFilterVisible('CategoryFilter')"">"
+Kategorier
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[CategoryFilterVisible]"">"
+</i>
+</h3>
+"<div class=""ng-hide"" ng-show=""CategoryFilterVisible"">"
+<!-- ngRepeat: level1Category in Filters.Categories|filter :IsRowHiddenToggle -->
+<!-- ngIf: Filters.Categories.length>5 -->
+"<div style=""clear:both"">"
+</div>
+</div>
+</div>
+"<div class=""box one-level ng-hide"" ng-show=""WholeBaseEtimFeatureFilterVisible &amp;&amp; FeatureBaseEtimFeatureFilterIsEnabled &amp;&amp; !(BaseEtimFeatureFiltersLoaded &amp;&amp; BaseEtimFeatureFilters.length===0)"">"
+"<h3 ng-click=""ToggleFilterVisible('BaseEtimFeatureFilter')"">"
+Egenskaper
+"<i class=""glyphicon glyphicon-minus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [BaseEtimFeatureFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: BaseEtimFeatureFilterVisible -->
+"<div class=""ng-scope"" ng-if=""BaseEtimFeatureFilterVisible"">"
+<!-- ngIf: Filters.BaseEtimClasses.length > 0 -->
+"<div class=""box-advancedfilter-new"">"
+<!-- ngRepeat: etimfilter in BaseEtimFeatureFilters -->
+</div>
+<!-- ngIf: BaseEtimFeatureFiltersLoaded && BaseEtimFeatureFilters.length===0 -->
+</div>
+<!-- end ngIf: BaseEtimFeatureFilterVisible -->
+</div>
+"<div class=""box one-level"" ng-show=""FeatureNewSuggestionsIsEnabled"">"
+"<h3 ng-click=""ToggleFilterVisible('ProductTypeNamesFilter')"">"
+Produkt
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [ProductTypeNamesFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: ProductTypeNamesFilterVisible -->
+</div>
+"<div class=""box one-level"">"
+<h3>
+Tillverkare
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[ManufacturerFilterVisible]"" ng-click=""ToggleFilterVisible('ManufacturerFilter')"">"
+</i>
+</h3>
+<!-- ngIf: ManufacturerFilterVisible -->
+</div>
+"<div class=""box one-level"">"
+"<h3 ng-click=""ToggleFilterVisible('BrandsFilter')"">"
+Varumärken
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [BrandsFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: BrandsFilterVisible -->
+</div>
+"<div class=""box one-level"">"
+"<h3 ng-click=""ToggleFilterVisible('ApprovalsFilter')"">"
+Märkningar
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [ApprovalsFilterVisible]"">"
+</i>
+</h3>
+"<div class=""level1filter ng-hide"" ng-show=""ApprovalsFilterVisible"">"
+<!-- ngRepeat: filter in Filters.Approvals -->
+</div>
+</div>
+"<div class=""box one-level"">"
+"<h3 ng-click=""ToggleFilterVisible('DocumentsFilter')"">"
+Dokument
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [DocumentsFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: DocumentsFilterVisible -->
+</div>
+"<div class=""box ng-hide"" ng-show=""Filters.CategoriesOld.length &gt; 0"">"
+"<h3 ng-click=""ToggleFilterVisible('CategoryOldFilter')"">"
+RSK flik
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[CategoryOldFilterVisible]"">"
+</i>
+</h3>
+"<div class=""ng-hide"" ng-show=""CategoryOldFilterVisible"">"
+<!-- ngRepeat: level1Category in Filters.CategoriesOld|filter :IsRowHiddenToggle -->
+<!-- ngIf: Filters.CategoriesOld.length>5 -->
+"<div style=""clear:both"">"
+</div>
+</div>
+</div>
+</div>
+"<div class=""filter-content advanced"">"
+"<div class=""box one-level"">"
+"<h3 ng-click=""ToggleFilterVisible('EtimFilter')"">"
+Produktegenskaper
+"<i class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' } [EtimFilterVisible]"">"
+</i>
+</h3>
+<!-- ngIf: EtimFilterVisible -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+"<div id=""filter-responsive"">"
+<!-- ngIf: FiltersSelected && IsSelectedFiltersEnabledInSearchSite -->
+"<div class=""col-md-3 col-xs-12"">"
+<div>
+"<div class=""showfilter col-xs-12"">"
+<h2>
+Filter
+</h2>
+"<span class=""glyphicon glyphicon-plus"" ng-class=""{false: 'glyphicon glyphicon-plus' ,true:'glyphicon glyphicon-minus' }"
+"[FiltersVisible]"" ng-click=""ToggleFilterVisible('FilterBox')"">"
+</span>
+</div>
+<!-- ngIf: FiltersVisible -->
+</div>
+</div>
+</div>
+</div>
+"<div class=""col-md-9 col-xs-12"">"
+"<div class=""searchresult-background"">"
+"<!-- search result, angular template -->"
+"<div class=""ng-scope"" data-ng-init='init({""Query"":""2812018"",""Brand"":null,""CategoryId"":null,""CategoryOldId"":null,""ManufacturerId"":null,""ActiveOnly"":false,""PicsOnly"":false,""Filter"":{""Categories"":null,""CategoriesOld"":null,""Manufacturers"":null,""Brands"":null,""Series"":null,""Models"":null,""Approvals"":null,""Documents"":null,""EtimClass"":null,""EtimFilters"":null,""BaseEtimFeatureFilters"":null,""ProductTypeNames"":null},""Sort"":{""SelectedSort"":0},""Pagination"":{""Page"":1,""PageSize"":20},""IsAuthorized"":false,""FeatureNewSuggestionsIsEnabled"":true,""FeatureBaseEtimFeatureFilterIsEnabled"":true,""IsSelectedFiltersEnabledInSearchSite"":true})' ng-controller=""searchResultController"">"
+<!-- ngIf: !model.DirectHit -->
+"<div class=""ng-scope ng-hide"" ng-if=""!model.DirectHit"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='OK'"">"
+<!-- LISTVIEW -->
+"<div class=""col-md-12 col-xs-12"" id=""searchresult-list"">"
+<!-- ngRepeat: row in model.SearchResultRows -->
+</div>
+<!-- GRIDVIEW -->
+"<div id=""searchresult-grid"">"
+<!-- ngRepeat: row in model.SearchResultRows -->
+</div>
+</div>
+<!-- end ngIf: !model.DirectHit -->
+<!-- NO HITS -->
+"<div class=""col-md-12 search-alert"" ng-show=""!model.Loading &amp;&amp; !model.NoQuery &amp;&amp; model.SearchResult==='NoHits'"">"
+<span>
+Inga träffar!
+</span>
+</div>
+"<div class=""col-md-12 ng-hide"" ng-show=""!model.Loading &amp;&amp; model.NoQuery"">"
+<span>
+Vänligen ange ett sökvillkor
+</span>
+</div>
+<!-- ngIf: model.Loading && !model.DirectHit -->
+<!-- ngIf: model.DirectHit -->
+</div>
+</div>
+"<div class=""pagination ng-scope"" data-ng-init=""init()"" ng-controller=""paginationController"">"
+"<div class=""col-md-12"">"
+<!-- ngIf: !initNewSearch && model.PaginationItems.length>1 -->
+</div>
+</div>
+</div>
+</div>
+"<script src=""/Scripts/angular.min.js?filetime=638242477855201033"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/angular-cookies.min.js?filetime=638242477854674822"" type=""text/javascript"">"
+</script>
+<!-- Include the JS ReCaptcha API -->
+"<script src=""/Scripts/AngularExtension/angular-recaptcha.min.js?filetime=638242477854528019"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/app.js?filetime=638242477854291762"" type=""text/javascript"">"
+</script>
+<!-- TODO should we skip loading some scripts on some pages? -->
+"<script src=""/Scripts/Angular/configs.js?filetime=638242477854351055"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/statisticsController.js?filetime=638242477854507628"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/searchBoxController.js?filetime=638270805433600767"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/searchResultController.js?filetime=638270805433607660"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/sortOptionsController.js?filetime=638242477854497816"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/paginationController.js?filetime=638242477854439473"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/changeViewModeController.js?filetime=638242477854340761"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/simpleFiltersController.js?filetime=638242477854497816"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/productGroupController.js?filetime=638242477854459301"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/manufacturerController.js?filetime=638242477854429975"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/filtersController.js?filetime=638270805433593813"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/errorReportController.js?filetime=638242477854399981"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/articleDetailsController.js?filetime=638242477854305924"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/previousArticlesController.js?filetime=638242477854449638"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/articleRelatedController.js?filetime=638313155549259813"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/messagesController.js?filetime=638308317169661419"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/loginController.js?filetime=638242477854419827"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/cookieWarningController.js?filetime=638242477854370246"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Slider/angular-awesome-slider.js?filetime=638242477854557968"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/registerController.js?filetime=638242477854469015"" type=""text/javascript"">"
+</script>
+"<script src=""/Scripts/Angular/editController.js?filetime=638242477854379401"" type=""text/javascript"">"
+</script>
+</div>
+</div>
+<footer>
+"<div class=""container"">"
+<p>
+VVS Information Data AB
+</p>
+"<img class=""break1"" src=""/Content/Images/ellips.png""/>"
+<p>
+"Drakenbergsgatan 21, 117 41 Stockholm"
+</p>
+"<img class=""break2"" id=""ellips"" src=""/Content/Images/ellips.png""/>"
+<p>
+info@vvsinfo.se
+</p>
+"<img class=""break3"" src=""/Content/Images/ellips.png""/>"
+<p>
+"<a href=""http://www.vvsinfo.se"" target=""_Blank"" title=""Länk till VVS info(öppnas i nytt fönster)"">"
+vvsinfo.se
+</a>
+</p>
+"<img class=""break3"" src=""/Content/Images/ellips.png""/>"
+<p>
+"<a href=""/Messages"" title=""Aktuella meddelanden"">"
+Aktuella meddelanden
+</a>
+</p>
+</div>
+</footer>
+"<script type=""text/javascript"">"
+if ($('#product-view').length > 0) {
+$('#ellips').hide();
+$('#phoneNumber').hide();
+}
+</script>
+"<script src=""/bundles/jquery?v=Zfdy3QMv1cJx0TVwvAqpE_gpFgb276e-Z4R4Logbgyg1"">"
+</script>
+"<script src=""/bundles/bootstrap?v=y06_79Ad8PBEWhAqU8oC7bf_QdxhPF_kt4ClTo6bnGw1"">"
+</script>
+"<script src=""/bundles/jquery_fancybox?v=5yM8Kn9MVut8fLiYYtsqpfr-fXANIP85Spqd2LZc3EU1"">"
+</script>
+"<script src=""/Scripts/Slider/angular-awesome-slider.js"">"
+</script>
+<script>
+"(function(i, s, o, g, r, a, m) {"
+i['GoogleAnalyticsObject'] = r;
+i[r] = i[r] ||
+function() {
+(i[r].q = i[r].q || []).push(arguments)
+"}, i[r].l = 1 * new Date();"
+"a = s.createElement(o),"
+m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+"m.parentNode.insertBefore(a, m)"
+"})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');"
+"ga('create', 'UA-75061961-3', 'auto');"
+"ga('send', 'pageview');"
+</script>
+"<script async="""" src=""https://www.googletagmanager.com/gtag/js?id=G-W9RK33D98T"">"
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+"gtag('js', new Date());"
+"gtag('config', 'G-M84JG341Z2');"
+</script>
+"<script src=""/Scripts/include.js"" type=""text/javascript"">"
+</script>
+"<script type=""text/javascript"">"
+"var IeWarningMessage = ""Microsoft Internet Explorer supporteras inte längre av Microsoft, och du bör uppgradera till en annan webläsare för att siten ska fungera korrekt. Till exempel Chrome eller Micorsoft Edge"";"
+if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) ||  (/MSIE 10/i.test(navigator.userAgent))) {
+"$(""#IeWarningMessage"").text(IeWarningMessage);"
+"$(""#IeWarningMessage"").removeClass(""hidden"");"
+}
+else if (navigator.appName === 'Microsoft Internet Explorer') {
+alert(IeWarningMessage);
+}
+</script>
+"<script async="""" defer="""" src=""https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&amp;render=explicit"">"
+</script>
+</body>
 ----------------------------------------
