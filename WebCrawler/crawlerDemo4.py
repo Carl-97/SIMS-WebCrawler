@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 
 
 class WebCrawler:
-    _max_retries = 3  # Maximum number of retries
+    _max_retries = 5  # Maximum number of retries
     _retry_delay = 3  # Number of seconds to wait between retries
 
     def __init__(self):

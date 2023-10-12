@@ -28,7 +28,6 @@ if __name__ == '__main__':
     excel = em.ExcelManip(file_path)
     data = excel.pre_process()
     wc = WebCrawler()
-    filename = 'data.csv'
 
     for idx, dictionary in enumerate(data, start=1):
         if 'id' in dictionary and dictionary['id'] is not None:
