@@ -6,7 +6,7 @@ import openpyxl
 from openpyxl.styles import PatternFill
 
 if __name__ == '__main__':
-    file_path = 'resources/QualityTest.xlsx'
+    file_path = 'resources/QualityTest2.xlsx'
     excel = em.ExcelManip(file_path)
     data = excel.pre_process()
     wc = WebCrawler()
@@ -28,7 +28,7 @@ if __name__ == '__main__':
                 search_query = " ".join(filtered_values)
                 search_query = quote(search_query)  # URL encode the search query
                 google_search_url = f'https://www.google.com/search?q={search_query}'
-                #print(f'Search Query {i}: {google_search_url}')
+                print(f'Search Query {i}: {google_search_url}')
                 wc.crawl_website_with_depth(str(i), 1, start_url=google_search_url)
             else:
                 print("Dictionary has no valid values to perform a search.")
