@@ -6,7 +6,6 @@ import os
 import shutil
 import pandas as pd
 import webbrowser
-from PIL import Image
 
 # Note: using unsafe_allow_html can cause security problems if application is deployed on the web.
 st.markdown("""
@@ -40,7 +39,7 @@ st.markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
-webbrowser.open("http://localhost:8501")
+# webbrowser.open("http://localhost:8501")
 st.markdown("<h1 class='center'>SSG</h1>", unsafe_allow_html=True)
 st.markdown("<h1 class='subtitle' 'center'>Data Enrichment Tool</h1>", unsafe_allow_html=True)
 
