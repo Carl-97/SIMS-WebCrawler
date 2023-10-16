@@ -1,1 +1,2 @@
-
+WebcrawlerRequerments
+input: excelfile with rows ID,Brand (ID is articelnumber/rsk/enumber)
