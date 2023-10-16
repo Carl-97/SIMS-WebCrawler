@@ -11,7 +11,6 @@ from bs4 import BeautifulSoup, Tag
 from urllib.parse import urlparse
 
 
-# TODO: fix pdf handling || fix download handling
 class WebCrawler:
     _max_retries = 3  # Maximum number of retries
     _retry_delay = 3  # Number of seconds to wait between retries
@@ -21,6 +20,17 @@ class WebCrawler:
         self.link_queue = queue.Queue()
         self.visited = set()
         self.ignore_list = self.set_ignorelist_url()
+
+    @staticmethod
+    def set_ignorelist_url():
+        with open("resources/ignoreUrls.csv", mode='r') as file:
+            csv_reader = csv.reader(file)
+            array=[]
+            for row in csv_reader:
+               # decode_row = [cell.decode('utf-8') for cell in row]
+                array.append(row[0])
+        return array
+
 
     @staticmethod
     def setup_headless_chrome():
@@ -125,21 +135,8 @@ class WebCrawler:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerows([[line] for line in lines])
 
-    @staticmethod
-    def set_ignorelist_url():
-        with open("resources/ignoreUrls.csv", mode='r') as file:
-            csv_reader = csv.reader(file)
-            array=[]
-            for row in csv_reader:
-               # decode_row = [cell.decode('utf-8') for cell in row]
-                array.append(row[0])
-        return array
-
     def is_search_engine_url(self, url):
-        # Define a list of known search engine domains (you can add more if needed)
-        #string_array = self.ignorelist
-        #binary_data = [s.encode('utf-8') for s in string_array]
-        #search_engine_domains =  binary_data
+        # In WebCrawler/resources add more into ignoreUrls if needed
         search_engine_domains = self.ignore_list
 
         parsed_url = urlparse(url)
