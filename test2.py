@@ -1,6 +1,6 @@
 from urllib.parse import quote
 from ExcelManip import excelmanip as em
-from WebCrawler.crawlerDemo4 import WebCrawler
+from WebCrawler.crawlerDemo5 import WebCrawler
 
 
 def process_with_id(id_val, web_crawler, index):
