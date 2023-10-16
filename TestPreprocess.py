@@ -5,7 +5,7 @@ from openpyxl.styles import PatternFill
 
 def check_file_for_data(file_name):
     try:
-        with open(file_name, 'r') as file:
+        with open(file_name, 'r', encoding='utf-8') as file:
             lines = file.readlines()
             for line in lines:
                 elements = line.strip().split("||")
@@ -46,9 +46,10 @@ if __name__ == '__main__':
                     for cell in sheet[i + 1]:
                         cell.fill = red_fill
                 else:
-                    check_file_for_data(filename)
-                    for cell in sheet[i + 1]:
-                        cell.fill = yellow_fill
+                    is_pdf = check_file_for_data(file_path)
+                    if is_pdf:
+                        for cell in sheet[i + 1]:
+                            cell.fill = yellow_fill
             else:
                 print(f'error {filename} does not exist')
                 # Perform actions for missing files here, if needed

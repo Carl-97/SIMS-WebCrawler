@@ -31,7 +31,6 @@ class WebCrawler:
                 array.append(row[0])
         return array
 
-
     @staticmethod
     def setup_headless_chrome():
         chrome_options = webdriver.ChromeOptions()
@@ -72,7 +71,7 @@ class WebCrawler:
         soup = BeautifulSoup(html_content, 'html.parser')
         # add class names you want to remove
         classes_to_remove = ['header', 'footer', 'nav', 'navbar']
-        #ignorecontent
+        # ignorecontent
         for class_name in classes_to_remove:
             elements_with_class = soup.find_all(class_name)
             for element in elements_with_class:
@@ -128,7 +127,7 @@ class WebCrawler:
         if not csv_filename.endswith('.csv'):
             csv_filename += '.csv'
 
-        file_path = f'temp_files/{csv_filename}'
+        file_path = f'{folder_path}/{csv_filename}'
         lines = [line.strip() for line in content.split('\n') if line.strip()]
         mode = 'a' if os.path.exists(file_path) else 'w'
         with open(file_path, mode, newline='', encoding='utf-8') as csv_file:
@@ -142,7 +141,6 @@ class WebCrawler:
         parsed_url = urlparse(url)
         netloc = parsed_url.netloc
 
-        #netloc =
         # Check if the netloc (domain) of the URL is in the list of search engine domains
         return any(search_engine_domain in netloc for search_engine_domain in search_engine_domains)
 
@@ -152,13 +150,9 @@ class WebCrawler:
             soup = BeautifulSoup(html_content, 'html.parser')
             # Find the specific div element by its id ("search")
             search_div = soup.find('div', id='search')
-
-            # Initialize a list to store the extracted links
             search_result_links = []
-    
-            # Check if the div element with the specified id was found
+
             if search_div:
-                # Extract links from the div element, assuming links are in <a> tags
                 links = search_div.find_all('a', href=True)
                 search_result_links = [link['href'] for link in links]
                 return search_result_links
@@ -175,7 +169,7 @@ class WebCrawler:
             current_url, current_depth = self.link_queue.get()
 
             # Check if the current URL is from a search engine and skip scraping if true
-            #print(current_url)
+            print(current_url)
             if self.is_search_engine_url(current_url):
                 #print(f"Skipping scraping for search engine URL: {current_url}")
                 if current_depth == 0:
