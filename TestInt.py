@@ -126,24 +126,24 @@ if upload_excel:
             os.remove(zip_name)
 
 #Delete CSV Files
-            folder_path = 'temp_files'
-            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
-            for file_path in file_paths:
-                try:
-                    os.remove(file_path)
-                except Exception as e:
-                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
+            # folder_path = 'temp_files'
+            # file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
+            # for file_path in file_paths:
+            #     try:
+            #         os.remove(file_path)
+            #     except Exception as e:
+            #         print(f"Error occurred while deleting file {file_path}: {str(e)}")
 # Delete all PDF Files in the directory
-            folder_path = os.getcwd()
-            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
-            for file_path in file_paths:
-                try:
-                    # Check if the file is a PDF by looking at the extension
-                    if file_path.lower().endswith(".pdf"):
-                        os.remove(file_path)
-                        print(f"Deleted file: {file_path}")
-                    else:
-                        print(f"Skipped file: {file_path}")
-                except Exception as e:
-                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
+#             folder_path = os.getcwd()
+#             file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
+#             for file_path in file_paths:
+#                 try:
+#                     # Check if the file is a PDF by looking at the extension
+#                     if file_path.lower().endswith(".pdf"):
+#                         os.remove(file_path)
+#                         print(f"Deleted file: {file_path}")
+#                     else:
+#                         print(f"Skipped file: {file_path}")
+#                 except Exception as e:
+#                     print(f"Error occurred while deleting file {file_path}: {str(e)}")
 
