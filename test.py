@@ -1,6 +1,7 @@
 from urllib.parse import quote
 from ExcelManip import excelmanip as em
-from WebCrawler.crawlerDemo4 import WebCrawler
+from WebCrawler.crawlerDemo5 import WebCrawler
+import time
 
 
 def process_with_id(id_val, web_crawler, index):
@@ -24,7 +25,8 @@ def process_without_id(data_dict, web_crawler, index):
 
 
 if __name__ == '__main__':
-    file_path = 'resources/QualityTest2.xlsx'
+    start_time = time.time()
+    file_path = 'resources/100_items.xlsx'
     excel = em.ExcelManip(file_path)
     data = excel.pre_process()
     wc = WebCrawler()
@@ -39,3 +41,6 @@ if __name__ == '__main__':
 
     print("------Done------")
     wc.close()
+    end_time = time.time()
+    total_time = end_time - start_time
+    print(f"Execution time: {total_time:.2f} seconds")

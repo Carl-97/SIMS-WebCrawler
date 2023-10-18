@@ -25,7 +25,7 @@ class WebCrawler:
     def set_ignorelist_url():
         with open("resources/ignoreUrls.csv", mode='r') as file:
             csv_reader = csv.reader(file)
-            array=[]
+            array = []
             for row in csv_reader:
                # decode_row = [cell.decode('utf-8') for cell in row]
                 array.append(row[0])
@@ -164,12 +164,12 @@ class WebCrawler:
     def crawl_website_with_depth(self, csv_filename, depth_limit, start_url):
         self.link_queue.put((start_url, 0))
         self.save_content_to_csv('', csv_filename)
-        separator = '||'
+        separator = '\n||'
         while not self.link_queue.empty():
             current_url, current_depth = self.link_queue.get()
 
             # Check if the current URL is from a search engine and skip scraping if true
-            print(current_url)
+            #print(current_url)
             if self.is_search_engine_url(current_url):
                 #print(f"Skipping scraping for search engine URL: {current_url}")
                 if current_depth == 0:
@@ -191,14 +191,12 @@ class WebCrawler:
                     else:
                         scraped_url = self.driver.current_url
                         cleaned_content = self.clean_html_content(html_content)
-                        cleaned_content = scraped_url + cleaned_content + '\n' + separator
+                        cleaned_content = scraped_url + cleaned_content + separator
                         self.save_content_to_csv(cleaned_content, csv_filename)
                 else:
                     if self.is_pdf(current_url):
                         savetofile = current_url + separator
                         self.save_content_to_csv(savetofile, csv_filename)
-                    else:
-                        print("Weird")
                 # Add valid links to the queue regardless of whether it's a search engine URL
                 for link in self.find_valid_links(html_content):
                     self.link_queue.put((link, current_depth + 1))
