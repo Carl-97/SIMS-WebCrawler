@@ -5,6 +5,8 @@ import streamlit as st #for UI
 import os #for UI
 import shutil #for UI
 import pandas as pd#for UI
+import csv
+from openpyxl.styles import PatternFill
 
 def updateNumbers():
     nummer_found.markdown(f'RSK or E-Nummer found: {countNummer} ({countNummer / i * 100:.2f}%)')
@@ -18,6 +20,48 @@ def process_with_id(id_val, web_crawler, index):
     for url in websites:
         web_crawler.crawl_website_with_depth(str(index), 0, start_url=url)
 
+def has_only_pdf_urls(csv_file):
+    with open(csv_file, 'r', newline='', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        for row_number, row in enumerate(reader, start=1):
+            # Skip the row if it's just a separator, remove this if necessary
+            if row and '||' in row[0]:
+                continue
+            pdf_url = row[0]
+            if not pdf_url.endswith('.pdf'):
+                return False
+        return True
+
+def preProcess(file_path):
+    # file_path = 'resources/100_items.xlsx'
+    file_dir = 'temp_files'
+    excel_output = 'result.xlsx'
+    df = pd.read_excel(file_path, sheet_name=0)
+    num_rows = len(df)
+
+    with pd.ExcelWriter(excel_output, engine='openpyxl') as writer:
+        df.to_excel(writer, sheet_name='result', index=False)
+        workbook = writer.book
+        sheet = writer.sheets['result']
+
+        yellow_fill = PatternFill(start_color='FFFF00', end_color='FFFF00', fill_type='solid')
+        red_fill = PatternFill(start_color='FF0000', end_color='FF0000', fill_type='solid')
+
+        for i in range(1, num_rows + 1):
+            csv_file_path = os.path.join(file_dir, f"{i}.csv")
+            if os.path.exists(csv_file_path):
+                if os.path.getsize(csv_file_path) == 0:
+                    for cell in sheet[i + 1]:
+                        cell.fill = red_fill
+                elif has_only_pdf_urls(csv_file_path):
+                    for cell in sheet[i + 1]:
+                        cell.fill = yellow_fill
+            else:
+                print(f"Error: {csv_file_path} does not exist")
+                # Handle the error as required
+
+        workbook.save(excel_output)
+
 def process_without_id(data_dict, web_crawler, index):
     filtered_values = [value for value in data_dict.values() if value is not None]
     if filtered_values:
@@ -27,6 +71,9 @@ def process_without_id(data_dict, web_crawler, index):
         web_crawler.crawl_website_with_depth(str(index), 1, start_url=google_search_url)
     else:
         print("Dictionary has no valid values to perform a search.")
+
+if 'files_processed' not in st.session_state:
+    st.session_state.files_processed = False
 
 # Note: using unsafe_allow_html can cause security problems if application is deployed on the web.
 # belows Code section is used for the streamlit UI
@@ -107,7 +154,8 @@ if upload_excel:
             processed_text.markdown(f'<p class="text">Items processed: {i}</p>', unsafe_allow_html=True) #update the number of items procesed
             status_text.markdown(f'<p class="text">Progress: {progress_percentage:.2f}%</p>', unsafe_allow_html=True) #update the percentage text
             i += 1
-
+        preProcess(upload_excel)
+        st.session_state.files_processed = True
         print("------Done------")
         wc.close()
 
@@ -116,34 +164,57 @@ if upload_excel:
 #code section below is for UI (Processing complete, prepare zip for download
         status_text.markdown("<p class='text'>Processing Complete!</p>", unsafe_allow_html=True)
 
+
+    if st.session_state.files_processed:
         zip_name = "download.zip"
         if os.path.exists('temp_files'):
             shutil.make_archive(zip_name.replace('.zip', ''), 'zip', 'temp_files', )
 
         with open(zip_name, "rb") as file:
-            st.download_button( label="Download Zip Folder", data=file, file_name=f"Processed_{original_file_name}.zip", mime='application/zip', )
+            st.download_button( label="Download Zipped CSV Files", data=file, file_name=f"Processed_{original_file_name}.zip", mime='application/zip', )
             # remove Files after Download
+            # os.remove(zip_name)
+
+        with open("result.xlsx", "rb") as file:
+            btn = st.download_button(
+                label="Download Result Excel",
+                data=file,
+                file_name=f"Processed_{original_file_name}.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
+
+        if st.button("Clean and Restart"):
+            # remove zipped File after Download
             os.remove(zip_name)
 
-#Delete CSV Files
-            # folder_path = 'temp_files'
-            # file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
-            # for file_path in file_paths:
-            #     try:
-            #         os.remove(file_path)
-            #     except Exception as e:
-            #         print(f"Error occurred while deleting file {file_path}: {str(e)}")
-# Delete all PDF Files in the directory
-#             folder_path = os.getcwd()
-#             file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
-#             for file_path in file_paths:
-#                 try:
-#                     # Check if the file is a PDF by looking at the extension
-#                     if file_path.lower().endswith(".pdf"):
-#                         os.remove(file_path)
-#                         print(f"Deleted file: {file_path}")
-#                     else:
-#                         print(f"Skipped file: {file_path}")
-#                 except Exception as e:
-#                     print(f"Error occurred while deleting file {file_path}: {str(e)}")
+            # remove CSV Files in temp_files
+            folder_path = 'temp_files'
+            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
+            for file_path in file_paths:
+                try:
+                    os.remove(file_path)
+                except Exception as e:
+                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
+
+            # Delete all downloaded PDF Files in the directory
+            folder_path = os.getcwd()
+            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
+            for file_path in file_paths:
+                try:
+                    # Check if the file is a PDF by looking at the extension
+                    if file_path.lower().endswith(".pdf"):
+                        os.remove(file_path)
+                        print(f"Deleted file: {file_path}")
+                    else:
+                        print(f"Skipped file: {file_path}")
+                except Exception as e:
+                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
+
+            #remove result.xlsx
+            os.remove("result.xlsx")
+
+
+            st.session_state.files_processed = False
+            st.rerun()
+
 
