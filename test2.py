@@ -25,14 +25,14 @@ def find_relevant_content(query, scraped_data, n=3):  # Default top 3, you can a
 
 def find_relevant_content_2(query, scraped_data, n=3):
     # Stop words list can be expanded based on domain-specific knowledge
-    stop_words = {"and", "the", "is", "in", "for", "of", "or", "on", "with"}
+    stop_words = [("and", "the", "is", "in", "for", "of", "or", "on", "with")]
 
     # TF-IDF vectorizer with some tuning
     vectorizer = TfidfVectorizer(
         stop_words=stop_words,
         ngram_range=(1, 2),  # considering bigrams can capture terms like "PowerDrain V100P/G"
-        max_df=0.85,  # ignore terms that appear in more than 85% of the documents
-        min_df=0.15  # ignore terms that appear in less than 15% of the documents
+        max_df=0.9,  # ignore terms that appear in more than 85% of the documents
+        min_df=0.1  # ignore terms that appear in less than 15% of the documents
     )
 
     # Combine the query with the scraped data and transform
@@ -99,7 +99,7 @@ if __name__ == '__main__':
             continue
 
         # Get the top 'n' relevant pieces of content
-        relevant_pieces = find_relevant_content(query, scraped_content)
+        relevant_pieces = find_relevant_content_2(query, scraped_content)
 
         for piece in relevant_pieces:
             print(f'{idx} : {piece}')
