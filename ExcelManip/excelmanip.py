@@ -19,13 +19,17 @@ class ExcelManip:
                 return modified_str, brand
         return input_string, None
 
-    # TODO : fix so that it takes multiple integers and add them do a list?
     @staticmethod
     def _identify_rsk(s):
         pattern = re.compile(r'\b\d{7}\b')
         matches = pattern.findall(s)
         modified_str = pattern.sub('', s).strip()
         return modified_str, matches if matches else None
+
+    @staticmethod
+    def _identify_art_nr():
+
+        return 0
 
     def pre_process(self):
         df = pd.read_excel(self.data_file, engine='openpyxl', header=0, dtype=str)
@@ -36,13 +40,13 @@ class ExcelManip:
             processed_row = ";".join(filter(lambda item: item != "nan", row_items))
 
             modified_str_rsk, extracted_value_rsk = self._identify_rsk(processed_row)
-            modified_str_brands, extracted_value_brands = self._identify_brands(modified_str_rsk)  # Added this line
+            modified_str_brands, extracted_value_brands = self._identify_brands(modified_str_rsk)
 
             remaining_items = modified_str_brands.split(';')
 
             dictionary = {
                 'id': extracted_value_rsk[0] if extracted_value_rsk else None,
-                'brand': extracted_value_brands,
+                'brand': extracted_value_brands if extracted_value_brands else None,
                 **{f'attribute_{i}': item for i, item in enumerate(remaining_items)}
             }
 

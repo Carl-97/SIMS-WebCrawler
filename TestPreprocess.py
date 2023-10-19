@@ -18,7 +18,7 @@ def has_only_pdf_urls(csv_file):
 
 
 if __name__ == '__main__':
-    file_path = 'resources/100_items.xlsx'
+    file_path = 'resources/ifm_10.xlsx'
     file_dir = 'temp_files'
     excel_output = 'result.xlsx'
     df = pd.read_excel(file_path, sheet_name=0)

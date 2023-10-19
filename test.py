@@ -19,6 +19,7 @@ def process_without_id(data_dict, web_crawler, index):
         search_query = " ".join(filtered_values)
         search_query = quote(search_query)
         google_search_url = f'https://www.google.com/search?q={search_query}'
+        print(f'{google_search_url}')
         web_crawler.crawl_website_with_depth(str(index), 1, start_url=google_search_url)
     else:
         print("Dictionary has no valid values to perform a search.")
@@ -26,7 +27,7 @@ def process_without_id(data_dict, web_crawler, index):
 
 if __name__ == '__main__':
     start_time = time.time()
-    file_path = 'resources/100_items.xlsx'
+    file_path = 'resources/ifm_10.xlsx'
     excel = em.ExcelManip(file_path)
     data = excel.pre_process()
     wc = WebCrawler()
