@@ -1,5 +1,9 @@
 # SIMS-WebCrawler
 Scope for the whole projekt.
+The scope is after the quality gate 1 to xxxx
+
+Purpose is to find more information/sources about items
+-------
 
 Requerment for input file.
 ------------------------------
