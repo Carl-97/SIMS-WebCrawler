@@ -2,7 +2,9 @@
 Scope for the whole projekt.
 
 Requerment for input file. 
-Input file needs to be xlsx
+
+Input file needs to be xlsx.
+
 The input file must have columns Artikelnumber, Brand, typbenämning (comes from apendo)
 
   Artikelnumber is artikelnumer/rks/enum 
