@@ -14,7 +14,8 @@ Purpose of Input Data
 --------------------
 The input file will be used to help with identifying
 
-
+Columns:
+------------
 
   Artikelnumber is artikelnumer/rks/enum 
 
