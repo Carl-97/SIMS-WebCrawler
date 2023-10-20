@@ -14,7 +14,7 @@ Input file should not be modified.
 The input file must have columns Artikelnumber, Brand, typbenämning (comes from apendo)
 
 
-Purpose of Input Data
+Purpose of Input file
 --------------------
 The input file will be used to help with identifying
 
