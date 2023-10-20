@@ -17,6 +17,7 @@ The input file must have columns Artikelnumber, Brand, typbenämning (comes from
 Purpose of Input file
 --------------------
 The input file will be used to help with identifying
+Used for web search quarys, (datamining,cleaning)
 
 Columns:
 ------------
