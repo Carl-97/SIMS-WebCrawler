@@ -26,9 +26,9 @@ class ExcelManip:
         modified_str = pattern.sub('', s).strip()
         return modified_str, matches if matches else None
 
-    @staticmethod
-    def _identify_art_nr():
-
+    def _identify_art_nr(self):
+        column_name = 'Artikelnummer'
+        specific_column = ''
         return 0
 
     def pre_process(self):
@@ -39,6 +39,7 @@ class ExcelManip:
             row_items = list(map(str, row))
             processed_row = ";".join(filter(lambda item: item != "nan", row_items))
 
+            extracted_article_nr = self._identify_art_nr()
             modified_str_rsk, extracted_value_rsk = self._identify_rsk(processed_row)
             modified_str_brands, extracted_value_brands = self._identify_brands(modified_str_rsk)
 
@@ -47,6 +48,7 @@ class ExcelManip:
             dictionary = {
                 'id': extracted_value_rsk[0] if extracted_value_rsk else None,
                 'brand': extracted_value_brands if extracted_value_brands else None,
+                'article_nr': extracted_article_nr if extracted_article_nr else None
                 **{f'attribute_{i}': item for i, item in enumerate(remaining_items)}
             }
 
