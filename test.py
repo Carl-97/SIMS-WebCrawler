@@ -1,6 +1,6 @@
 from urllib.parse import quote
 from ExcelManip import excelidentify as em
-from WebCrawler.crawlerDemo5 import WebCrawler
+from WebCrawler.crawler import WebCrawler
 import time
 
 KEYS = ['brand', 'article_id', 'type_desc']
