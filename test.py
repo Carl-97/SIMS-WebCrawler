@@ -1,6 +1,7 @@
 from urllib.parse import quote
 from ExcelManip import excelidentify as em
 from WebCrawler.crawler import WebCrawler
+import postprocess as pp
 import time
 
 KEYS = ['brand', 'article_id', 'type_desc']
@@ -62,6 +63,12 @@ if __name__ == '__main__':
     print("------Done------")
     wc.close()
 
+    excel_processor = pp.ExcelProcessor(
+        input_file='resources/QualityTest2.xlsx',
+        output_file='result.xlsx',
+        csv_directory='temp_files'
+    )
+    excel_processor.process_excel()
     end_time = time.time()
     total_time = end_time - start_time
     print(f"Execution time: {total_time:.2f} seconds")
