@@ -12,8 +12,8 @@ from urllib.parse import urlparse
 
 
 class WebCrawler:
-    _max_retries = 3  # Maximum number of retries
-    _retry_delay = 3  # Number of seconds to wait between retries
+    _MAX_RETRIES = 3  # Maximum number of retries
+    _RETRY_DELAY = 3  # Number of seconds to wait between retries
 
     def __init__(self):
         self.driver = self.setup_headless_chrome()
@@ -23,7 +23,7 @@ class WebCrawler:
 
     @staticmethod
     def set_ignorelist_url():
-        with open("resources/ignoreUrls.csv", mode='r') as file:
+        with open("WebCrawler/resources/ignoreUrls.csv", mode='r') as file:
             csv_reader = csv.reader(file)
             array = []
             for row in csv_reader:
@@ -41,7 +41,7 @@ class WebCrawler:
         return webdriver.Chrome(options=chrome_options)
 
     def get_html_content(self, url):
-        for retry in range(self._max_retries):
+        for retry in range(self._MAX_RETRIES):
             try:
                 self.driver.get(url)
                 # Wait for the page to fully load (handle redirections)
@@ -50,10 +50,10 @@ class WebCrawler:
                 wait.until(ec.presence_of_element_located((By.TAG_NAME, 'body')))
                 return self.driver.page_source
             except WebDriverException as e:
-                print(f"Error fetching {url} (Attempt {retry + 1}/{self._max_retries}): {e}")
-                if retry < self._max_retries - 1:
-                    print(f"Retrying in {self._retry_delay} seconds...")
-                    time.sleep(self._retry_delay)
+                print(f"Error fetching {url} (Attempt {retry + 1}/{self._MAX_RETRIES}): {e}")
+                if retry < self._MAX_RETRIES - 1:
+                    print(f"Retrying in {self._RETRY_DELAY} seconds...")
+                    time.sleep(self._RETRY_DELAY)
         print(f"Max retries reached for {url}. Unable to fetch content.")
         return ""
 

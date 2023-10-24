@@ -9,7 +9,7 @@ KEYS = ['brand', 'article_id', 'type_desc']
 def process_with_keys(data_dict, web_crawler, index):
     values_to_use = [data_dict[key] for key in KEYS if key in data_dict and data_dict[key] is not None]
     if values_to_use:
-        print(f'Key Value: {values_to_use}')
+        #print(f'Key Value: {values_to_use}')
         search_query = " ".join(values_to_use)
         search_query = quote(search_query)
         google_search_url = f'https://www.google.com/search?q={search_query}'
