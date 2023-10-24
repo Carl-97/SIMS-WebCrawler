@@ -59,7 +59,7 @@ class ExcelManip:
             dictionary = {
                 'id': extracted_value_rsk[0] if extracted_value_rsk else None,
                 'brand': extracted_value_brands if extracted_value_brands else None,
-                'article_nr': extracted_article_nr if extracted_article_nr else None,
+                'article_id': extracted_article_nr if extracted_article_nr else None,
                 'type_desc': extracted_type_desc if extracted_type_desc else None
             }
 
