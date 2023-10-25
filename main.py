@@ -104,8 +104,8 @@ def empty_folder(path):
 if __name__ == '__main__':
     file_path = 'resources/ifm_10.xlsx'
     start_time = time.time()
-    run(file_path)
     empty_folder('temp_files')
+    run(file_path)
     end_time = time.time()
     total_time = end_time - start_time
     print(f"Identify time: {total_time:.2f} seconds")
