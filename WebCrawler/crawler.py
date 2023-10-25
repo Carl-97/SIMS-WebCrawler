@@ -106,18 +106,23 @@ class WebCrawler:
         scheme = parsed_url.scheme
         netloc = parsed_url.netloc
         #can be added for further development
-        # path = parsed_url.path
+        # path = parsed_url.path@staticmethod
         lower_url = url.lower()
 
-        # Check if the scheme is 'http' or 'https'
+        # Check if the scheme is 'http' or 'https'is_pdfw2
         # Check if the netloc (domain) is present
         # Exclude links with specific file extensions
         is_http_or_https = scheme in ['http', 'https']
         is_valid_netloc = bool(netloc)
-        has_valid_extension = not any(lower_url.endswith(ext) for ext in excluded_extensions)
-
+        #has_valid_extension = not any(lower_url.endswith(ext) for ext in excluded_extensions)
+        
+        has_valid_extension = True
+        for word in excluded_extensions:
+            if word in lower_url:
+                has_valid_extension = False
+                break
+        
         return is_http_or_https and is_valid_netloc and has_valid_extension
-
     @staticmethod
     def save_content_to_csv(content, csv_filename):
         # Add folder for saved files
