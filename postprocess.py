@@ -50,6 +50,7 @@ class ExcelProcessor:
                     self._add_to_row(sheet, index, num_cols, pdf_urls)
                     self._fill_row(row, YELLOW_FILL)
                 else:
+                    # TODO : loop through cells and cross-reference if that exists in csv?
                     self._fill_row(row, GREEN_FILL)
             else:
                 self._fill_row(row, RED_FILL)
