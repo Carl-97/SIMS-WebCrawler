@@ -18,8 +18,14 @@ class CSVHandler:
 
     @staticmethod
     def find_all_pdf_urls(csv_file):
-        with open(csv_file, 'r', newline='', encoding='utf-8') as file:
-            return [row[0] for row in csv.reader(file) if row and not '||' in row[0]]
+        try:
+            with open(csv_file, 'r', newline='', encoding='utf-8') as file:
+                return [row[0] for row in csv.reader(file) if row and not '||' in row[0]]
+        except (FileNotFoundError, UnicodeDecodeError, csv.Error) as e:
+            # Handle the exception(s) here
+            print(f"An error occurred while processing the CSV file: {e}")
+            return []
+
 
 class ExcelProcessor:
     def __init__(self, input_file, output_file, csv_directory):
@@ -36,6 +42,7 @@ class ExcelProcessor:
             cell = sheet.cell(row=row_index + 1, column=num_cols + i)
             cell.value = data_value
 
+
     def _process_csv_files(self, sheet, num_rows, num_cols):
         for index, row in enumerate(sheet.iter_rows(min_row=2, max_row=num_rows + 1, max_col=num_cols), start=1):
             csv_file_path = os.path.join(self.csv_directory, f"{index}.csv")
@@ -50,7 +57,6 @@ class ExcelProcessor:
                     self._add_to_row(sheet, index, num_cols, pdf_urls)
                     self._fill_row(row, YELLOW_FILL)
                 else:
-                    # TODO : loop through cells and cross-reference if that exists in csv?
                     self._fill_row(row, GREEN_FILL)
             else:
                 self._fill_row(row, RED_FILL)
@@ -76,7 +82,7 @@ class ExcelProcessor:
 
 if __name__ == '__main__':
     excel_processor = ExcelProcessor(
-        input_file='resources/QualityTest2.xlsx',
+        input_file='resources/ifm_10.xlsx',
         output_file='result.xlsx',
         csv_directory='temp_files'
     )
