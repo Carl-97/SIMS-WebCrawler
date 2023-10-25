@@ -44,10 +44,11 @@ def crawl_all(data_dict, web_crawler, index):
 
 def run(file):
     excel = em.ExcelManip(file)
-    data = excel.pre_process()
+    #data = excel.pre_process()
     wc = WebCrawler()
-
+    for index, row in wc.iterrows():
     for idx, dictionary in enumerate(data, start=1):
+        for 
         if 'id' in dictionary and dictionary['id'] is not None:
             id_nr = dictionary['id']
             crawl_with_id(id_nr, wc, idx)
