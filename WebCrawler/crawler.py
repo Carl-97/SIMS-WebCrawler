@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from bs4 import BeautifulSoup, Tag
 from urllib.parse import urlparse
 
-
+# TODO : respect robots.txt also check the visited.csv if it cleanses
 class WebCrawler:
     _MAX_RETRIES = 3  # Maximum number of retries
     _RETRY_DELAY = 3  # Number of seconds to wait between retries
