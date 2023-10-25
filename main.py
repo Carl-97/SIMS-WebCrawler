@@ -93,12 +93,14 @@ def run_postprocess(file):
 
 
 def empty_folder(path):
-    files = os.listdir(path)
     if os.path.exists(path):
+        files = os.listdir(path)
         for file in files:
             target_file = os.path.join(path, file)
             if os.path.isfile(target_file):
                 os.remove(target_file)
+    else:
+        return
 
 
 if __name__ == '__main__':
