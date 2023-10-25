@@ -54,44 +54,20 @@ def run(file):
     wc = WebCrawler()
     i = 1
     for idx, dictionary in enumerate(data, start=1):
-        if 'id' in dictionary and dictionary['article_id'] is not None:
-            id_nr = dictionary['id']
-            crawl_with_id(id_nr, wc, idx)
-            crawl_with_keys(dictionary, wc, idx)
-        else:
-            crawl_with_keys(dictionary, wc, idx)
-    wc.close()
-        article_value= row[column_articel]
-        typdesign_value = row[column_typdesign]
-        brand_value = row[column_brand]
-        articels = article_value.split(', ')
+        if 'article_id' in dictionary and dictionary['article_id'] is not None:
+            article_value = dictionary['article_id']
+            articels = article_value.split(', ')
         
+            for article in articels:
 
-
-        for article in articels:
-            #just using article
-            e_nr_url = f'https://www.e-nummersok.se/sok?Query={article}'
-            rsk_nr_url = f'https://www.rskdatabasen.se/sok?Query={article}'
-            wc.crawl_website_with_depth(str(i), 0, start_url=e_nr_url)
-            wc.crawl_website_with_depth(str(i), 0, start_url=rsk_nr_url)
+                id_nr = article
+                crawl_with_id(id_nr, wc, idx)
+            
         
-            ###advanced search using googles search quary
-            #brand + article
-            #brand + typedesign sometime work
-            #all values for hail marry
-            filtered_values = [value for value in excel.values() if value is not None]
-            if filtered_values:
-                # Construct a Google search query using the filtered values
-                search_query = " ".join(filtered_values)
-                search_query = quote(search_query)  # URL encode the search query
-                google_search_url = f'https://www.google.com/search?q={search_query}'
-                print(f'Search Query {i}: {google_search_url}')
-                wc.crawl_website_with_depth(str(i), 1, start_url=google_search_url)
-            else:
-                print("Dictionary has no valid values to perform a search.")
-        i += 1
-    print("------Done------")
+        crawl_with_keys(dictionary, wc, idx)
     wc.close()
+       
+       
     
 
     excel_processor = pp.ExcelProcessor(
