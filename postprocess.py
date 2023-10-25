@@ -72,6 +72,7 @@ class ExcelProcessor:
         self._process_csv_files(sheet, num_rows, num_cols)
         workbook.save(self.output_file)
 
+
 if __name__ == '__main__':
     excel_processor = ExcelProcessor(
         input_file='resources/QualityTest2.xlsx',

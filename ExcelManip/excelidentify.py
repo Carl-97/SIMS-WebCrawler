@@ -50,10 +50,10 @@ class ExcelManip:
             modified_row, extracted_type_desc = self._identify_column(modified_row, 'Typbeteckning')
             modified_row = self.clean_row(modified_row)
 
-            modified_str_rsk, extracted_value_rsk = self._identify_rsk(modified_row)
-            modified_str_brands, extracted_value_brands = self._identify_brands(modified_str_rsk)
+            modified_row, extracted_value_rsk = self._identify_rsk(modified_row)
+            modified_row, extracted_value_brands = self._identify_brands(modified_row)
 
-            remaining_items = modified_str_brands.split(';')
+            remaining_items = modified_row.split(';')
             remaining_attributes = {f'attribute_{i}': item for i, item in enumerate(remaining_items)}
 
             dictionary = {
