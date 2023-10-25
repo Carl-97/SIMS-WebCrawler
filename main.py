@@ -104,7 +104,7 @@ def empty_folder(path):
 
 
 if __name__ == '__main__':
-    file_path = 'resources/ifm_10.xlsx'
+    file_path = 'resources/QualityTest.xlsx'
     start_time = time.time()
     empty_folder('temp_files')
     run(file_path)
