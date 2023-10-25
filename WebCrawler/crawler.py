@@ -64,7 +64,7 @@ class WebCrawler:
         return bool(soup.select('div[class*="product"]')) or bool(soup.select('div[id*="product"]'))
 
     @staticmethod
-    def is_pdf(self, url):
+    def is_pdf(url):
         # checks if its end with .pdfis_
         if '.pdf' in url:
             return True
