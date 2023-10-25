@@ -7,8 +7,14 @@ import shutil #for UI
 import pandas as pd#for UI
 import csv
 import main as cape1903
+from datetime import datetime
+import time
 
 KEYS = ['brand', 'article_id', 'type_desc']
+start_time = None
+end_time = None
+datetime1 = None
+datetime2 = None
 
 
 def updateNumbers():
@@ -93,6 +99,9 @@ if upload_excel:
     print(f"Number of Lines (Items): {num_rows}")
     del df
     if st.button("Start processing File"):
+        start_time = datetime.now().time()
+        print(f"Start Time: {start_time.strftime('%H:%M:%S')}")
+        datetime1 = datetime.combine(datetime.today(), start_time) #used to print time used in seconds
         progress_bar = st.progress(0)
         status_text = st.empty()
         processed_text.markdown(f'<p class="text">Items processed: 0</p>', unsafe_allow_html=True)
@@ -122,7 +131,15 @@ if upload_excel:
         wc.close()
         cape1903.run_postprocess(upload_excel)
         st.session_state.files_processed = True
+        end_time = datetime.now().time()
+        print(f"End Time: {end_time.strftime('%H:%M:%S')}")
+        datetime2 = datetime.combine(datetime.today(), end_time)
         print("------Done------")
+
+        #print time difference
+        time_difference = datetime2 - datetime1
+        total_seconds = time_difference.total_seconds()
+        print(f"Total Time in Seconds: {total_seconds}")
 
         # here the Preprocess will happen
 
@@ -157,20 +174,6 @@ if upload_excel:
             for file_path in file_paths:
                 try:
                     os.remove(file_path)
-                except Exception as e:
-                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
-
-            # Delete all downloaded PDF Files in the directory
-            folder_path = os.getcwd()
-            file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
-            for file_path in file_paths:
-                try:
-                    # Check if the file is a PDF by looking at the extension
-                    if file_path.lower().endswith(".pdf"):
-                        os.remove(file_path)
-                        print(f"Deleted file: {file_path}")
-                    else:
-                        print(f"Skipped file: {file_path}")
                 except Exception as e:
                     print(f"Error occurred while deleting file {file_path}: {str(e)}")
 
