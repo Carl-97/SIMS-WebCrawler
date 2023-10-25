@@ -64,10 +64,11 @@ class WebCrawler:
         return bool(soup.select('div[class*="product"]')) or bool(soup.select('div[id*="product"]'))
 
     @staticmethod
-    def is_pdf(url):
-        # checks if its end with .pdf
-        return url.lower().endswith('.pdf')
-
+    def is_pdf(self, url):
+        # checks if its end with .pdfis_
+        if '.pdf' in url:
+            return True
+        return False 
     def clean_html_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         # add class names you want to remove
