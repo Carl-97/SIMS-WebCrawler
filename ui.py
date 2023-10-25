@@ -106,6 +106,7 @@ if upload_excel:
         status_text = st.empty()
         processed_text.markdown(f'<p class="text">Items processed: 0</p>', unsafe_allow_html=True)
 # following code section is mostly for Web Crawling
+        cape1903.empty_folder('temp_files')
         data = cape1903.run_identify(upload_excel)
         wc = WebCrawler()
 
@@ -167,15 +168,15 @@ if upload_excel:
         if st.button("Clean and Restart"):
             # remove zipped File after Download
             os.remove(zip_name)
-
-            # remove CSV Files in temp_files
+            cape1903.empty_folder('temp_files')
+            '''# remove CSV Files in temp_files
             folder_path = 'temp_files'
             file_paths = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path)]
             for file_path in file_paths:
                 try:
                     os.remove(file_path)
                 except Exception as e:
-                    print(f"Error occurred while deleting file {file_path}: {str(e)}")
+                    print(f"Error occurred while deleting file {file_path}: {str(e)}")'''
 
             #remove result.xlsx
             os.remove("result.xlsx")
