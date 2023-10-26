@@ -42,7 +42,6 @@ class ExcelProcessor:
             cell = sheet.cell(row=row_index + 1, column=num_cols + i)
             cell.value = data_value
 
-
     def _process_csv_files(self, sheet, num_rows, num_cols):
         for index, row in enumerate(sheet.iter_rows(min_row=2, max_row=num_rows + 1, max_col=num_cols), start=1):
             csv_file_path = os.path.join(self.csv_directory, f"{index}.csv")
