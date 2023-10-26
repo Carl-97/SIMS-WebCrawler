@@ -72,7 +72,6 @@ def run_identify(file):
 
 def run_crawl(data):
     wc = WebCrawler()
-
     for idx, dictionary in enumerate(data, start=1):
         if 'id' in dictionary and dictionary['id'] is not None:
             id_nr = dictionary['id']
