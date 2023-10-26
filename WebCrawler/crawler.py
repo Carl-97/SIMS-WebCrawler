@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup, Tag
 from urllib.parse import urlparse
 
 
-# TODO : respect robots.txt also check the visited.csv if it cleanses
+# TODO : respect robots.txt
 class WebCrawler:
     _MAX_RETRIES = 3  # Maximum number of retries
     _RETRY_DELAY = 3  # Number of seconds to wait between retries
@@ -68,7 +68,8 @@ class WebCrawler:
         # checks if its end with .pdfis_
         if '.pdf' in url:
             return True
-        return False 
+        return False
+
     def clean_html_content(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
         # add class names you want to remove
@@ -123,6 +124,7 @@ class WebCrawler:
                 break
         
         return is_http_or_https and is_valid_netloc and has_valid_extension
+
     @staticmethod
     def save_content_to_csv(content, csv_filename):
         # Add folder for saved files
@@ -191,7 +193,7 @@ class WebCrawler:
                 if self.is_valid_link(current_url):
                     self.visited.add(current_url)
                     html_content = self.get_html_content(current_url)
-                    time.sleep(0.7)
+                    time.sleep(2)
                     if not html_content:
                         continue
                     # if self.has_product(html_content):

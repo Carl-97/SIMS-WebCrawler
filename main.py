@@ -11,11 +11,11 @@ KEYS = ['brand', 'article_id', 'type_desc']
 def crawl_with_keys(data_dict, web_crawler, index):
     values_to_use = [data_dict[key] for key in KEYS if key in data_dict and data_dict[key] is not None]
     if values_to_use:
-        #print(f'Key Value: {values_to_use}')
+        print(f'Key Value: {values_to_use}')
         search_query = " ".join(values_to_use)
         search_query = quote(search_query)
         google_search_url = f'https://www.google.com/search?q={search_query}'
-        #print(f'{google_search_url}')
+        print(f'{google_search_url}')
         web_crawler.crawl_website_with_depth(str(index), 1, start_url=google_search_url)
     else:
         print("Dictionary has no valid values to perform a search.")
@@ -109,5 +109,5 @@ if __name__ == '__main__':
     run(file_path)
     end_time = time.time()
     total_time = end_time - start_time
-    print(f"Identify time: {total_time:.2f} seconds")
+    print(f"Total time: {total_time:.2f} seconds")
     print("------Done------")
