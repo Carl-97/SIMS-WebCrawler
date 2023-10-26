@@ -11,7 +11,7 @@ Input file needs to be xlsx.
 
 Input file should not be modified.
 
-The input file must have columns Artikelnumber, Brand, typbenämning (comes from apendo)
+The input file must have columns Artikelnumber, Brand, typbeteckning
 
 
 Purpose of Input file
