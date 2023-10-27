@@ -1,14 +1,11 @@
-from ExcelManip import excelidentify as em
 from WebCrawler.crawler import WebCrawler
 from urllib.parse import quote
 import streamlit as st #for UI
 import os #for UI
 import shutil #for UI
 import pandas as pd#for UI
-import csv
 import main as cape1903
 from datetime import datetime
-import time
 
 KEYS = ['brand', 'article_id', 'type_desc']
 start_time = None
