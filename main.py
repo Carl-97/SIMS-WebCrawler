@@ -77,8 +77,7 @@ def run_crawl(data):
             id_nr = dictionary['id']
             crawl_with_id(id_nr, wc, idx)
             crawl_with_keys(dictionary, wc, idx)
-        else:
-            crawl_with_keys(dictionary, wc, idx)
+        crawl_with_keys(dictionary, wc, idx)
     wc.close()
 
 
