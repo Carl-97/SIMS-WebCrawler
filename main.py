@@ -51,9 +51,7 @@ def run(file):
         if 'id' in dictionary and dictionary['id'] is not None:
             id_nr = dictionary['id']
             crawl_with_id(id_nr, wc, idx)
-            crawl_with_keys(dictionary, wc, idx)
-        else:
-            crawl_with_keys(dictionary, wc, idx)
+        crawl_with_keys(dictionary, wc, idx)
     wc.close()
 
     excel_processor = pp.ExcelProcessor(
