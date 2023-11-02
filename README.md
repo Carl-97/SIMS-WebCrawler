@@ -1,6 +1,6 @@
 # SIMS-WebCrawler
 Scope for the whole projekt.
-The scope is after the quality gate 1 to xxxx
+The scope is after the quality gate 1 to 
 
 Purpose is to find more information/sources about items
 -------
@@ -23,8 +23,6 @@ Columns:
 ------------
 
   Artikelnumber is artikelnumer/rks/enum 
-
-  artikelnumber can have several diffrent values exampel 03212,3213,3213
 
   Brand is brand
 
