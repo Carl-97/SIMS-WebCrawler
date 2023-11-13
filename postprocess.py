@@ -11,13 +11,40 @@ BLUE_FILL = PatternFill(start_color='0000FF', end_color='0000FF', fill_type='sol
 
 
 class CSVHandler:
+    """
+    A class for handling CSV files and extracting information from them.
+
+    Methods:
+        has_only_pdf_urls(csv_file):
+            Check if a CSV file contains only PDF URLs and return a boolean indicating this and a list of PDF URLs.
+
+        find_all_pdf_urls(csv_file):
+            Find and return all PDF URLs in a CSV file.
+    """
     @staticmethod
     def has_only_pdf_urls(csv_file):
+        """
+        Check if a CSV file contains only PDF URLs and return a boolean indicating this and a list of PDF URLs.
+
+        Args:
+            csv_file (str): The path to the CSV file to be checked.
+        Returns:
+            tuple: A tuple containing a boolean (True if only PDF URLs, False otherwise) and a list of PDF URLs.
+        """
         pdf_urls = CSVHandler.find_all_pdf_urls(csv_file)
         return all(url.endswith('.pdf') for url in pdf_urls), pdf_urls
 
     @staticmethod
     def find_all_pdf_urls(csv_file):
+        """
+        Find and return all PDF URLs in a CSV file.
+
+        Args:
+            csv_file (str): The path to the CSV file to be processed.
+
+        Returns:
+            list: A list of PDF URLs found in the CSV file.
+        """
         try:
             with open(csv_file, 'r', newline='', encoding='utf-8') as file:
                 return [row[0] for row in csv.reader(file) if row and not '||' in row[0]]
@@ -28,7 +55,35 @@ class CSVHandler:
 
 
 class ExcelProcessor:
+    """
+    A class for processing Excel files, generating reports, and integrating data from CSV files.
+
+    Attributes:
+        input_file (str): The path to the input Excel file.
+        output_file (str): The path to the output Excel file.
+        csv_directory (str): The directory where CSV files are stored.
+
+    Methods:
+        _fill_row(row, fill_color):
+            Fill cells in a row with a specified fill color.
+
+        _add_to_row(sheet, row_index, num_cols, found_pdfs):
+            Add data to a row in an Excel sheet based on the presence of PDF URLs.
+
+        _process_csv_files(sheet, num_rows, num_cols):
+            Process CSV files associated with the Excel sheet and update cell fill colors accordingly.
+
+        process_excel():
+            Process the input Excel file, integrate data from CSV files, and generate an output Excel file.
+    """
+
     def __init__(self, input_file, output_file, csv_directory):
+        """
+        Initialize the ExcelProcessor object.
+        :param input_file: The path to the input Excel file.
+        :param output_file: The path to the output Excel file.
+        :param csv_directory: The directory where the CSV files are stored.
+        """
         self.input_file = input_file
         self.output_file = output_file
         self.csv_directory = csv_directory
@@ -61,6 +116,10 @@ class ExcelProcessor:
                 self._fill_row(row, RED_FILL)
 
     def process_excel(self):
+        '''
+        Process an Excel file and create a result.xlsx file
+        :return:
+        '''
         df = pd.read_excel(self.input_file, sheet_name=0)
         num_rows, num_cols = df.shape
 

@@ -13,6 +13,60 @@ from urllib.parse import urlparse
 
 # TODO : respect robots.txt
 class WebCrawler:
+    """
+        A web crawler class for scraping and processing web content.
+
+    Attributes:
+        _MAX_RETRIES (int): Maximum number of retries for fetching a URL.
+        _RETRY_DELAY (int): Number of seconds to wait between retries.
+        driver (webdriver.Chrome): Selenium WebDriver for web scraping.
+        link_queue (queue.Queue): Queue for managing URLs to be scraped.
+        visited (set): Set to keep track of visited URLs.
+        ignore_list (list): List of URLs to be ignored during crawling.
+
+    Methods:
+        set_ignorelist_url():
+            Read a list of URLs from 'WebCrawler/resources/ignoreUrls.csv' and set it as the ignore list.
+
+        setup_headless_chrome():
+            Set up and configure a headless Chrome WebDriver for web scraping.
+
+        get_html_content(url):
+            Fetch the HTML content of a URL, handling retries and waiting for page load.
+
+        has_product(html_content):
+            Check if the HTML content contains product-related information.
+
+        is_pdf(url):
+            Check if a URL points to a PDF file.
+
+        clean_html_content(html_content):
+            Clean the HTML content by removing specified elements and extracting text.
+
+        remove_all_children(element):
+            Remove all child elements from a BeautifulSoup element.
+
+        find_valid_links(html_content):
+            Find valid links in the HTML content.
+
+        is_valid_link(url):
+            Check if a URL is valid for crawling, considering file extensions and other criteria.
+
+        save_content_to_csv(content, csv_filename):
+            Save content to a CSV file in the 'temp_files' folder.
+
+        is_search_engine_url(url):
+            Check if a URL belongs to a search engine and should be skipped during crawling.
+
+        extract_search_engine_links(html_content):
+            Extract search engine result links from HTML content.
+
+        crawl_website_with_depth(csv_filename, depth_limit, start_url):
+            Crawl a website up to a specified depth, saving content to a CSV file.
+
+        close():
+            Close the Selenium WebDriver instance.
+    """
     _MAX_RETRIES = 3  # Maximum number of retries
     _RETRY_DELAY = 3  # Number of seconds to wait between retries
 
@@ -174,6 +228,7 @@ class WebCrawler:
         self.link_queue.put((start_url, 0))
         self.save_content_to_csv('', csv_filename)
         separator = '\n||'
+        html_content = ''
         while not self.link_queue.empty():
             current_url, current_depth = self.link_queue.get()
 

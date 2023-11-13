@@ -3,6 +3,37 @@ import re
 
 
 class ExcelManip:
+    """
+        A class for processing Excel data and extracting information from it.
+
+    Attributes:
+        data_file (str): The path to the Excel file containing the data to be processed.
+        brands_file (str): The path to the Excel file containing brand names (default: 'resources/Brands.xlsx').
+        brand_names (list): A list of brand names loaded from the brands_file.
+
+    Methods:
+        _load_brands(self):
+            Load brand names from the 'brands_file' Excel file and return them as a list.
+
+        _identify_brands(self, input_string):
+            Identify brand names in the input string and return the modified string with the brand removed
+            and the identified brand name (if any).
+
+        _identify_rsk(s):
+            Identify 7-digit numbers in the input string and return the modified string with the numbers removed
+            and a list of identified numbers (if any).
+
+        _identify_column(row, column_name):
+            Identify a specific column's value in a DataFrame row, remove it, and return the modified row
+            along with the extracted value.
+
+        clean_row(row):
+            Clean and format a row by converting NaN values to empty strings and joining the row elements into a string.
+
+        pre_process(self):
+            Process the data from the 'data_file' Excel file and extract relevant information.
+            Return the processed data as a list of dictionaries, where each dictionary represents a row of data.
+    """
     def __init__(self, data_file, brands_file='resources/Brands.xlsx'):
         self.data_file = data_file
         self.brands_file = brands_file
