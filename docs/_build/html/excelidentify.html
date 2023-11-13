@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ExcelIdentifier module &#8212; SIMS  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="WebCrawler module" href="crawler.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-excelidentify">
+<span id="excelidentifier-module"></span><h1>ExcelIdentifier module<a class="headerlink" href="#module-excelidentify" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="excelidentify.ExcelManip">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">excelidentify.</span></span><span class="sig-name descname"><span class="pre">ExcelManip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">brands_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'resources/Brands.xlsx'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#excelidentify.ExcelManip" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<blockquote>
+<div><p>A class for processing Excel data and extracting information from it.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>data_file (str): The path to the Excel file containing the data to be processed.
+brands_file (str): The path to the Excel file containing brand names (default: ‘resources/Brands.xlsx’).
+brand_names (list): A list of brand names loaded from the brands_file.</p>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>_load_brands(self):</dt><dd><p>Load brand names from the ‘brands_file’ Excel file and return them as a list.</p>
+</dd>
+<dt>_identify_brands(self, input_string):</dt><dd><p>Identify brand names in the input string and return the modified string with the brand removed
+and the identified brand name (if any).</p>
+</dd>
+<dt>_identify_rsk(s):</dt><dd><p>Identify 7-digit numbers in the input string and return the modified string with the numbers removed
+and a list of identified numbers (if any).</p>
+</dd>
+<dt>_identify_column(row, column_name):</dt><dd><p>Identify a specific column’s value in a DataFrame row, remove it, and return the modified row
+along with the extracted value.</p>
+</dd>
+<dt>clean_row(row):</dt><dd><p>Clean and format a row by converting NaN values to empty strings and joining the row elements into a string.</p>
+</dd>
+<dt>pre_process(self):</dt><dd><p>Process the data from the ‘data_file’ Excel file and extract relevant information.
+Return the processed data as a list of dictionaries, where each dictionary represents a row of data.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="excelidentify.ExcelManip.clean_row">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clean_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#excelidentify.ExcelManip.clean_row" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="excelidentify.ExcelManip.pre_process">
+<span class="sig-name descname"><span class="pre">pre_process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#excelidentify.ExcelManip.pre_process" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SIMS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">SIMS-WebCrawler</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postprocess.html">postprocess module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html">ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="crawler.html">WebCrawler module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ExcelIdentifier module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">SIMS-WebCrawler</a><ul>
+      <li>Previous: <a href="crawler.html" title="previous chapter">WebCrawler module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Carl Pettersson, Jakob Hallin, Gianluca Von Ehrenberg.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/excelidentify.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

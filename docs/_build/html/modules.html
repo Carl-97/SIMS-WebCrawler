@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SIMS-WebCrawler &#8212; SIMS  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="main module" href="main.html" />
+    <link rel="prev" title="Welcome to SIMS’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="sims-webcrawler">
+<h1>SIMS-WebCrawler<a class="headerlink" href="#sims-webcrawler" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.crawl_all"><code class="docutils literal notranslate"><span class="pre">crawl_all()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.crawl_with_id"><code class="docutils literal notranslate"><span class="pre">crawl_with_id()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.crawl_with_keys"><code class="docutils literal notranslate"><span class="pre">crawl_with_keys()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.empty_folder"><code class="docutils literal notranslate"><span class="pre">empty_folder()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.run"><code class="docutils literal notranslate"><span class="pre">run()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.run_crawl"><code class="docutils literal notranslate"><span class="pre">run_crawl()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.run_identify"><code class="docutils literal notranslate"><span class="pre">run_identify()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#main.run_postprocess"><code class="docutils literal notranslate"><span class="pre">run_postprocess()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="postprocess.html">postprocess module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="postprocess.html#postprocess.CSVHandler"><code class="docutils literal notranslate"><span class="pre">CSVHandler</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="postprocess.html#postprocess.CSVHandler.find_all_pdf_urls"><code class="docutils literal notranslate"><span class="pre">CSVHandler.find_all_pdf_urls()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="postprocess.html#postprocess.CSVHandler.has_only_pdf_urls"><code class="docutils literal notranslate"><span class="pre">CSVHandler.has_only_pdf_urls()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="postprocess.html#postprocess.ExcelProcessor"><code class="docutils literal notranslate"><span class="pre">ExcelProcessor</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="postprocess.html#postprocess.ExcelProcessor.process_excel"><code class="docutils literal notranslate"><span class="pre">ExcelProcessor.process_excel()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui.html">ui module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#ui.crawl_with_id"><code class="docutils literal notranslate"><span class="pre">crawl_with_id()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#ui.crawl_with_keys"><code class="docutils literal notranslate"><span class="pre">crawl_with_keys()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html#ui.updateNumbers"><code class="docutils literal notranslate"><span class="pre">updateNumbers()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.html">WebCrawler module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="crawler.html#crawler.WebCrawler"><code class="docutils literal notranslate"><span class="pre">WebCrawler</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.clean_html_content"><code class="docutils literal notranslate"><span class="pre">WebCrawler.clean_html_content()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.close"><code class="docutils literal notranslate"><span class="pre">WebCrawler.close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.crawl_website_with_depth"><code class="docutils literal notranslate"><span class="pre">WebCrawler.crawl_website_with_depth()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.extract_search_engine_links"><code class="docutils literal notranslate"><span class="pre">WebCrawler.extract_search_engine_links()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.find_valid_links"><code class="docutils literal notranslate"><span class="pre">WebCrawler.find_valid_links()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.get_html_content"><code class="docutils literal notranslate"><span class="pre">WebCrawler.get_html_content()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.has_product"><code class="docutils literal notranslate"><span class="pre">WebCrawler.has_product()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.is_pdf"><code class="docutils literal notranslate"><span class="pre">WebCrawler.is_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.is_search_engine_url"><code class="docutils literal notranslate"><span class="pre">WebCrawler.is_search_engine_url()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.is_valid_link"><code class="docutils literal notranslate"><span class="pre">WebCrawler.is_valid_link()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.remove_all_children"><code class="docutils literal notranslate"><span class="pre">WebCrawler.remove_all_children()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.save_content_to_csv"><code class="docutils literal notranslate"><span class="pre">WebCrawler.save_content_to_csv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.set_ignorelist_url"><code class="docutils literal notranslate"><span class="pre">WebCrawler.set_ignorelist_url()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.html#crawler.WebCrawler.setup_headless_chrome"><code class="docutils literal notranslate"><span class="pre">WebCrawler.setup_headless_chrome()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="excelidentify.html">ExcelIdentifier module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="excelidentify.html#excelidentify.ExcelManip"><code class="docutils literal notranslate"><span class="pre">ExcelManip</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="excelidentify.html#excelidentify.ExcelManip.clean_row"><code class="docutils literal notranslate"><span class="pre">ExcelManip.clean_row()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="excelidentify.html#excelidentify.ExcelManip.pre_process"><code class="docutils literal notranslate"><span class="pre">ExcelManip.pre_process()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SIMS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SIMS-WebCrawler</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postprocess.html">postprocess module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui.html">ui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="crawler.html">WebCrawler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="excelidentify.html">ExcelIdentifier module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to SIMS’s documentation!</a></li>
+      <li>Next: <a href="main.html" title="next chapter">main module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Carl Pettersson, Jakob Hallin, Gianluca Von Ehrenberg.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

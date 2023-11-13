@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WebCrawler module &#8212; SIMS  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-crawler">
+<span id="webcrawler-module"></span><h1>WebCrawler module<a class="headerlink" href="#module-crawler" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.WebCrawler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.</span></span><span class="sig-name descname"><span class="pre">WebCrawler</span></span><a class="headerlink" href="#crawler.WebCrawler" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<blockquote>
+<div><p>A web crawler class for scraping and processing web content.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>_MAX_RETRIES (int): Maximum number of retries for fetching a URL.
+_RETRY_DELAY (int): Number of seconds to wait between retries.
+driver (webdriver.Chrome): Selenium WebDriver for web scraping.
+link_queue (queue.Queue): Queue for managing URLs to be scraped.
+visited (set): Set to keep track of visited URLs.
+ignore_list (list): List of URLs to be ignored during crawling.</p>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>set_ignorelist_url():</dt><dd><p>Read a list of URLs from ‘WebCrawler/resources/ignoreUrls.csv’ and set it as the ignore list.</p>
+</dd>
+<dt>setup_headless_chrome():</dt><dd><p>Set up and configure a headless Chrome WebDriver for web scraping.</p>
+</dd>
+<dt>get_html_content(url):</dt><dd><p>Fetch the HTML content of a URL, handling retries and waiting for page load.</p>
+</dd>
+<dt>has_product(html_content):</dt><dd><p>Check if the HTML content contains product-related information.</p>
+</dd>
+<dt>is_pdf(url):</dt><dd><p>Check if a URL points to a PDF file.</p>
+</dd>
+<dt>clean_html_content(html_content):</dt><dd><p>Clean the HTML content by removing specified elements and extracting text.</p>
+</dd>
+<dt>remove_all_children(element):</dt><dd><p>Remove all child elements from a BeautifulSoup element.</p>
+</dd>
+<dt>find_valid_links(html_content):</dt><dd><p>Find valid links in the HTML content.</p>
+</dd>
+<dt>is_valid_link(url):</dt><dd><p>Check if a URL is valid for crawling, considering file extensions and other criteria.</p>
+</dd>
+<dt>save_content_to_csv(content, csv_filename):</dt><dd><p>Save content to a CSV file in the ‘temp_files’ folder.</p>
+</dd>
+<dt>is_search_engine_url(url):</dt><dd><p>Check if a URL belongs to a search engine and should be skipped during crawling.</p>
+</dd>
+<dt>extract_search_engine_links(html_content):</dt><dd><p>Extract search engine result links from HTML content.</p>
+</dd>
+<dt>crawl_website_with_depth(csv_filename, depth_limit, start_url):</dt><dd><p>Crawl a website up to a specified depth, saving content to a CSV file.</p>
+</dd>
+<dt>close():</dt><dd><p>Close the Selenium WebDriver instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.clean_html_content">
+<span class="sig-name descname"><span class="pre">clean_html_content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.clean_html_content" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.close" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.crawl_website_with_depth">
+<span class="sig-name descname"><span class="pre">crawl_website_with_depth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv_filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth_limit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.crawl_website_with_depth" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.extract_search_engine_links">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extract_search_engine_links</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.extract_search_engine_links" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.find_valid_links">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_valid_links</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.find_valid_links" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.get_html_content">
+<span class="sig-name descname"><span class="pre">get_html_content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.get_html_content" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.has_product">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.has_product" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.is_pdf">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.is_pdf" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.is_search_engine_url">
+<span class="sig-name descname"><span class="pre">is_search_engine_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.is_search_engine_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.is_valid_link">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_valid_link</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.is_valid_link" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.remove_all_children">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">remove_all_children</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.remove_all_children" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.save_content_to_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_content_to_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csv_filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.save_content_to_csv" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.set_ignorelist_url">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_ignorelist_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.set_ignorelist_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.WebCrawler.setup_headless_chrome">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setup_headless_chrome</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#crawler.WebCrawler.setup_headless_chrome" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SIMS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Carl Pettersson, Jakob Hallin, Gianluca Von Ehrenberg.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/crawler.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

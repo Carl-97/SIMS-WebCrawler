@@ -1,0 +1,44 @@
+\indexentry{module@\spxentry{module}!main@\spxentry{main}|hyperpage}{1}
+\indexentry{main@\spxentry{main}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{crawl\_all() (in module main)@\spxentry{crawl\_all()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{crawl\_with\_id() (in module main)@\spxentry{crawl\_with\_id()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{crawl\_with\_keys() (in module main)@\spxentry{crawl\_with\_keys()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{empty\_folder() (in module main)@\spxentry{empty\_folder()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{run() (in module main)@\spxentry{run()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{run\_crawl() (in module main)@\spxentry{run\_crawl()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{run\_identify() (in module main)@\spxentry{run\_identify()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{run\_postprocess() (in module main)@\spxentry{run\_postprocess()}\spxextra{in module main}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!postprocess@\spxentry{postprocess}|hyperpage}{2}
+\indexentry{postprocess@\spxentry{postprocess}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{CSVHandler (class in postprocess)@\spxentry{CSVHandler}\spxextra{class in postprocess}|hyperpage}{2}
+\indexentry{find\_all\_pdf\_urls() (postprocess.CSVHandler static method)@\spxentry{find\_all\_pdf\_urls()}\spxextra{postprocess.CSVHandler static method}|hyperpage}{2}
+\indexentry{has\_only\_pdf\_urls() (postprocess.CSVHandler static method)@\spxentry{has\_only\_pdf\_urls()}\spxextra{postprocess.CSVHandler static method}|hyperpage}{2}
+\indexentry{ExcelProcessor (class in postprocess)@\spxentry{ExcelProcessor}\spxextra{class in postprocess}|hyperpage}{2}
+\indexentry{process\_excel() (postprocess.ExcelProcessor method)@\spxentry{process\_excel()}\spxextra{postprocess.ExcelProcessor method}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!ui@\spxentry{ui}|hyperpage}{3}
+\indexentry{ui@\spxentry{ui}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{crawl\_with\_id() (in module ui)@\spxentry{crawl\_with\_id()}\spxextra{in module ui}|hyperpage}{3}
+\indexentry{crawl\_with\_keys() (in module ui)@\spxentry{crawl\_with\_keys()}\spxextra{in module ui}|hyperpage}{3}
+\indexentry{updateNumbers() (in module ui)@\spxentry{updateNumbers()}\spxextra{in module ui}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!crawler@\spxentry{crawler}|hyperpage}{3}
+\indexentry{crawler@\spxentry{crawler}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{WebCrawler (class in crawler)@\spxentry{WebCrawler}\spxextra{class in crawler}|hyperpage}{3}
+\indexentry{clean\_html\_content() (crawler.WebCrawler method)@\spxentry{clean\_html\_content()}\spxextra{crawler.WebCrawler method}|hyperpage}{4}
+\indexentry{close() (crawler.WebCrawler method)@\spxentry{close()}\spxextra{crawler.WebCrawler method}|hyperpage}{4}
+\indexentry{crawl\_website\_with\_depth() (crawler.WebCrawler method)@\spxentry{crawl\_website\_with\_depth()}\spxextra{crawler.WebCrawler method}|hyperpage}{4}
+\indexentry{extract\_search\_engine\_links() (crawler.WebCrawler static method)@\spxentry{extract\_search\_engine\_links()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{find\_valid\_links() (crawler.WebCrawler static method)@\spxentry{find\_valid\_links()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{get\_html\_content() (crawler.WebCrawler method)@\spxentry{get\_html\_content()}\spxextra{crawler.WebCrawler method}|hyperpage}{4}
+\indexentry{has\_product() (crawler.WebCrawler static method)@\spxentry{has\_product()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{is\_pdf() (crawler.WebCrawler static method)@\spxentry{is\_pdf()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{is\_search\_engine\_url() (crawler.WebCrawler method)@\spxentry{is\_search\_engine\_url()}\spxextra{crawler.WebCrawler method}|hyperpage}{4}
+\indexentry{is\_valid\_link() (crawler.WebCrawler static method)@\spxentry{is\_valid\_link()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{remove\_all\_children() (crawler.WebCrawler static method)@\spxentry{remove\_all\_children()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{save\_content\_to\_csv() (crawler.WebCrawler static method)@\spxentry{save\_content\_to\_csv()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{set\_ignorelist\_url() (crawler.WebCrawler static method)@\spxentry{set\_ignorelist\_url()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{setup\_headless\_chrome() (crawler.WebCrawler static method)@\spxentry{setup\_headless\_chrome()}\spxextra{crawler.WebCrawler static method}|hyperpage}{4}
+\indexentry{module@\spxentry{module}!excelidentify@\spxentry{excelidentify}|hyperpage}{4}
+\indexentry{excelidentify@\spxentry{excelidentify}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{ExcelManip (class in excelidentify)@\spxentry{ExcelManip}\spxextra{class in excelidentify}|hyperpage}{4}
+\indexentry{clean\_row() (excelidentify.ExcelManip static method)@\spxentry{clean\_row()}\spxextra{excelidentify.ExcelManip static method}|hyperpage}{5}
+\indexentry{pre\_process() (excelidentify.ExcelManip method)@\spxentry{pre\_process()}\spxextra{excelidentify.ExcelManip method}|hyperpage}{5}
